@@ -1,0 +1,68 @@
+<!-- ============ NAVBAR ============ -->
+<header class="ct-header">
+  <div class="ct-nav-container">
+
+    <!-- LOGO -->
+    <div class="ct-logo">
+      <a href="index_id.html">
+        <img src="img/Crown Transfers Logo-3-2.webp"
+             alt="Logo Veloura Transfers – Layanan Chauffeur Premium Swiss">
+      </a>
+    </div>
+
+    <!-- NAVIGATION -->
+    <nav class="ct-navbar">
+      <ul>
+
+        <li><a href="index_id.html">Beranda</a></li>
+
+        <!-- SERVICES DROPDOWN -->
+        <li class="ct-dropdown">
+          <a class="ct-drop-btn">Layanan ▾</a>
+
+          <div class="ct-dropdown-menu">
+            <a href="hotel-airport-luggage-transfers_id.html">Transfer Hotel & Bandara</a>
+            <a href="wef_id.html">Shuttle WEF Davos 2026</a>
+            <a href="vip_id.html">Layanan Bisnis & VIP</a>
+            <a href="event_id.html">Transfer Acara & Grup</a>
+            <a href="ski_id.html">Transfer Resor Ski</a>
+            <a href="tour_id.html">Tur Wisata Eksklusif</a>
+          </div>
+        </li>
+
+        <li><a href="index_id.html#limousinecars">Armada</a></li>
+        <li><a href="ueberuns_id.html">Tentang Kami</a></li>
+        <li><a href="kontakt_id.html">Kontak</a></li>
+
+        <!-- LANGUAGE SWITCH -->
+        <li class="ct-lang">
+          <a href="index.html">DE</a>
+          <span>|</span>
+          <a href="index_en.html">EN</a>
+          <span>|</span>
+          <a href="index_id.html">ID</a>
+          <span>|</span>
+          <a href="index_ar.html">AR</a>
+        </li>
+
+      </ul>
+    </nav>
+
+    <!-- HAMBURGER -->
+    <button class="ct-hamburger">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+
+  <script>
+    function initNavbar() {
+    const burger = document.querySelector('.ct-hamburger');
+    const nav = document.querySelector('.ct-navbar');
+    if (!burger || !nav) return; // Falls HTML noch nicht geladen
+    burger.addEventListener('click', () => {
+      nav.classList.toggle('show');
+    });
+    }
+  </script>
+
+</header>

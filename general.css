@@ -1,0 +1,1228 @@
+
+/* ============================
+   👑 CROWN TRANSFERS – NAVBAR
+   FULL RESPONSIVE OPTIMIZATION
+   ============================ */
+
+:root {
+  --crown-gold: #c7a347;
+  --crown-text-dark: #1a1a1a;
+  --crown-bg: #f7f6f3;
+}
+
+/* ============================
+   HEADER WRAPPER
+   ============================ */
+.ct-header {
+  width: 100%;
+  background: var(--crown-bg);
+  padding: 0.55rem 0;
+  border-bottom: 1px solid rgba(0,0,0,0.12);
+  position: sticky;
+  top: 0;
+  z-index: 9999;
+}
+
+/* NAV CONTAINER */
+.ct-nav-container {
+  max-width: 1250px;
+  margin: 0 auto;
+  padding: 0 4%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* ============================
+   LOGO
+   ============================ */
+.ct-logo img {
+  height: 60px;
+  width: auto;
+  display: block;
+  transform-origin: center;
+}
+
+/* ============================
+   DESKTOP NAVIGATION
+   ============================ */
+.ct-navbar ul {
+  display: flex;
+  align-items: center;
+  gap: 2.2rem;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.ct-navbar a {
+  color: var(--crown-text-dark);
+  font-weight: 600;
+  font-size: 1.04rem;
+  text-decoration: none;
+  padding-bottom: 4px;
+  position: relative;
+  transition: 0.25s ease;
+}
+
+/* Hover underline */
+.ct-navbar a:hover {
+  color: var(--crown-gold);
+}
+
+.ct-navbar a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 0%;
+  height: 2px;
+  background: var(--crown-gold);
+  transition: 0.3s;
+}
+
+.ct-navbar a:hover::after {
+  width: 100%;
+}
+
+/* ============================
+   DROPDOWN (DESKTOP)
+   ============================ */
+.ct-dropdown {
+  position: relative;
+}
+
+.ct-drop-btn {
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+}
+
+.ct-dropdown-menu {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  min-width: 260px;
+  background: #fff;
+  border: 1px solid rgba(0,0,0,0.08);
+  border-radius: 14px;
+  padding: 0.8rem 0;
+  box-shadow: 0 12px 35px rgba(0,0,0,0.10);
+  display: none;
+  flex-direction: column;
+  z-index: 50;
+}
+
+.ct-dropdown:hover .ct-dropdown-menu {
+  display: flex;
+}
+
+.ct-dropdown-menu a {
+  padding: 0.85rem 1.3rem;
+  font-size: 1rem;
+  font-weight: 500;
+  border-bottom: 1px solid rgba(0,0,0,0.06);
+  transition: 0.25s ease;
+}
+
+.ct-dropdown-menu a:last-child {
+  border-bottom: none;
+}
+
+.ct-dropdown-menu a:hover {
+  background: rgba(199,163,71,0.10);
+  color: var(--crown-gold);
+  padding-left: 1.55rem;
+}
+
+/* Top Gold Line */
+.ct-dropdown-menu::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  height: 4px;
+  width: 100%;
+  background: var(--crown-gold);
+  border-radius: 14px 14px 0 0;
+}
+
+/* ============================
+   HAMBURGER
+   ============================ */
+.ct-hamburger {
+  display: none;
+  flex-direction: column;
+  gap: 6px;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+.ct-hamburger span {
+  width: 28px;
+  height: 3px;
+  background: var(--crown-gold);
+  border-radius: 3px;
+}
+
+/* ======================================================
+   🧩 MacBook Pro Retina – 1100px bis 1500px
+   ====================================================== */
+@media (min-width: 1100px) and (max-width: 1500px) {
+  .ct-logo img { height: 54px; }
+  .ct-navbar a { font-size: 0.97rem; }
+  .ct-navbar ul { gap: 2rem; }
+  .ct-dropdown-menu a { font-size: 0.94rem; }
+}
+
+/* ======================================================
+   🧩 bis 1100px – Laptop
+   ====================================================== */
+@media (max-width: 1100px) {
+  .ct-logo img { height: 50px; }
+  .ct-navbar a { font-size: 0.92rem; }
+  .ct-navbar ul { gap: 1.75rem; }
+  .ct-dropdown-menu a { font-size: 0.9rem; }
+}
+
+/* ======================================================
+   🧩 bis 1000px – Hamburger aktiviert (optimiert)
+   ====================================================== */
+@media (max-width: 1000px) {
+
+  /* Hamburger sichtbar */
+  .ct-hamburger {
+    display: flex;
+    z-index: 20000;
+  }
+
+  /* Desktop-Nav ausblenden */
+  .ct-navbar {
+    display: none;
+  }
+
+  /* Mobile-Menü sichtbar */
+  .ct-navbar.show {
+    display: flex !important;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 100%;
+    background: #fff;
+    position: absolute;
+    top: 100%;
+    left: 0;
+
+    padding: 1.6rem 1.6rem;
+    gap: 1.15rem;
+
+    border-bottom: 3px solid rgba(199,163,71,0.35);
+    box-shadow: 0 12px 30px rgba(0,0,0,0.14);
+  }
+
+  /* UL in Mobile */
+  .ct-navbar ul {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1.1rem;
+    width: 100%;
+  }
+
+  /* Mobile Links kleiner */
+  .ct-navbar a {
+    font-size: 0.97rem;
+    padding: 0;
+    font-weight: 600;
+    letter-spacing: 0.2px;
+    color: #444; /* hellere Schrift */
+  }
+
+  /* ======================================================
+       ⭐ SCHÖNERES MOBILE-DROPDOWN
+     ====================================================== */
+
+  .ct-dropdown-menu {
+    display: none !important;
+    position: static !important;
+
+    background: #f7f7f7 !important;  /* leicht abgesetzt */
+    padding: 0.8rem 1rem 1rem !important;
+
+    border: 1px solid rgba(0,0,0,0.08) !important;
+    border-radius: 12px !important;
+    box-shadow: 0 4px 14px rgba(0,0,0,0.08) !important;
+
+    width: 100%;
+    gap: 0.7rem;   /* mehr Abstand */
+  }
+
+  /* goldener Balken entfernen */
+  .ct-dropdown-menu::before {
+    display: none !important;
+  }
+
+  /* Dropdown sichtbar wenn .open */
+  .ct-dropdown.open .ct-dropdown-menu {
+    display: flex !important;
+  }
+
+  /* einzelne Dropdown-Links */
+  .ct-dropdown-menu a {
+    padding: 0.55rem 0 !important;
+    font-size: 0.9rem !important;
+    color: #555 !important; /* hellere Farbe */
+    width: 100%;
+    border-bottom: 1px solid rgba(0,0,0,0.06);
+    transition: 0.2s ease;
+  }
+
+  .ct-dropdown-menu a:last-child {
+    border-bottom: none;
+  }
+
+  /* schöner Hover */
+  .ct-dropdown-menu a:hover {
+    background: rgba(199,163,71,0.10) !important;
+    color: var(--crown-gold) !important;
+    padding-left: 4px !important;
+    border-radius: 6px;
+  }
+
+  /* Dropdown Pfeil */
+  .ct-drop-btn::after {
+    content: "▾";
+    margin-left: 6px;
+    font-size: 0.8rem;
+    color: var(--crown-gold);
+  }
+
+  /* Hamburger Linien kleiner */
+  .ct-hamburger span {
+    width: 26px;
+    height: 2.7px;
+  }
+}
+
+
+
+
+
+
+/* ======================================================
+   🧩 bis 900px – Tablet quer
+   ====================================================== */
+@media (max-width: 900px) {
+  .ct-logo img { height: 45px; }
+
+  .ct-navbar a {
+    font-size: 0.9rem;
+  }
+
+  .ct-dropdown-menu a {
+    font-size: 0.86rem !important;
+  }
+
+  .ct-hamburger span {
+    width: 24px;
+    height: 2.5px;
+  }
+
+  .ct-navbar.show {
+    padding: 1.45rem 1.45rem;
+    gap: 1.05rem;
+  }
+
+  .ct-navbar ul {
+    gap: 1rem;
+  }
+}
+
+
+/* ======================================================
+   🧩 bis 768px – Tablet hoch
+   ====================================================== */
+@media (max-width: 768px) {
+  .ct-logo img { height: 42px; }
+
+  .ct-navbar a {
+    font-size: 0.86rem;
+  }
+
+  .ct-dropdown-menu a {
+    font-size: 0.82rem !important;
+  }
+
+  .ct-hamburger span {
+    width: 22px;
+    height: 2.4px;
+  }
+
+  .ct-navbar.show {
+    padding: 1.3rem 1.3rem;
+    gap: 0.95rem;
+  }
+
+  .ct-navbar ul {
+    gap: 0.9rem;
+  }
+}
+
+
+/* ======================================================
+   🧩 bis 600px – kleine Phones
+   ====================================================== */
+@media (max-width: 600px) {
+  .ct-logo img { height: 39px; }
+
+  .ct-navbar a {
+    font-size: 0.82rem;
+  }
+
+  .ct-dropdown-menu a {
+    font-size: 0.78rem !important;
+  }
+
+  .ct-hamburger span {
+    width: 21px;
+    height: 2.3px;
+  }
+
+  .ct-navbar.show {
+    padding: 1.15rem 1.15rem;
+    gap: 0.85rem;
+  }
+
+  .ct-navbar ul {
+    gap: 0.8rem;
+  }
+}
+
+/* ======================================================
+   🧩 bis 420px – iPhone 12 / modern
+   ====================================================== */
+@media (max-width: 420px) {
+  .ct-logo img { height: 34px; }
+
+  .ct-navbar a {
+    font-size: 0.78rem;
+  }
+
+  .ct-dropdown-menu a {
+    font-size: 0.73rem !important;
+  }
+
+  .ct-hamburger span {
+    width: 19px;
+    height: 2.2px;
+  }
+
+  .ct-navbar.show {
+    padding: 1rem 1rem;
+    gap: 0.75rem;
+  }
+
+  .ct-navbar ul {
+    gap: 0.7rem;
+  }
+}
+
+
+/* ======================================================
+   🧩 bis 350px – sehr kleine Devices
+   ====================================================== */
+@media (max-width: 350px) {
+  .ct-logo img { height: 30px; }
+
+  .ct-navbar a {
+    font-size: 0.7rem;
+  }
+
+  .ct-dropdown-menu a {
+    font-size: 0.66rem !important;
+  }
+
+  .ct-hamburger span {
+    width: 17px;
+    height: 2px;
+  }
+
+  .ct-navbar.show {
+    padding: 0.85rem 0.85rem;
+    gap: 0.6rem;
+  }
+
+  .ct-navbar ul {
+    gap: 0.55rem;
+  }
+}
+
+
+
+/*scrollen*/
+
+html {
+  scroll-behavior: smooth;
+}
+
+html, body {
+  overflow-x: hidden;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+/* Typografie */
+html {
+  font-size: 17px;
+}
+
+body {
+  font-family: 'DM Mono', sans-serif;
+  line-height: 1.55;
+  color: white;
+}
+
+a {
+  color: white;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+p.minititle {
+  text-transform: uppercase;
+  letter-spacing: 5px;
+  font-size: 15px;
+  color: #a9852d;
+}
+
+h1 {
+  font-size: 57px;
+  letter-spacing: -2px;
+  margin-bottom: 20px;
+  line-height: 4rem;
+}
+
+h2 {
+  font-size: 38px;
+  font-weight: 400;
+  letter-spacing: -2px;
+  margin-bottom: 1rem;
+}
+
+/* ================================
+   👑 CROWN TRANSFERS – FAQ (SMALLER EDITION)
+   ================================ */
+
+:root {
+  --gold: #c7a347;
+  --ink: #1f1f1f;
+  --muted: #666;
+  --bg: #f9f8f6;
+}
+
+/* === Grundstruktur === */
+.faq {
+  background: #f7f6f3;
+  padding: clamp(2rem, 1.6vw + 1rem, 3.5rem) 1rem;
+  overflow-x: hidden;
+}
+
+.faq-wrap {
+  max-width: 830px;
+  margin: 0 auto;
+  width: 100%;
+}
+
+.faq-head {
+  text-align: center;
+  margin-bottom: 2.1rem;
+}
+
+.faq-head h2 {
+  font-size: clamp(1.55rem, 0.8rem + 1.7vw, 2.2rem);
+  margin: 0 0 0.5rem;
+  color: var(--ink);
+  font-weight: 600;
+  letter-spacing: -0.2px;
+}
+
+/* === FAQ-Details === */
+.faq-list details {
+  background: #fff;
+  border: 1px solid #e8e6e0;
+  border-radius: 10px;
+  padding: 0.95rem 1.1rem;
+  margin-bottom: 0.95rem;
+  cursor: pointer;
+  transition: box-shadow 0.3s ease, border-color 0.3s ease;
+  box-shadow: 0 5px 14px rgba(0, 0, 0, 0.04);
+}
+
+.faq-list details:hover {
+  border-color: #eadfbf;
+  box-shadow: 0 8px 18px rgba(0, 0, 0, 0.06);
+}
+
+/* === Summary === */
+.faq-list summary {
+  font-weight: 600;
+  color: var(--ink);
+  list-style: none;
+  position: relative;
+  font-size: 0.97rem;
+  padding-right: 1.4rem;
+  line-height: 1.35;
+}
+
+.faq-list summary::-webkit-details-marker {
+  display: none;
+}
+
+.faq-list summary::after {
+  content: "+";
+  position: absolute;
+  right: 0;
+  top: 0;
+  font-weight: 700;
+  color: var(--gold);
+  transition: transform 0.3s ease;
+  font-size: 1.3rem;
+  line-height: 1;
+}
+
+details[open] summary::after {
+  content: "–";
+  transform: rotate(180deg);
+}
+
+/* === Antworttext === */
+.faq-list p {
+  margin: 0.6rem 0 0;
+  color: var(--muted);
+  line-height: 1.55;
+  font-size: 0.9rem;
+}
+
+/* === Motion Reduce === */
+@media (prefers-reduced-motion: reduce) {
+  [data-aos] {
+    transition: none !important;
+    animation: none !important;
+  }
+}
+
+/* ============================================================
+   🧩 MacBook Pro – 1100px bis 1500px
+   ============================================================ */
+@media (min-width: 1100px) and (max-width: 1500px) {
+  .faq {
+    padding: 3.2rem 1rem;
+  }
+  .faq-wrap {
+    max-width: 780px;
+  }
+  .faq-head h2 {
+    font-size: 2rem;
+  }
+  .faq-list summary {
+    font-size: 0.95rem;
+  }
+  .faq-list p {
+    font-size: 0.88rem;
+  }
+}
+
+/* ============================================================
+   🧩 bis 1100px – Laptop
+   ============================================================ */
+@media (max-width: 1100px) {
+  .faq {
+    padding: 3rem 1rem;
+  }
+  .faq-head h2 {
+    font-size: 1.9rem;
+  }
+  .faq-list summary {
+    font-size: 0.94rem;
+  }
+  .faq-list p {
+    font-size: 0.87rem;
+  }
+}
+
+/* ============================================================
+   🧩 bis 900px – Tablet quer
+   ============================================================ */
+@media (max-width: 900px) {
+  .faq {
+    padding: 2.8rem 0.9rem;
+  }
+  .faq-head h2 {
+    font-size: 1.8rem;
+  }
+  .faq-list details {
+    padding: 0.9rem 1rem;
+  }
+  .faq-list summary {
+    font-size: 0.92rem;
+  }
+  .faq-list summary::after {
+    font-size: 1.2rem;
+  }
+  .faq-list p {
+    font-size: 0.86rem;
+  }
+}
+
+/* ============================================================
+   🧩 bis 768px – Tablet hoch
+   ============================================================ */
+@media (max-width: 768px) {
+  .faq {
+    padding: 2.6rem 0.85rem;
+  }
+  .faq-head h2 {
+    font-size: 1.7rem;
+  }
+  .faq-list summary {
+    font-size: 0.9rem;
+  }
+  .faq-list p {
+    font-size: 0.85rem;
+  }
+}
+
+/* ============================================================
+   🧩 bis 600px – kleine Handys
+   ============================================================ */
+@media (max-width: 600px) {
+  .faq {
+    padding: 2.3rem 0.75rem;
+  }
+  .faq-head h2 {
+    font-size: 1.55rem;
+  }
+  .faq-list summary {
+    font-size: 0.88rem;
+  }
+  .faq-list p {
+    font-size: 0.84rem;
+  }
+}
+
+/* ============================================================
+   🧩 bis 420px – iPhone 12 / moderne Smartphones
+   ============================================================ */
+@media (max-width: 420px) {
+  .faq {
+    padding: 2.1rem 0.6rem;
+  }
+  .faq-head h2 {
+    font-size: 1.45rem;
+  }
+  .faq-list summary {
+    font-size: 0.86rem;
+  }
+  .faq-list p {
+    font-size: 0.82rem;
+  }
+}
+
+/* ============================================================
+   🧩 bis 350px – sehr kleine Geräte
+   ============================================================ */
+@media (max-width: 350px) {
+  .faq {
+    padding: 1.9rem 0.5rem;
+  }
+  .faq-head h2 {
+    font-size: 1.35rem;
+  }
+  .faq-list summary {
+    font-size: 0.84rem;
+  }
+  .faq-list p {
+    font-size: 0.8rem;
+  }
+}
+
+
+
+
+/* ================================
+   👑 CROWN TRANSFERS – LUXURY CARS SLIDER
+   ================================ */
+
+.limousine-cars {
+  background-color: #f7f6f3;
+  color: #222;
+  padding: 6rem 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+
+/* === Header === */
+.limousinecars-header {
+  text-align: center;
+  max-width: 800px;
+}
+
+.limousinecars-header h2 {
+  font-size: 38px;
+  font-weight: 600;
+  color: #bfa14a;
+}
+
+.underline {
+  width: 90px;
+  height: 3px;
+  background: linear-gradient(90deg, #bda35a, #f5d77b);
+  margin: 1rem auto 1.5rem;
+  border-radius: 2px;
+}
+
+.limousinecars-header p {
+  font-size: 1.1rem;
+  color: #555;
+  line-height: 1.6;
+}
+
+/* ================
+   SLIDER STRUCTURE
+   ================ */
+.limousinecars-slider-wrap {
+  display: flex;
+  align-items: center;
+  gap: 1.3rem;
+  width: 100%;
+  max-width: 1400px;
+  margin: auto;
+}
+
+.limousinecars-slider {
+  overflow: hidden;
+  flex: 1;
+}
+
+.limousinecars-track {
+  display: flex;
+  gap: 2rem;
+  transition: transform 0.5s ease;
+}
+
+/* ================
+   INDIVIDUAL CARD
+   ================ */
+
+/* STANDARD: DESKTOP → 3 Karten */
+.limousinecars-card {
+  min-width: calc(33.333% - 1.3rem);
+  background: #fff;
+  border-radius: 18px;
+  overflow: hidden;
+  box-shadow: 0 6px 25px rgba(0, 0, 0, 0.08);
+  transition: 0.3s ease;
+}
+
+.limousinecars-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 12px 30px rgba(191, 161, 74, 0.25);
+}
+
+/* ================
+   IMAGE
+   ================ */
+.limousinecars-image {
+  width: 100%;
+  height: 230px;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+
+/* ================
+   CONTENT
+   ================ */
+.limousinecars-content {
+  padding: 1.8rem;
+}
+
+.limousinecars-content h4 {
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: #bfa14a;
+}
+
+.limousinecars-content p {
+  font-size: 0.98rem;
+  color: #555;
+  line-height: 1.6;
+}
+
+/* ================
+   SUBTLE ARROWS – CROWN STYLE
+   ================ */
+.car-arrow {
+  background: rgba(255, 255, 255, 0.6);
+  border: 1px solid rgba(191, 161, 74, 0.4);
+  color: rgba(191, 161, 74, 0.7);
+  font-size: 1.6rem;
+  padding: 0.25rem 0.55rem;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: 0.25s ease;
+  backdrop-filter: blur(4px);
+}
+
+.car-arrow:hover {
+  background: rgba(191, 161, 74, 0.15);
+  color: #bfa14a;
+  border-color: rgba(191, 161, 74, 0.6);
+}
+
+.car-arrow:active {
+  transform: scale(0.92);
+}
+
+/* === NOTE TEXT === */
+.eco-note {
+  text-align: center;
+  margin-top: 4.5rem;
+  font-size: 1.1rem;
+  color: var(--muted, #5b5b5b);
+  line-height: 1.7;
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+
+/* ============================================================
+   🧩 bis 1500px – MacBook Pro Retina (kompakter, feinere Fonts)
+   ============================================================ */
+@media (min-width: 1100px) and (max-width: 1500px) {
+  .limousine-cars {
+    padding: 5rem 2rem;
+  }
+
+  .limousinecars-header h2 {
+    font-size: 34px;
+  }
+
+  .limousinecars-header p {
+    font-size: 1rem;
+  }
+
+  .limousinecars-track {
+    gap: 1.7rem;
+  }
+
+  .limousinecars-card {
+    border-radius: 16px;
+  }
+
+  .limousinecars-image {
+    height: 210px;
+  }
+
+  .limousinecars-content {
+    padding: 1.5rem;
+  }
+
+  .limousinecars-content h4 {
+    font-size: 1.15rem;
+  }
+
+  .limousinecars-content p {
+    font-size: 0.9rem;
+  }
+
+  .car-arrow {
+    font-size: 1.45rem;
+    padding: 0.22rem 0.5rem;
+  }
+
+  .eco-note {
+    font-size: 1rem;
+    margin-top: 4rem;
+  }
+}
+
+
+
+/* ======================================
+   🧩 bis 1100px – Laptop
+   → 2 Karten sichtbar
+   ====================================== */
+@media (max-width: 1100px) {
+  .limousine-cars {
+    padding: 4.5rem 1.8rem;
+  }
+
+  .limousinecars-header h2 {
+    font-size: 30px;
+  }
+
+  .limousinecars-track {
+    gap: 1.5rem;
+  }
+
+  .limousinecars-card {
+    min-width: calc(50% - 1rem);
+  }
+
+  .limousinecars-image {
+    height: 190px;
+  }
+
+  .limousinecars-content h4 {
+    font-size: 1.15rem;
+  }
+
+  .limousinecars-content p {
+    font-size: 0.92rem;
+  }
+
+  .car-arrow {
+    font-size: 1.4rem;
+    padding: 0.2rem 0.48rem;
+  }
+}
+
+
+
+/* ======================================
+   🧩 bis 900px – Tablet quer
+   → 1 Karte sichtbar
+   ====================================== */
+@media (max-width: 900px) {
+  .limousine-cars {
+    padding: 4rem 1.5rem;
+  }
+
+  .limousinecars-header h2 {
+    font-size: 27px;
+  }
+
+  .underline {
+    width: 75px;
+  }
+
+  .limousinecars-card {
+    min-width: 100%;
+  }
+
+  .limousinecars-image {
+    height: 180px;
+  }
+
+  .limousinecars-content {
+    padding: 1.4rem;
+  }
+
+  .limousinecars-content h4 {
+    font-size: 1.1rem;
+  }
+
+  .limousinecars-content p {
+    font-size: 0.88rem;
+  }
+
+  .car-arrow {
+    font-size: 1.35rem;
+    padding: 0.18rem 0.45rem;
+  }
+
+  .eco-note {
+    font-size: 0.95rem;
+  }
+}
+
+
+
+/* ======================================
+   🧩 bis 768px – Tablet hoch
+   ====================================== */
+@media (max-width: 768px) {
+  .limousine-cars {
+    padding: 3.5rem 1.3rem;
+  }
+
+  .limousinecars-header h2 {
+    font-size: 25px;
+  }
+
+  .limousinecars-header p {
+    font-size: 0.95rem;
+  }
+
+  .limousinecars-image {
+    height: 170px;
+  }
+
+  .limousinecars-content {
+    padding: 1.3rem;
+  }
+
+  .limousinecars-content h4 {
+    font-size: 1.05rem;
+  }
+
+  .limousinecars-content p {
+    font-size: 0.85rem;
+  }
+
+  .car-arrow {
+    font-size: 1.3rem;
+    padding: 0.18rem 0.42rem;
+  }
+
+  .eco-note {
+    font-size: 0.9rem;
+  }
+}
+
+
+
+/* ======================================
+   🧩 bis 600px – kleine Handys
+   ====================================== */
+@media (max-width: 600px) {
+  .limousine-cars {
+    padding: 3rem 1.1rem;
+  }
+
+  .limousinecars-header h2 {
+    font-size: 23px;
+  }
+
+  .underline {
+    width: 70px;
+  }
+
+  .limousinecars-header p {
+    font-size: 0.9rem;
+  }
+
+  .limousinecars-card {
+    border-radius: 15px;
+  }
+
+  .limousinecars-image {
+    height: 160px;
+  }
+
+  .limousinecars-content {
+    padding: 1.2rem;
+  }
+
+  .limousinecars-content h4 {
+    font-size: 1rem;
+  }
+
+  .limousinecars-content p {
+    font-size: 0.8rem;
+  }
+
+  .car-arrow {
+    font-size: 1.25rem;
+    padding: 0.16rem 0.4rem;
+  }
+
+  .eco-note {
+    font-size: 0.88rem;
+  }
+}
+
+
+
+/* ======================================
+   🧩 bis 420px – iPhone 12
+   ====================================== */
+@media (max-width: 420px) {
+  .limousine-cars {
+    padding: 2.7rem 0.9rem;
+  }
+
+  .limousinecars-header h2 {
+    font-size: 21px;
+  }
+
+  .limousinecars-header p {
+    font-size: 0.85rem;
+  }
+
+  .limousinecars-image {
+    height: 150px;
+  }
+
+  .limousinecars-content {
+    padding: 1rem;
+  }
+
+  .limousinecars-content h4 {
+    font-size: 0.95rem;
+  }
+
+  .limousinecars-content p {
+    font-size: 0.78rem;
+  }
+
+  .car-arrow {
+    font-size: 1.15rem;
+    padding: 0.15rem 0.38rem;
+  }
+
+  .eco-note {
+    font-size: 0.85rem;
+    padding: 0 1rem;
+  }
+}
+
+
+
+/* ======================================
+   🧩 bis 350px – sehr kleine Geräte
+   ====================================== */
+@media (max-width: 350px) {
+  .limousine-cars {
+    padding: 2.5rem 0.7rem;
+  }
+
+  .limousinecars-header h2 {
+    font-size: 19px;
+  }
+
+  .limousinecars-header p {
+    font-size: 0.8rem;
+  }
+
+  .limousinecars-image {
+    height: 140px;
+  }
+
+  .limousinecars-content {
+    padding: 0.9rem;
+  }
+
+  .limousinecars-content h4 {
+    font-size: 0.9rem;
+  }
+
+  .limousinecars-content p {
+    font-size: 0.75rem;
+  }
+
+  .car-arrow {
+    font-size: 1.1rem;
+    padding: 0.14rem 0.34rem;
+  }
+
+  .eco-note {
+    font-size: 0.8rem;
+  }
+}
+
+
+

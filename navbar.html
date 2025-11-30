@@ -1,0 +1,71 @@
+
+<!-- ============ NAVBAR ============ -->
+<header class="ct-header">
+  <div class="ct-nav-container">
+
+    <!-- LOGO -->
+    <div class="ct-logo">
+      <a href="index.html">
+        <img src="img/Crown Transfers Logo-3-2.webp"
+             alt="Veloura Transfers Logo – Premium Chauffeurservice Schweiz">
+      </a>
+    </div>
+
+    <!-- NAVIGATION -->
+    <nav class="ct-navbar">
+      <ul>
+
+        <li><a href="index.html">Home</a></li>
+
+        <!-- SERVICES DROPDOWN -->
+        <li class="ct-dropdown">
+          <a class="ct-drop-btn">Services ▾</a>
+
+          <div class="ct-dropdown-menu">
+            <a href="hotel-airport-luggage-transfers.html">Hotel & Flughafen Transfers</a>
+            <a href="wef.html">WEF Davos 2026 Shuttle</a>
+            <a href="vip.html">Business & VIP Chauffeurservice</a>
+            <a href="event.html">Event- & Gruppenfahrten</a>
+            <a href="ski.html">Ski Resort Transfers</a>
+            <a href="tour.html">Exklusive Sightseeing-Touren</a>
+          </div>
+        </li>
+
+        <li><a href="index.html#limousinecars">Flotte</a></li>
+        <li><a href="ueberuns.html">Über Uns</a></li>
+        <li><a href="kontakt.html">Kontakt</a></li>
+
+        <!-- LANGUAGE SWITCH -->
+        <li class="ct-lang">
+          <a href="index.html">DE</a>
+          <span>|</span>
+          <a href="index_en.html">EN</a>
+          <span>|</span>
+          <a href="index_id.html">ID</a>
+          <span>|</span>
+          <a href="index_ar.html">AR</a>
+        </li>
+
+      </ul>
+    </nav>
+
+    <!-- HAMBURGER -->
+    <button class="ct-hamburger">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+
+  <script>
+    function initNavbar() {
+    const burger = document.querySelector('.ct-hamburger');
+    const nav = document.querySelector('.ct-navbar');
+    if (!burger || !nav) return; // Falls HTML noch nicht geladen
+    burger.addEventListener('click', () => {
+      nav.classList.toggle('show');
+    });
+    }
+  </script>
+
+</header>
+
+

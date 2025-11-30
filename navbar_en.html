@@ -1,0 +1,68 @@
+<!-- ============ NAVBAR ============ -->
+<header class="ct-header">
+  <div class="ct-nav-container">
+
+    <!-- LOGO -->
+    <div class="ct-logo">
+      <a href="index_en.html">
+        <img src="img/Crown Transfers Logo-3-2.webp"
+             alt="Veloura Transfers Logo – Premium Chauffeur Service Switzerland">
+      </a>
+    </div>
+
+    <!-- NAVIGATION -->
+    <nav class="ct-navbar">
+      <ul>
+
+        <li><a href="index_en.html">Home</a></li>
+
+        <!-- SERVICES DROPDOWN -->
+        <li class="ct-dropdown">
+          <a class="ct-drop-btn">Services ▾</a>
+
+          <div class="ct-dropdown-menu">
+            <a href="hotel-airport-luggage-transfers_en.html">Hotel & Airport Transfers</a>
+            <a href="wef_en.html">WEF Davos 2026 Shuttle</a>
+            <a href="vip_en.html">Business & VIP Chauffeur Service</a>
+            <a href="event_en.html">Event & Group Transfers</a>
+            <a href="ski_en.html">Ski Resort Transfers</a>
+            <a href="tour_en.html">Exclusive Sightseeing Tours</a>
+          </div>
+        </li>
+
+        <li><a href="index_en.html#limousinecars">Fleet</a></li>
+        <li><a href="ueberuns_en.html">About Us</a></li>
+        <li><a href="kontakt_en.html">Contact</a></li>
+
+        <!-- LANGUAGE SWITCH -->
+        <li class="ct-lang">
+          <a href="index.html">DE</a>
+          <span>|</span>
+          <a href="index_en.html">EN</a>
+          <span>|</span>
+          <a href="index_id.html">ID</a>
+          <span>|</span>
+          <a href="index_ar.html">AR</a>
+        </li>
+
+      </ul>
+    </nav>
+
+    <!-- HAMBURGER -->
+    <button class="ct-hamburger">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+
+  <script>
+    function initNavbar() {
+    const burger = document.querySelector('.ct-hamburger');
+    const nav = document.querySelector('.ct-navbar');
+    if (!burger || !nav) return; // Falls HTML noch nicht geladen
+    burger.addEventListener('click', () => {
+      nav.classList.toggle('show');
+    });
+    }
+  </script>
+
+</header>

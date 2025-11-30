@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
+
+  <!-- ===== ROOT IMAGES ===== -->
+  <url>
+    <loc>https://www.velouratransfers.ch/</loc>
+    <image:image><image:loc>https://www.velouratransfers.ch/img/alsarlberg.webp</image:loc></image:image>
+    <image:image><image:loc>https://www.velouratransfers.ch/img/flughafenzürichlogo.webp</image:loc></image:image>
+    <image:image><image:loc>https://www.velouratransfers.ch/img/sraclogo.webp</image:loc></image:image>
+    <image:image><image:loc>https://www.velouratransfers.ch/img/Crown Transfers Logo-3-2.webp</image:loc></image:image>
+  </url>
+
+  <!-- ===== INDEX SECTION ===== -->
+  <url>
+    <loc>https://www.velouratransfers.ch/index.html</loc>
+    <image:image><image:loc>https://www.velouratransfers.ch/img/index/indexhero.webp</image:loc></image:image>
+    <image:image><image:loc>https://www.velouratransfers.ch/img/index/vklass.webp</image:loc></image:image>
+    <image:image><image:loc>https://www.velouratransfers.ch/img/index/airporttransfer.webp</image:loc></image:image>
+    <image:image><image:loc>https://www.velouratransfers.ch/img/index/wef.webp</image:loc></image:image>
+    <image:image><image:loc>https://www.velouratransfers.ch/img/index/vip.webp</image:loc></image:image>
+    <image:image><image:loc>https://www.velouratransfers.ch/img/index/gruppenfahrten.webp</image:loc></image:image>
+    <image:image><image:loc>https://www.velouratransfers.ch/img/index/skiresort.webp</image:loc></image:image>
+    <image:image><image:loc>https://www.velouratransfers.ch/img/index/sightseeing.webp</image:loc></image:image>
+    <image:image><image:loc>https://www.velouratransfers.ch/img/index/infobild.webp</image:loc></image:image>
+  </url>
+
+  <!-- ===== ABOUT US ===== -->
+  <url>
+    <loc>https://www.velouratransfers.ch/ueberuns.html</loc>
+    <image:image><image:loc>https://www.velouratransfers.ch/img/aboutus/aboutushero.webp</image:loc></image:image>
+    <image:image><image:loc>https://www.velouratransfers.ch/img/aboutus/aboutus1.webp</image:loc></image:image>
+    <image:image><image:loc>https://www.velouratransfers.ch/img/aboutus/aboutus2.webp</image:loc></image:image>
+  </url>
+
+  <!-- ===== SERVICES ===== -->
+  <url>
+    <loc>https://www.velouratransfers.ch/event.html</loc>
+    <image:image><image:loc>https://www.velouratransfers.ch/img/services/hotel.webp</image:loc></image:image>
+    <image:image><image:loc>https://www.velouratransfers.ch/img/services/wefbild1.webp</image:loc></image:image>
+    <image:image><image:loc>https://www.velouratransfers.ch/img/services/vip.webp</image:loc></image:image>
+    <image:image><image:loc>https://www.velouratransfers.ch/img/services/hebebühne.webp</image:loc></image:image>
+    <image:image><image:loc>https://www.velouratransfers.ch/img/services/ski.webp</image:loc></image:image>
+  </url>
+
+  <!-- ===== VEHICLE FLEET ===== -->
+  <url>
+    <loc>https://www.velouratransfers.ch/vip.html</loc>
+    <image:image><image:loc>https://www.velouratransfers.ch/img/vehicleimg/bklass.webp</image:loc></image:image>
+    <image:image><image:loc>https://www.velouratransfers.ch/img/vehicleimg/eklasstransp.webp</image:loc></image:image>
+    <image:image><image:loc>https://www.velouratransfers.ch/img/vehicleimg/reanultmaster.webp</image:loc></image:image>
+    <image:image><image:loc>https://www.velouratransfers.ch/img/vehicleimg/stariawhite.webp</image:loc></image:image>
+    <image:image><image:loc>https://www.velouratransfers.ch/img/vehicleimg/vito.webp</image:loc></image:image>
+    <image:image><image:loc>https://www.velouratransfers.ch/img/vehicleimg/sclassnew.webp</image:loc></image:image>
+    <image:image><image:loc>https://www.velouratransfers.ch/img/vehicleimg/benz-e-class.webp</image:loc></image:image>
+    <image:image><image:loc>https://www.velouratransfers.ch/img/vehicleimg/sklass.webp</image:loc></image:image>
+    <image:image><image:loc>https://www.velouratransfers.ch/img/vehicleimg/vklass.webp</image:loc></image:image>
+    <image:image><image:loc>https://www.velouratransfers.ch/img/vehicleimg/sprinter.webp</image:loc></image:image>
+    <image:image><image:loc>https://www.velouratransfers.ch/img/vehicleimg/sprinternew.webp</image:loc></image:image>
+  </url>
+
+  <!-- ===== SIGHTSEEING ===== -->
+  <url>
+    <loc>https://www.velouratransfers.ch/tour.html</loc>
+    <image:image><image:loc>https://www.velouratransfers.ch/img/sightseeing/luzern.webp</image:loc></image:image>
+    <image:image><image:loc>https://www.velouratransfers.ch/img/sightseeing/zurich.webp</image:loc></image:image>
+    <image:image><image:loc>https://www.velouratransfers.ch/img/sightseeing/interlaken.webp</image:loc></image:image>
+    <image:image><image:loc>https://www.velouratransfers.ch/img/sightseeing/bern.webp</image:loc></image:image>
+    <image:image><image:loc>https://www.velouratransfers.ch/img/sightseeing/montreux.webp</image:loc></image:image>
+    <image:image><image:loc>https://www.velouratransfers.ch/img/sightseeing/grindelwald.webp</image:loc></image:image>
+    <image:image><image:loc>https://www.velouratransfers.ch/img/sightseeing/rheinfall.webp</image:loc></image:image>
+    <image:image><image:loc>https://www.velouratransfers.ch/img/sightseeing/matterhorn.webp</image:loc></image:image>
+    <image:image><image:loc>https://www.velouratransfers.ch/img/sightseeing/appenzell.webp</image:loc></image:image>
+    <image:image><image:loc>https://www.velouratransfers.ch/img/sightseeing/basel.webp</image:loc></image:image>
+  </url>
+
+</urlset>

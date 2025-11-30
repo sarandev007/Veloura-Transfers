@@ -1,0 +1,68 @@
+<!-- ============ NAVBAR ============ -->
+<header class="ct-header">
+  <div class="ct-nav-container">
+
+    <!-- LOGO -->
+    <div class="ct-logo">
+      <a href="index_ar.html">
+        <img src="img/Crown Transfers Logo-3-2.webp"
+             alt="شعار كراون ترانسفيرز – خدمة سائق فاخرة في سويسرا">
+      </a>
+    </div>
+
+    <!-- NAVIGATION -->
+    <nav class="ct-navbar">
+      <ul>
+
+        <li><a href="index_ar.html">الرئيسية</a></li>
+
+        <!-- SERVICES DROPDOWN -->
+        <li class="ct-dropdown">
+          <a class="ct-drop-btn">الخدمات ▾</a>
+
+          <div class="ct-dropdown-menu">
+            <a href="hotel-airport-luggage-transfers_ar.html">خدمات التوصيل إلى الفندق والمطار</a>
+            <a href="wef_ar.html">خدمة نقل WEF دافوس 2026</a>
+            <a href="vip_ar.html">خدمة سائق لرجال الأعمال وكبار الشخصيات</a>
+            <a href="event_ar.html">خدمات النقل للفعاليات والمجموعات</a>
+            <a href="ski_ar.html">خدمات التوصيل لمنتجعات التزلج</a>
+            <a href="tour_ar.html">جولات سياحية حصرية</a>
+          </div>
+        </li>
+
+        <li><a href="index_ar.html#limousinecars">الأسطول</a></li>
+        <li><a href="ueberuns_ar.html">من نحن</a></li>
+        <li><a href="kontakt_ar.html">اتصل بنا</a></li>
+
+        <!-- LANGUAGE SWITCH -->
+        <li class="ct-lang">
+          <a href="index.html">DE</a>
+          <span>|</span>
+          <a href="index_en.html">EN</a>
+          <span>|</span>
+          <a href="index_id.html">ID</a>
+          <span>|</span>
+          <a href="index_ar.html">AR</a>
+        </li>
+
+      </ul>
+    </nav>
+
+    <!-- HAMBURGER -->
+    <button class="ct-hamburger">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+
+  <script>
+    function initNavbar() {
+    const burger = document.querySelector('.ct-hamburger');
+    const nav = document.querySelector('.ct-navbar');
+    if (!burger || !nav) return; // Falls HTML noch nicht geladen
+    burger.addEventListener('click', () => {
+      nav.classList.toggle('show');
+    });
+    }
+  </script>
+
+</header>

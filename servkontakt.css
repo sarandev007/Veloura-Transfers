@@ -1,0 +1,313 @@
+/* ======================================
+   👑 CROWN TRANSFERS – SERVICE FORM (FINAL CLEAN)
+   ====================================== */
+
+.ct-service-request {
+  width: 100%;
+  max-width: 100%;
+  overflow-x: hidden;
+  background: #f7f6f3;
+  padding: 4rem 1.5rem;
+  box-sizing: border-box;
+}
+
+.ct-sr-wrap {
+  width: 100%;
+  max-width: 600px;
+  margin: 0 auto;
+  text-align: left;
+  box-sizing: border-box;
+}
+
+.ct-sr-wrap h2 {
+  font-size: 2.3rem;
+  font-weight: 700;
+  color: #1f1f1f;
+  margin-bottom: 0.4rem;
+}
+
+.ct-sr-sub {
+  font-size: 1.05rem;
+  color: #555;
+  margin-bottom: 2.2rem;
+}
+
+/* FORM STRUCTURE */
+.ct-sr-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.3rem;
+}
+
+.ct-row {
+  width: 100%;
+  max-width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 0.45rem;
+  box-sizing: border-box;
+}
+
+.ct-row label {
+  font-size: 1rem;
+  font-weight: 600;
+  color: #1f1f1f;
+  letter-spacing: 0.3px;
+}
+
+/* INPUTS + SELECT */
+.ct-row input,
+.ct-row select,
+.ct-row textarea {
+  width: 100%;
+  padding: 0.85rem 1rem;
+  border: 1px solid #d8d6d2;
+  border-radius: 8px;
+  background: #fff;
+  font-size: 1rem;
+  color: #1f1f1f;
+  outline: none;
+  transition: border 0.25s ease;
+  box-sizing: border-box;
+}
+
+.ct-row input:focus,
+.ct-row select:focus,
+.ct-row textarea:focus {
+  border-color: #c7a347;
+}
+
+/* BUTTON */
+.ct-sr-btn {
+  width: 100%;
+  padding: 0.95rem;
+  background: #c7a347;
+  color: #fff;
+  font-size: 1.1rem;
+  font-weight: 600;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+  transition: opacity 0.25s ease;
+}
+
+.ct-sr-btn:hover {
+  opacity: 0.92;
+}
+
+
+
+
+
+/* ================================================================
+   🌍 RESPONSIVE – CROWN TRANSFERS (PERFECT SYMMETRIC)
+================================================================ */
+
+
+/* 🧩 1500px – 1100px | Retina Fix */
+@media (min-width: 1100px) and (max-width: 1500px) {
+  .ct-service-request {
+    padding: 3.5rem 1.4rem;
+  }
+  .ct-sr-wrap h2 { font-size: 2.15rem; }
+  .ct-sr-sub { font-size: 1rem; }
+
+  .ct-row input,
+  .ct-row select,
+  .ct-row textarea {
+    padding: 0.78rem 0.92rem;
+    font-size: 0.95rem;
+  }
+
+  .ct-sr-btn {
+    padding: 0.9rem;
+    font-size: 1.05rem;
+  }
+}
+
+
+
+/* 🧩 bis 1100px – Laptop */
+@media (max-width: 1100px) {
+  .ct-service-request {
+    padding: 3.4rem 1.3rem;
+  }
+  .ct-sr-wrap { max-width: 560px; }
+  .ct-sr-wrap h2 { font-size: 2rem; }
+}
+
+
+
+/* 🧩 bis 900px – Tablet quer */
+@media (max-width: 900px) {
+  .ct-service-request {
+    padding: 3.1rem 1.2rem;
+  }
+
+  .ct-sr-wrap { max-width: 520px; }
+
+  .ct-sr-wrap h2 {
+    font-size: 1.85rem;
+    margin-bottom: 0.3rem;
+  }
+
+  .ct-sr-sub {
+    font-size: 0.95rem;
+    margin-bottom: 1.8rem;
+  }
+
+  .ct-row label { font-size: 0.95rem; }
+
+  .ct-row input,
+  .ct-row select,
+  .ct-row textarea {
+    padding: 0.75rem 0.9rem;
+    font-size: 0.92rem;
+  }
+
+  .ct-sr-btn {
+    padding: 0.82rem;
+    font-size: 0.96rem;
+  }
+}
+
+
+
+/* 🧩 bis 768px – Tablet hoch */
+@media (max-width: 768px) {
+  .ct-service-request {
+    padding: 2.9rem 1rem;
+  }
+
+  .ct-sr-wrap { max-width: 480px; }
+
+  .ct-sr-wrap h2 {
+    font-size: 1.72rem;
+    margin-bottom: 0.25rem; /* h2 Abstand kleiner */
+  }
+
+  .ct-sr-sub {
+    font-size: 0.9rem;
+    margin-bottom: 1.6rem;
+  }
+
+  .ct-row label {
+    font-size: 0.9rem;
+    max-width: 100%;
+    overflow-wrap: break-word;
+  }
+
+  .ct-row input,
+  .ct-row select,
+  .ct-row textarea {
+    padding: 0.7rem 0.85rem;
+    font-size: 0.9rem;
+  }
+
+  .ct-sr-btn {
+    padding: 0.78rem;
+    font-size: 0.94rem;
+  }
+}
+
+
+
+/* 🧩 bis 600px – kleine Handys */
+@media (max-width: 600px) {
+  .ct-service-request {
+    padding: 2.7rem 1rem; /* Links & rechts perfekt gleich */
+  }
+
+  .ct-sr-wrap { max-width: 440px; }
+
+  .ct-sr-wrap h2 {
+    font-size: 1.6rem;
+    margin-bottom: 0.2rem;
+  }
+
+  .ct-sr-sub {
+    font-size: 0.88rem;
+    margin-bottom: 1.4rem;
+  }
+
+  /* Formular komplett im Screen halten */
+  .ct-row label {
+    font-size: 0.88rem;
+    max-width: 100%;
+    width: 100%;
+    overflow-wrap: break-word;
+    word-break: break-word;
+    display: block;
+    padding-right: 2px;
+  }
+
+  .ct-row input,
+  .ct-row select,
+  .ct-row textarea {
+    padding: 0.68rem 0.78rem;
+    font-size: 0.88rem;
+  }
+
+  .ct-sr-btn {
+    padding: 0.75rem;
+    font-size: 0.92rem;
+  }
+}
+
+
+
+/* 🧩 bis 420px – iPhone 12 */
+@media (max-width: 420px) {
+  .ct-service-request {
+    padding: 2.5rem 0.85rem;
+  }
+
+  .ct-sr-wrap h2 { font-size: 1.48rem; }
+  .ct-sr-sub { font-size: 0.85rem; }
+
+  .ct-row label {
+    font-size: 0.85rem;
+    padding-right: 3px;
+  }
+
+  .ct-row input,
+  .ct-row select,
+  .ct-row textarea {
+    padding: 0.65rem 0.75rem;
+    font-size: 0.85rem;
+  }
+
+  .ct-sr-btn {
+    padding: 0.72rem;
+    font-size: 0.9rem;
+  }
+}
+
+
+
+/* 🧩 bis 350px – sehr kleine Geräte */
+@media (max-width: 350px) {
+
+  .ct-service-request {
+    padding: 2.4rem 0.7rem;
+  }
+
+  .ct-sr-wrap h2 { font-size: 1.38rem; }
+
+  .ct-row label {
+    font-size: 0.82rem;
+    padding-right: 3px;
+  }
+
+  .ct-row input,
+  .ct-row select,
+  .ct-row textarea {
+    padding: 0.6rem 0.7rem;
+    font-size: 0.83rem;
+  }
+
+  .ct-sr-btn {
+    padding: 0.7rem;
+    font-size: 0.87rem;
+  }
+}

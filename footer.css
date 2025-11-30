@@ -1,0 +1,695 @@
+/*footer*/
+:root {
+  --gold: #c7a347;
+  --dark: #1a1a1a;           /* Edleres, tieferes Schwarz */
+  --muted: #bfbfbf;
+}
+
+/* =============================== */
+/* FOOTER */
+/* =============================== */
+.site-footer {
+  background: var(--dark);
+  color: #fff;
+  padding: 4rem 1.5rem 2rem;         /* mehr Premium-Abstand */
+  font-size: 1rem;                   /* minimal grösser */
+}
+
+.footer-wrap {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* breitere Columns */
+  gap: 2.5rem;
+}
+
+/* Überschriften */
+.footer-about h4,
+.footer-nav h4,
+.footer-contact h4,
+.footer-socials h4 {
+  margin: 0 0 .8rem;
+  font-size: 1.25rem;        /* grösser und edler */
+  color: var(--gold);
+  font-weight: 600;
+}
+
+/* About Text */
+.footer-about p {
+  color: #f1f1f1;
+  line-height: 1.65;         /* eleganter Zeilenabstand */
+  font-size: 1rem;
+  margin: 0;
+}
+
+/* Navigation */
+.footer-nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.footer-nav li {
+  margin: .5rem 0;
+}
+.footer-nav a {
+  color: #fff;
+  font-size: 1rem;
+  text-decoration: none;
+  transition: color .3s ease;
+}
+.footer-nav a:hover {
+  color: var(--gold);
+}
+
+/* Kontakt */
+.footer-contact p {
+  margin: .55rem 0;
+  color: var(--muted);
+  font-size: 1rem;
+  display: flex;
+  align-items: center;
+  gap: .6rem;
+}
+.footer-contact svg {
+  width: 22px;
+  height: 22px;
+  fill: var(--gold);
+}
+.footer-contact a {
+  color: #fff;
+}
+.footer-contact a:hover {
+  color: var(--gold);
+}
+
+/* Socials */
+.footer-socials a {
+  display: inline-block;
+  margin-right: .7rem;
+}
+.footer-socials svg {
+  width: 24px;
+  height: 24px;
+  fill: #fff;
+  transition: fill .3s ease;
+}
+.footer-socials a:hover svg {
+  fill: var(--gold);
+}
+
+/* Bottom */
+.footer-bottom {
+  text-align: center;
+  margin-top: 2.5rem;
+  border-top: 1px solid #333;
+  padding-top: 1.2rem;
+}
+.footer-bottom p {
+  margin: 0;
+  color: var(--muted);
+  font-size: 0.9rem;
+}
+
+/* Links nicht uppercased */
+.site-footer a {
+  text-transform: none;
+}
+
+/* Rechtslinks */
+.footer-legal {
+  margin-top: 1.3rem;
+}
+.footer-legal a {
+  color: #fff;
+  font-size: 0.9rem;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+.footer-legal a:hover {
+  color: var(--gold);
+}
+
+/* ========================================================= */
+/* 🧩 bis 1500px – MacBook Pro Retina Fix (kompakter, edler) */
+/* ========================================================= */
+@media (max-width: 1500px) and (min-width: 1100px) {
+  .site-footer {
+    padding: 3.5rem 1.5rem 1.8rem;
+    font-size: 0.95rem;
+  }
+
+  .footer-about h4,
+  .footer-nav h4,
+  .footer-contact h4,
+  .footer-socials h4 {
+    font-size: 1.15rem;
+  }
+
+  .footer-about p,
+  .footer-nav a,
+  .footer-contact p {
+    font-size: 0.95rem;
+  }
+
+  .footer-contact svg {
+    width: 20px;
+    height: 20px;
+  }
+
+  .footer-socials svg {
+    width: 22px;
+    height: 22px;
+  }
+
+  .footer-bottom p,
+  .footer-legal a {
+    font-size: 0.85rem;
+  }
+}
+
+/* =============================================== */
+/* 🧩 bis 1100px – Laptop */
+/* =============================================== */
+@media (max-width: 1100px) {
+  .site-footer {
+    padding: 3.2rem 1.4rem 1.8rem;
+    font-size: 0.92rem;
+  }
+
+  .footer-wrap {
+    gap: 2rem;
+  }
+
+  .footer-about h4,
+  .footer-nav h4,
+  .footer-contact h4,
+  .footer-socials h4 {
+    font-size: 1.1rem;
+  }
+
+  .footer-about p,
+  .footer-nav a,
+  .footer-contact p {
+    font-size: 0.92rem;
+  }
+
+  .footer-contact svg {
+    width: 20px;
+    height: 20px;
+  }
+
+  .footer-socials svg {
+    width: 22px;
+    height: 22px;
+  }
+
+  .footer-bottom p,
+  .footer-legal a {
+    font-size: 0.85rem;
+  }
+}
+
+/* =============================================== */
+/* 🧩 bis 900px – Tablet quer */
+/* =============================================== */
+@media (max-width: 900px) {
+  .site-footer {
+    padding: 3rem 1.4rem 1.7rem;
+    font-size: 0.9rem;
+  }
+
+  .footer-wrap {
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 1.8rem;
+  }
+
+  .footer-about h4,
+  .footer-nav h4,
+  .footer-contact h4,
+  .footer-socials h4 {
+    font-size: 1.05rem;
+  }
+
+  .footer-about p,
+  .footer-nav a,
+  .footer-contact p {
+    font-size: 0.9rem;
+  }
+
+  .footer-contact svg {
+    width: 19px;
+    height: 19px;
+  }
+
+  .footer-socials svg {
+    width: 20px;
+    height: 20px;
+  }
+}
+
+/* =============================================== */
+/* 🧩 bis 768px – Tablet hoch */
+/* =============================================== */
+@media (max-width: 768px) {
+  .site-footer {
+    padding: 2.8rem 1.3rem 1.6rem;
+    font-size: 0.88rem;
+  }
+
+  .footer-wrap {
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1.7rem;
+  }
+
+  .footer-about h4,
+  .footer-nav h4,
+  .footer-contact h4,
+  .footer-socials h4 {
+    font-size: 1rem;
+  }
+
+  .footer-about p,
+  .footer-nav a,
+  .footer-contact p {
+    font-size: 0.88rem;
+  }
+
+  .footer-contact svg {
+    width: 18px;
+    height: 18px;
+  }
+
+  .footer-socials svg {
+    width: 19px;
+    height: 19px;
+  }
+
+  .footer-bottom p,
+  .footer-legal a {
+    font-size: 0.8rem;
+  }
+}
+
+/* =============================================== */
+/* 🧩 bis 600px – kleine Handys */
+/* =============================================== */
+@media (max-width: 600px) {
+  .site-footer {
+    padding: 2.5rem 1.2rem 1.5rem;
+    font-size: 0.85rem;
+  }
+
+  .footer-wrap {
+    grid-template-columns: 1fr 1fr; 
+    gap: 1.6rem;
+  }
+
+  .footer-about h4,
+  .footer-nav h4,
+  .footer-contact h4,
+  .footer-socials h4 {
+    font-size: 0.95rem;
+  }
+
+  .footer-about p,
+  .footer-nav a,
+  .footer-contact p {
+    font-size: 0.85rem;
+    line-height: 1.55;
+  }
+
+  .footer-contact svg {
+    width: 17px;
+    height: 17px;
+  }
+
+  .footer-socials svg {
+    width: 18px;
+    height: 18px;
+  }
+
+  .footer-bottom {
+    margin-top: 2rem;
+    padding-top: 1rem;
+  }
+
+  .footer-bottom p,
+  .footer-legal a {
+    font-size: 0.78rem;
+  }
+}
+
+/* =============================================== */
+/* 🧩 bis 420px – iPhone 12 / moderne Smartphones */
+/* =============================================== */
+@media (max-width: 420px) {
+  .site-footer {
+    padding: 2.2rem 1.1rem 1.3rem;
+    font-size: 0.82rem;
+  }
+
+  .footer-wrap {
+    grid-template-columns: 1fr; 
+    gap: 1.4rem;
+  }
+
+  .footer-about h4,
+  .footer-nav h4,
+  .footer-contact h4,
+  .footer-socials h4 {
+    font-size: 0.9rem;
+  }
+
+  .footer-about p,
+  .footer-nav a,
+  .footer-contact p {
+    font-size: 0.82rem;
+  }
+
+  .footer-contact svg {
+    width: 16px;
+    height: 16px;
+  }
+
+  .footer-socials svg {
+    width: 17px;
+    height: 17px;
+  }
+
+  .footer-bottom p,
+  .footer-legal a {
+    font-size: 0.75rem;
+  }
+}
+
+/* =============================================== */
+/* 🧩 bis 350px – sehr kleine Geräte */
+/* =============================================== */
+@media (max-width: 350px) {
+  .site-footer {
+    padding: 2rem 1rem 1.2rem;
+    font-size: 0.78rem;
+  }
+
+  .footer-wrap {
+    grid-template-columns: 1fr;
+    gap: 1.3rem;
+  }
+
+  .footer-about h4,
+  .footer-nav h4,
+  .footer-contact h4,
+  .footer-socials h4 {
+    font-size: 0.85rem;
+  }
+
+  .footer-about p,
+  .footer-nav a,
+  .footer-contact p {
+    font-size: 0.78rem;
+  }
+
+  .footer-contact svg {
+    width: 15px;
+    height: 15px;
+  }
+
+  .footer-socials svg {
+    width: 16px;
+    height: 16px;
+  }
+
+  .footer-bottom p,
+  .footer-legal a {
+    font-size: 0.72rem;
+  }
+}
+
+.site-footer {
+  width: 100vw !important;
+  margin-left: calc(50% - 50vw) !important;
+}
+
+
+.emailimp {
+  text-transform: lowercase;
+}
+
+
+/* =============================== */
+/* IMPRESSUM / DATENSCHUTZ */
+/* =============================== */
+
+#impressum,
+#datenschutz {
+  background: #f7f6f3;
+  color: #1a1a1a;
+  padding: 5rem 1.5rem 6rem;          /* mehr Raum wie Premium Landing Pages */
+}
+
+#impressum .container,
+#datenschutz .container {
+  max-width: 1200px;
+  margin: 0 auto;
+  text-align: left;
+  padding-left: 0;
+  padding-right: 0;
+}
+
+/* H1 */
+#impressum h1,
+#datenschutz h1 {
+  color: #111;
+  font-size: clamp(2.2rem, 1rem + 3.3vw, 3.2rem);  /* grösser, edler */
+  margin-bottom: 2.2rem;
+  font-weight: 700;                                /* stärkeres Premium */
+  text-transform: none;
+}
+
+/* Paragraphs */
+#impressum .imp-content p,
+#datenschutz .ds-content p {
+  font-size: 1.05rem;
+  line-height: 1.75;           /* sehr lesbar */
+  color: #333;
+  margin-bottom: 1.2rem;
+}
+
+/* Strong */
+#impressum .imp-content strong,
+#datenschutz .ds-content strong {
+  color: #000;
+  font-weight: 700;
+}
+
+/* Links */
+#impressum .imp-content a,
+#datenschutz .ds-content a {
+  color: #222;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+#impressum .imp-content a:hover,
+#datenschutz .ds-content a:hover {
+  color: #777;
+}
+
+/* H2 */
+#datenschutz h2 {
+  color: #111;
+  font-size: 1.6rem;
+  margin-top: 2.2rem;
+  margin-bottom: .8rem;
+  font-weight: 600;
+}
+
+/* ================================================================
+   🌍 RESPONSIVE – IMPRESSUM & DATENSCHUTZ (CROWN TRANSFERS)
+================================================================ */
+
+
+/* 🧩 1500px – 1100px | MacBook Retina */
+@media (min-width: 1100px) and (max-width: 1500px) {
+
+  #impressum,
+  #datenschutz {
+    padding: 4.5rem 1.4rem 5rem;
+  }
+
+  #impressum h1,
+  #datenschutz h1 {
+    font-size: 2.7rem;
+  }
+
+  #datenschutz h2 {
+    font-size: 1.5rem;
+  }
+}
+
+
+
+/* 🧩 bis 1100px – Laptop */
+@media (max-width: 1100px) {
+
+  #impressum,
+  #datenschutz {
+    padding: 4rem 1.3rem 4.5rem;
+  }
+
+  #impressum .container,
+  #datenschutz .container {
+    max-width: 980px;
+  }
+
+  #impressum h1,
+  #datenschutz h1 {
+    font-size: 2.5rem;
+  }
+
+  #impressum .imp-content p,
+  #datenschutz .ds-content p {
+    font-size: 1rem;
+  }
+}
+
+
+
+/* 🧩 bis 900px – Tablet quer */
+@media (max-width: 900px) {
+
+  #impressum,
+  #datenschutz {
+    padding: 3.5rem 1.2rem 4rem; /* symmetrisch */
+  }
+
+  #impressum .container,
+  #datenschutz .container {
+    max-width: 760px;
+  }
+
+  #impressum h1,
+  #datenschutz h1 {
+    font-size: 2.3rem;
+    margin-bottom: 1.9rem;
+  }
+
+  #datenschutz h2 {
+    font-size: 1.45rem;
+    margin-top: 2rem;
+  }
+
+  #impressum .imp-content p,
+  #datenschutz .ds-content p {
+    font-size: 0.98rem;
+    line-height: 1.7;
+  }
+}
+
+
+
+/* 🧩 bis 768px – Tablet hoch */
+@media (max-width: 768px) {
+
+  #impressum,
+  #datenschutz {
+    padding: 3.2rem 1.1rem 3.6rem;
+  }
+
+  #impressum .container,
+  #datenschutz .container {
+    max-width: 680px;
+  }
+
+  #impressum h1,
+  #datenschutz h1 {
+    font-size: 2rem;
+    margin-bottom: 1.7rem;
+  }
+
+  #datenschutz h2 {
+    font-size: 1.35rem;
+  }
+}
+
+
+
+/* 🧩 bis 600px – kleine Handys */
+@media (max-width: 600px) {
+
+  #impressum,
+  #datenschutz {
+    padding: 3rem 1rem 3.4rem; /* perfekt für Handy */
+  }
+
+  #impressum .container,
+  #datenschutz .container {
+    max-width: 100%;   /* verhindert jedes Offscreen-Rutschen */
+  }
+
+  #impressum h1,
+  #datenschutz h1 {
+    font-size: 1.75rem;
+    margin-bottom: 1.6rem;
+  }
+
+  #datenschutz h2 {
+    font-size: 1.28rem;
+  }
+
+  #impressum .imp-content p,
+  #datenschutz .ds-content p {
+    font-size: 0.95rem;
+  }
+}
+
+
+
+/* 🧩 bis 420px – iPhone 12 / moderne Phones */
+@media (max-width: 420px) {
+
+  #impressum,
+  #datenschutz {
+    padding: 2.8rem 0.9rem 3rem; /* links & rechts perfekt gleich! */
+  }
+
+  #impressum h1,
+  #datenschutz h1 {
+    font-size: 1.6rem;
+    margin-bottom: 1.4rem;
+  }
+
+  #datenschutz h2 {
+    font-size: 1.22rem;
+  }
+
+  #impressum .imp-content p,
+  #datenschutz .ds-content p {
+    font-size: 0.9rem;
+    line-height: 1.65;
+  }
+}
+
+
+
+/* 🧩 bis 350px – sehr kleine Geräte */
+@media (max-width: 350px) {
+
+  #impressum,
+  #datenschutz {
+    padding: 2.6rem 0.75rem 2.9rem;
+  }
+
+  #impressum h1,
+  #datenschutz h1 {
+    font-size: 1.48rem;
+  }
+
+  #datenschutz h2 {
+    font-size: 1.18rem;
+  }
+
+  #impressum .imp-content p,
+  #datenschutz .ds-content p {
+    font-size: 0.88rem;
+  }
+}

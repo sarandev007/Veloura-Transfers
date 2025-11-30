@@ -1,0 +1,1583 @@
+/* ======================================
+   👑 CROWN TRANSFERS – ABOUT HERO (FINAL)
+   ====================================== */
+
+.a2-hero {
+  position: relative;
+  width: 100%;
+  height: 58vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  background: #000;
+}
+
+/* BACKGROUND IMAGE */
+.a2-hero-bg {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center 45%;
+  filter: brightness(0.58) saturate(1.15) contrast(1.18);
+  z-index: 1;
+}
+
+/* GLASS BOX */
+.a2-hero-glass {
+  position: relative;
+  z-index: 3;
+  max-width: 600px;
+  width: 88%;
+  background: rgba(255,255,255,0.14);
+  backdrop-filter: blur(14px);
+  border: 1px solid rgba(255,255,255,0.22);
+  padding: 2rem 1.8rem;
+  border-radius: 20px;
+  text-align: center;
+  box-shadow: 0 18px 40px rgba(0,0,0,0.28);
+}
+
+/* HEADLINE */
+.a2-hero-glass h1 {
+  font-size: 2.45rem;
+  line-height: 1.18;
+  font-weight: 700;
+  color: #fff;
+  margin-bottom: .55rem;
+}
+
+/* TEXT */
+.a2-hero-glass p {
+  font-size: 1.05rem;
+  color: rgba(255,255,255,0.85);
+  line-height: 1.65;
+  margin-bottom: 1.2rem;
+}
+
+/* BUTTONS */
+.a2-hero-actions {
+  display: flex;
+  gap: .7rem;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.a2-btn {
+  padding: .8rem 1.25rem;
+  border-radius: 12px;
+  font-weight: 700;
+  font-size: .92rem;
+}
+
+/* GOLD */
+.a2-btn-gold {
+  background: var(--gold);
+  color: #fff;
+}
+
+/* GHOST */
+.a2-btn-ghost {
+  background: rgba(255,255,255,0.22);
+  border: 1px solid rgba(255,255,255,0.35);
+  color: #fff;
+}
+
+
+/* ============================================================
+   🧩 1500px – 1100px / MacBook Retina Compact
+   ============================================================ */
+@media (min-width: 1100px) and (max-width: 1500px) {
+
+  .a2-hero {
+    height: 56vh;
+  }
+
+  .a2-hero-glass {
+    max-width: 560px;
+    padding: 1.9rem 1.7rem;
+  }
+
+  .a2-hero-glass h1 {
+    font-size: 2.25rem;
+  }
+
+  .a2-hero-glass p {
+    font-size: 1rem;
+  }
+
+  .a2-btn {
+    padding: .75rem 1.15rem;
+    font-size: .88rem;
+  }
+}
+
+
+/* ============================================================
+   🧩 bis 1100px – Laptop
+   ============================================================ */
+@media (max-width: 1100px) {
+
+  .a2-hero {
+    height: 52vh;
+  }
+
+  .a2-hero-glass {
+    max-width: 520px;
+    padding: 1.75rem 1.55rem;
+  }
+
+  .a2-hero-glass h1 {
+    font-size: 2.05rem;
+    line-height: 1.17;
+  }
+
+  .a2-hero-glass p {
+    font-size: .98rem;
+  }
+
+  .a2-btn {
+    padding: .68rem 1rem;
+    font-size: .82rem;
+  }
+}
+
+
+/* ============================================================
+   🧩 bis 900px – Tablet quer (iPad landscape)
+   ============================================================ */
+@media (max-width: 900px) {
+
+  .a2-hero {
+    height: 47vh;
+  }
+
+  .a2-hero-glass {
+    max-width: 480px;
+    padding: 1.6rem 1.4rem;
+  }
+
+  .a2-hero-glass h1 {
+    font-size: 1.85rem;
+    line-height: 1.15;
+  }
+
+  .a2-hero-glass p {
+    font-size: .92rem;
+  }
+
+  .a2-btn {
+    padding: .62rem .95rem;
+    font-size: .8rem;
+  }
+}
+
+
+/* ============================================================
+   🧩 bis 768px – Tablet hoch (iPad Mini vertical)
+   ============================================================ */
+@media (max-width: 768px) {
+
+  .a2-hero {
+    height: 42vh;
+  }
+
+  .a2-hero-glass {
+    max-width: 450px;
+    padding: 1.45rem 1.3rem;
+  }
+
+  .a2-hero-glass h1 {
+    font-size: 1.7rem;
+    line-height: 1.14;
+  }
+
+  .a2-hero-glass p {
+    font-size: .88rem;
+  }
+
+  .a2-btn {
+    padding: .58rem .9rem;
+    font-size: .78rem;
+  }
+}
+
+
+/* ============================================================
+   🧩 bis 600px – große Handys (NEUE VERSION)
+   ============================================================ */
+@media (max-width: 600px) {
+
+  .a2-hero {
+    height: 36vh;
+  }
+
+  .a2-hero-glass {
+    max-width: 82%;
+    padding: 1.2rem 1rem;
+    border-radius: 16px;
+  }
+
+  .a2-hero-glass h1 {
+    font-size: 1.48rem;
+    line-height: 1.14;
+  }
+
+  .a2-hero-glass p {
+    font-size: .82rem;
+  }
+
+  .a2-btn {
+    padding: .5rem .85rem;
+    font-size: .75rem;
+  }
+}
+
+
+/* ============================================================
+   🧩 bis 420px – iPhone 12 / moderne Phones (NEU)
+   ============================================================ */
+@media (max-width: 420px) {
+
+  .a2-hero {
+    height: 32vh;
+  }
+
+  .a2-hero-glass {
+    max-width: 88%;
+    padding: 1rem .9rem;
+  }
+
+  .a2-hero-glass h1 {
+    font-size: 1.32rem;
+    line-height: 1.12;
+  }
+
+  .a2-hero-glass p {
+    font-size: .78rem;
+  }
+
+  .a2-btn {
+    padding: .45rem .75rem;
+    font-size: .72rem;
+  }
+}
+
+
+/* ============================================================
+   🧩 bis 350px – super kleine Geräte
+   ============================================================ */
+@media (max-width: 350px) {
+
+  .a2-hero {
+    height: 30vh;
+  }
+
+  .a2-hero-glass {
+    max-width: 92%;
+    padding: .9rem .8rem;
+  }
+
+  .a2-hero-glass h1 {
+    font-size: 1.15rem;
+    line-height: 1.1;
+  }
+
+  .a2-hero-glass p {
+    font-size: .72rem;
+  }
+
+  .a2-btn {
+    padding: .42rem .7rem;
+    font-size: .68rem;
+  }
+}
+
+
+/* ============================================
+   CROWN TRANSFERS – SKI PREMIUM COMPACT
+   ============================================ */
+
+.ct-skiinfo-luxe {
+  padding: 4rem 0 4.8rem 0; /* kleiner */
+  background: #f8f7f3;
+}
+
+.ct-skiinfo-luxe-wrap {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 4%;
+  position: relative;
+}
+
+/* SMALLER IMAGE */
+.ct-skiinfo-luxe-img {
+  width: 60%;               /* vorher 80% */
+  margin-left: auto;
+  border-radius: 18px;
+  overflow: hidden;
+  box-shadow: 0 12px 32px rgba(0,0,0,0.10); /* kleiner shadow */
+}
+
+.ct-skiinfo-luxe-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* SMALLER FLOATING BOX */
+.ct-skiinfo-luxe-box {
+  position: absolute;
+  top: 46%;                 /* tiefer / kleiner */
+  left: 4%;
+  transform: translateY(-50%);
+  width: 40%;               /* kleiner */
+  background: #ffffff;
+  padding: 2rem 1.7rem;     /* kleiner */
+  border-radius: 16px;
+  box-shadow: 0 16px 36px rgba(0,0,0,0.12);
+  border-left: 3px solid var(--crown-gold);
+}
+
+/* TEXT */
+.ct-skiinfo-luxe-box h2 {
+  font-size: 1.9rem;        /* kleiner */
+  font-weight: 700;
+  letter-spacing: -0.3px;
+  color: var(--crown-text-dark);
+}
+
+.ct-skiinfo-luxe-line {
+  display: block;
+  width: 60px;              /* kleiner */
+  height: 3px;
+  background: var(--crown-gold);
+  border-radius: 4px;
+  margin: 0.7rem 0 1.3rem 0;
+}
+
+.ct-skiinfo-luxe-box p {
+  font-size: 0.98rem;       /* kleiner */
+  line-height: 1.55;
+  color: #444;
+  margin-bottom: 1rem;
+}
+
+/* ============================================================
+   🧩 1500px – 1100px / MacBook Retina Fix
+   ============================================================ */
+@media (min-width: 1100px) and (max-width: 1500px) {
+  .ct-skiinfo-luxe {
+    padding: 3.8rem 0 4.4rem;
+  }
+
+  .ct-skiinfo-luxe-img {
+    width: 58%;
+  }
+
+  .ct-skiinfo-luxe-box {
+    width: 42%;
+    padding: 1.85rem 1.6rem;
+  }
+
+  .ct-skiinfo-luxe-box h2 {
+    font-size: 1.8rem;
+  }
+}
+
+
+
+/* ============================================================
+   🧩 bis 1100px – Laptop
+   ============================================================ */
+@media (max-width: 1100px) {
+
+  .ct-skiinfo-luxe-img {
+    width: 58%;
+  }
+
+  .ct-skiinfo-luxe-box {
+    width: 45%;
+    padding: 1.75rem 1.55rem;
+  }
+
+  .ct-skiinfo-luxe-box h2 {
+    font-size: 1.65rem;
+  }
+
+  .ct-skiinfo-luxe-box p {
+    font-size: .92rem;
+  }
+}
+
+
+
+/* ============================================================
+   🧩 bis 900px – Tablet quer
+   ============================================================ */
+@media (max-width: 900px) {
+
+  .ct-skiinfo-luxe-img {
+    width: 70%;
+  }
+
+  .ct-skiinfo-luxe-box {
+    width: 48%;
+    top: 50%;
+    padding: 1.5rem 1.35rem;
+  }
+
+  .ct-skiinfo-luxe-box h2 {
+    font-size: 1.55rem;
+  }
+}
+
+
+/* ============================================================
+   🧩 bis 768px – Tablet hoch
+   ============================================================ */
+@media (max-width: 768px) {
+
+  .ct-skiinfo-luxe-img {
+    width: 75%;
+  }
+
+  .ct-skiinfo-luxe-box {
+    width: 50%;
+    padding: 1.45rem 1.3rem;
+  }
+
+  .ct-skiinfo-luxe-box h2 {
+    font-size: 1.45rem;
+  }
+}
+
+
+/* ============================================================
+   🧩 bis 600px – MOBILE PREMIUM STACK (FIXED)
+   ============================================================ */
+@media (max-width: 600px) {
+
+  .ct-skiinfo-luxe {
+    padding: 3rem 0 3.8rem; /* etwas höher, wirkt edler */
+  }
+
+  /* Wrapper bekommt mehr Luft LINKS + RECHTS */
+  .ct-skiinfo-luxe-wrap {
+    display: flex;
+    flex-direction: column;
+    gap: 1.6rem;
+    padding: 0 6%;  /* vorher 4% → FIX */
+  }
+
+  /* Bild */
+  .ct-skiinfo-luxe-img {
+    width: 100%;
+    position: static;
+    margin: 0 auto;
+  }
+
+  .ct-skiinfo-luxe-img img {
+    height: 310px;
+    border-radius: 16px;
+    object-fit: cover;
+  }
+
+  /* Floating Card wird MOBILE CARD */
+  .ct-skiinfo-luxe-box {
+    position: static;
+    width: 100%;
+    padding: 1.55rem 1.3rem;
+    transform: none;
+    border-radius: 14px;
+    box-shadow: 0 12px 26px rgba(0,0,0,0.12);
+
+    /* 👉 WICHTIGER FIX: Abstand links */
+    margin-left: 0;
+  }
+
+  .ct-skiinfo-luxe-box h2 {
+    font-size: 1.42rem;
+    line-height: 1.28; /* kompakter */
+  }
+
+  .ct-skiinfo-luxe-box p {
+    font-size: .9rem;
+    line-height: 1.58;
+  }
+}
+
+
+
+/* ============================================================
+   🧩 bis 420px – iPhone 12 / moderne Smartphones
+   ============================================================ */
+@media (max-width: 420px) {
+
+  .ct-skiinfo-luxe-img img {
+    height: 285px;
+  }
+
+  .ct-skiinfo-luxe-box {
+    padding: 1.3rem 1.15rem;
+  }
+
+  .ct-skiinfo-luxe-box h2 {
+    font-size: 1.32rem;
+  }
+
+  .ct-skiinfo-luxe-box p {
+    font-size: .84rem;
+  }
+}
+
+
+/* ============================================================
+   🧩 bis 350px – ultra small
+   ============================================================ */
+@media (max-width: 350px) {
+
+  .ct-skiinfo-luxe-img img {
+    height: 260px;
+  }
+
+  .ct-skiinfo-luxe-box h2 {
+    font-size: 1.25rem;
+  }
+
+  .ct-skiinfo-luxe-box p {
+    font-size: .8rem;
+  }
+}
+
+/* ====================================
+   CROWN TRANSFERS – SKIRESORT SECTION
+   ==================================== */
+
+.ct-skiresorts {
+  background: #f8f7f3;
+  padding: 5rem 0;
+}
+
+.ct-skiresorts-wrap {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 4%;
+  text-align: center;
+}
+
+.ct-skiresorts h2 {
+  font-size: 2.6rem;
+  font-weight: 700;
+  color: var(--crown-text-dark);
+  letter-spacing: -0.4px;
+}
+
+.ct-ski-line {
+  display: block;
+  width: 90px;
+  height: 3px;
+  background: var(--crown-gold);
+  margin: 0.8rem auto 2.2rem auto;
+  border-radius: 4px;
+}
+
+.ct-ski-intro {
+  max-width: 700px;
+  margin: 0 auto 3rem auto;
+  font-size: 1.05rem;
+  line-height: 1.55;
+  color: #444;
+}
+
+/* PREMIUM GRID */
+.ct-ski-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+}
+
+/* PREMIUM GOLD CARDS */
+.ct-ski-card {
+  background: linear-gradient(135deg, #ffffff 0%, #faf5e9 100%);
+  border: 1px solid rgba(199,163,71,0.35);
+  padding: 2.1rem 1.9rem;
+  border-radius: 18px;
+  text-align: left;
+  box-shadow: 0 12px 34px rgba(0,0,0,0.07);
+  transition: 0.35s ease;
+}
+
+.ct-ski-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 20px 40px rgba(0,0,0,0.13);
+}
+
+.ct-ski-card h3 {
+  font-size: 1.35rem;
+  font-weight: 600;
+  margin-bottom: 0.35rem;
+  color: var(--crown-text-dark);
+}
+
+.ct-time {
+  font-size: 0.98rem;
+  color: var(--crown-gold);
+  font-weight: 600;
+  margin-bottom: 0.7rem;
+}
+
+.ct-ski-card p {
+  font-size: 0.95rem;
+  line-height: 1.45;
+  color: #555;
+}
+
+/* ============================================================
+   🧩 1500px – 1100px / MacBook Retina Fix
+   ============================================================ */
+@media (min-width: 1100px) and (max-width: 1500px) {
+  .ct-skiresorts {
+    padding: 4.4rem 0;
+  }
+
+  .ct-skiresorts h2 {
+    font-size: 2.2rem; /* Crown MacBook fix */
+  }
+
+  .ct-ski-intro {
+    font-size: 1rem;
+  }
+
+  .ct-ski-grid {
+    gap: 1.8rem;
+  }
+
+  .ct-ski-card {
+    padding: 1.9rem 1.7rem;
+  }
+
+  .ct-ski-card h3 {
+    font-size: 1.25rem;
+  }
+
+  .ct-ski-card p {
+    font-size: .92rem;
+  }
+}
+
+/* ============================================================
+   🧩 bis 1100px – Laptop
+   ============================================================ */
+@media (max-width: 1100px) {
+  .ct-skiresorts {
+    padding: 4rem 0;
+  }
+
+  .ct-skiresorts h2 {
+    font-size: 2.05rem;
+  }
+
+  .ct-ski-intro {
+    font-size: .98rem;
+  }
+
+  .ct-ski-card {
+    padding: 1.8rem 1.6rem;
+  }
+
+  .ct-ski-card h3 {
+    font-size: 1.2rem;
+  }
+
+  .ct-ski-card p {
+    font-size: .9rem;
+  }
+}
+
+/* ============================================================
+   🧩 bis 900px – Tablet quer
+   ============================================================ */
+@media (max-width: 900px) {
+  .ct-skiresorts {
+    padding: 3.8rem 0;
+  }
+
+  .ct-skiresorts h2 {
+    font-size: 1.9rem;
+  }
+
+  .ct-ski-grid {
+    gap: 1.6rem;
+  }
+
+  .ct-ski-card {
+    padding: 1.7rem 1.5rem;
+  }
+}
+
+/* ============================================================
+   🧩 bis 768px – Tablet hoch
+   ============================================================ */
+@media (max-width: 768px) {
+  .ct-skiresorts h2 {
+    font-size: 1.78rem;
+  }
+
+  .ct-ski-intro {
+    font-size: .92rem;
+    line-height: 1.5;
+  }
+
+  .ct-ski-card h3 {
+    font-size: 1.15rem;
+  }
+
+  .ct-ski-card p {
+    font-size: .88rem;
+  }
+}
+
+/* ============================================================
+   🧩 bis 600px – kleine Handys (2-Spalten → 1-Spalte)
+   ============================================================ */
+@media (max-width: 600px) {
+
+  .ct-skiresorts {
+    padding: 3.4rem 0;
+  }
+
+  .ct-skiresorts-wrap {
+    padding: 0 6%; /* wichtiger FIX gegen Randproblem */
+  }
+
+  /* Grid wird 1 Spalte */
+  .ct-ski-grid {
+    grid-template-columns: 1fr;
+    gap: 1.4rem;
+  }
+
+  .ct-skiresorts h2 {
+    font-size: 1.55rem;
+  }
+
+  .ct-ski-card {
+    padding: 1.55rem 1.3rem;
+    border-radius: 14px;
+  }
+
+  .ct-ski-card h3 {
+    font-size: 1.1rem;
+  }
+
+  .ct-ski-card p {
+    font-size: .85rem;
+  }
+}
+
+/* ============================================================
+   🧩 bis 420px – Moderne Smartphones
+   ============================================================ */
+@media (max-width: 420px) {
+
+  .ct-skiresorts h2 {
+    font-size: 1.42rem;
+  }
+
+  .ct-ski-card {
+    padding: 1.45rem 1.15rem;
+  }
+
+  .ct-ski-card h3 {
+    font-size: 1.05rem;
+  }
+
+  .ct-ski-card p {
+    font-size: .82rem;
+  }
+}
+
+/* ============================================================
+   🧩 bis 350px – Ultra Small Devices
+   ============================================================ */
+@media (max-width: 350px) {
+
+  .ct-skiresorts h2 {
+    font-size: 1.3rem;
+  }
+
+  .ct-ski-card {
+    padding: 1.3rem 1rem;
+  }
+
+  .ct-ski-card h3 {
+    font-size: 1rem;
+  }
+
+  .ct-ski-card p {
+    font-size: .78rem;
+  }
+}
+
+
+/* ============================================
+   👑 CROWN TRANSFERS – CTA SECTION (CLEAN IVORY)
+   ============================================ */
+
+.ct-cta {
+  width: 100%;
+  background: #f7f6f3; /* Crown Ivory Clean Background */
+  padding: 6rem 0;
+  border-top: 1px solid rgba(199,163,71,0.25); /* dezente goldene Linie */
+}
+
+.ct-cta-container {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 0 4%;
+  text-align: center;
+  color: #1a1a1a; /* Text in elegantem Dunkelgrau */
+}
+
+/* HEADLINE */
+.ct-cta h2 {
+  font-size: 2.2rem;
+  font-weight: 600;
+  margin-bottom: 1.2rem;
+  color: #1a1a1a;
+  letter-spacing: -0.2px;
+}
+
+/* PARAGRAPH */
+.ct-cta p {
+  font-size: 1.1rem;
+  color: #444;
+  max-width: 700px;
+  margin: 0 auto 2.8rem auto;
+  line-height: 1.65;
+}
+
+/* ACTION BUTTONS */
+.ct-cta-actions {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+/* BASE BUTTON */
+.ct-cta-btn {
+  padding: 0.9rem 1.8rem;
+  border-radius: 12px;
+  font-size: .95rem;
+  font-weight: 700;
+  text-decoration: none;
+  transition: .25s ease;
+}
+
+/* GOLD BUTTON */
+.ct-cta-gold {
+  background: #c7a347;
+  color: #fff;
+}
+
+.ct-cta-gold:hover {
+  background: #d6b860;
+  box-shadow: 0 0 18px rgba(199,163,71,0.4);
+  transform: translateY(-3px);
+}
+
+/* GHOST BUTTON (HELL / IVORY VERSION) */
+.ct-cta-ghost {
+  background: rgba(0,0,0,0.06);
+  border: 1px solid rgba(0,0,0,0.15);
+  color: #1a1a1a;
+}
+
+.ct-cta-ghost:hover {
+  background: rgba(0,0,0,0.12);
+  transform: translateY(-3px);
+}
+
+/* ============================================================
+   🧩 1500px – 1100px / MacBook Pro Retina Fix
+   ============================================================ */
+@media (min-width: 1100px) and (max-width: 1500px) {
+  .ct-cta {
+    padding: 5rem 0;
+  }
+  .ct-cta h2 {
+    font-size: 2rem;
+  }
+  .ct-cta p {
+    font-size: 1rem;
+    margin-bottom: 2.4rem;
+  }
+  .ct-cta-btn {
+    padding: 0.85rem 1.6rem;
+    font-size: .9rem;
+  }
+}
+
+
+/* ============================================================
+   🧩 bis 1100px – Laptop
+   ============================================================ */
+@media (max-width: 1100px) {
+  .ct-cta {
+    padding: 4.7rem 0;
+  }
+  .ct-cta h2 {
+    font-size: 1.9rem;
+  }
+  .ct-cta p {
+    font-size: .98rem;
+  }
+  .ct-cta-btn {
+    padding: .82rem 1.55rem;
+    font-size: .88rem;
+  }
+}
+
+
+/* ============================================================
+   🧩 bis 900px – Tablet quer
+   ============================================================ */
+@media (max-width: 900px) {
+  .ct-cta {
+    padding: 4.4rem 0;
+  }
+  .ct-cta h2 {
+    font-size: 1.75rem;
+  }
+  .ct-cta p {
+    font-size: .95rem;
+    margin-bottom: 2.2rem;
+  }
+  .ct-cta-btn {
+    padding: .78rem 1.45rem;
+    font-size: .85rem;
+  }
+}
+
+
+/* ============================================================
+   🧩 bis 768px – Tablet hoch
+   ============================================================ */
+@media (max-width: 768px) {
+  .ct-cta {
+    padding: 4rem 0;
+  }
+  .ct-cta h2 {
+    font-size: 1.65rem;
+  }
+  .ct-cta p {
+    font-size: .92rem;
+    line-height: 1.55;
+  }
+  .ct-cta-btn {
+    padding: .75rem 1.3rem;
+    font-size: .82rem;
+  }
+}
+
+
+/* ============================================================
+   🧩 bis 600px – kleine Handys
+   ============================================================ */
+@media (max-width: 600px) {
+  .ct-cta {
+    padding: 3.6rem 0;
+  }
+  .ct-cta h2 {
+    font-size: 1.55rem;
+    margin-bottom: 1rem;
+  }
+  .ct-cta p {
+    font-size: .88rem;
+    margin-bottom: 1.9rem;
+  }
+  .ct-cta-actions {
+    gap: .75rem;
+  }
+  .ct-cta-btn {
+    padding: .65rem 1.15rem;
+    font-size: .78rem;
+    border-radius: 10px;
+  }
+}
+
+
+/* ============================================================
+   🧩 bis 420px – iPhone 12 / moderne Smartphones
+   ============================================================ */
+@media (max-width: 420px) {
+  .ct-cta {
+    padding: 3.2rem 0;
+  }
+  .ct-cta h2 {
+    font-size: 1.45rem;
+  }
+  .ct-cta p {
+    font-size: .85rem;
+    margin-bottom: 1.6rem;
+  }
+  .ct-cta-btn {
+    padding: .6rem 1rem;
+    font-size: .75rem;
+  }
+}
+
+
+/* ============================================================
+   🧩 bis 350px – sehr kleine Geräte
+   ============================================================ */
+@media (max-width: 350px) {
+  .ct-cta {
+    padding: 2.9rem 0;
+  }
+  .ct-cta h2 {
+    font-size: 1.32rem;
+  }
+  .ct-cta p {
+    font-size: .8rem;
+    margin-bottom: 1.4rem;
+  }
+  .ct-cta-btn {
+    padding: .55rem .9rem;
+    font-size: .72rem;
+  }
+}
+
+/* ============================================
+   CROWN TRANSFERS – WHY ICON SECTION (V3)
+   ============================================ */
+
+.ct-why3 {
+  background: #f8f7f3;
+  padding: 5rem 0;
+}
+
+.ct-why3-wrap {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 4%;
+  text-align: center;
+}
+
+.ct-why3 h2 {
+  font-size: 2.55rem;
+  font-weight: 700;
+  color: var(--crown-text-dark);
+  letter-spacing: -0.4px;
+}
+
+.ct-why3-line {
+  width: 90px;
+  height: 3px;
+  background: var(--crown-gold);
+  border-radius: 4px;
+  margin: 0.7rem auto 2rem auto;
+}
+
+.ct-why3-intro {
+  max-width: 760px;
+  margin: 0 auto 3.3rem auto;
+  font-size: 1.05rem;
+  color: #444;
+  line-height: 1.6;
+}
+
+/* GRID */
+.ct-why3-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+}
+
+/* CARDS */
+.ct-why3-card {
+  background: #ffffff;
+  padding: 2.4rem 2rem;
+  border-radius: 18px;
+  box-shadow: 0 12px 32px rgba(0,0,0,0.06);
+  border-top: 4px solid var(--crown-gold);
+  transition: 0.3s ease;
+  text-align: center;
+}
+
+.ct-why3-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 18px 36px rgba(0,0,0,0.1);
+}
+
+/* ICON */
+.ct-why3-icon {
+  width: 68px;
+  height: 68px;
+  margin: 0 auto 1.1rem auto;
+  border-radius: 50%;
+  background: rgba(199,163,71,0.1);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.ct-why3-icon img {
+  width: 34px;
+  height: 34px;
+  object-fit: contain;
+}
+
+/* HEADINGS + TEXT */
+.ct-why3-card h3 {
+  font-size: 1.32rem;
+  font-weight: 600;
+  margin-bottom: 0.7rem;
+  color: var(--crown-text-dark);
+}
+
+.ct-why3-card p {
+  font-size: 0.98rem;
+  color: #555;
+  line-height: 1.55;
+}
+/* ============================================================
+   🧩 1500px – 1100px (MacBook Retina)
+   ============================================================ */
+@media (min-width: 1100px) and (max-width: 1500px) {
+
+  .ct-why3 {
+    padding: 4.4rem 0;
+  }
+
+  .ct-why3 h2 {
+    font-size: 2.2rem; /* Crown MacBook Size */
+  }
+
+  .ct-why3-intro {
+    font-size: 1rem;
+  }
+
+  .ct-why3-grid {
+    gap: 1.8rem;
+  }
+
+  .ct-why3-card {
+    padding: 2.1rem 1.8rem;
+  }
+
+  .ct-why3-card h3 {
+    font-size: 1.22rem;
+  }
+
+  .ct-why3-card p {
+    font-size: .92rem;
+  }
+}
+
+/* ============================================================
+   🧩 bis 1100px – Laptop
+   ============================================================ */
+@media (max-width: 1100px) {
+
+  .ct-why3 h2 {
+    font-size: 2rem;
+  }
+
+  .ct-why3-card {
+    padding: 2rem 1.7rem;
+  }
+
+  .ct-why3-card h3 {
+    font-size: 1.2rem;
+  }
+
+  .ct-why3-card p {
+    font-size: .9rem;
+  }
+}
+
+/* ============================================================
+   🧩 bis 900px – Tablet quer (3 → 2 Columns)
+   ============================================================ */
+@media (max-width: 900px) {
+
+  .ct-why3 h2 {
+    font-size: 1.85rem;
+  }
+
+  .ct-why3-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.6rem;
+  }
+
+  .ct-why3-card {
+    padding: 1.85rem 1.6rem;
+  }
+
+  .ct-why3-card h3 {
+    font-size: 1.15rem;
+  }
+}
+
+/* ============================================================
+   🧩 bis 768px – Tablet hoch
+   ============================================================ */
+@media (max-width: 768px) {
+
+  .ct-why3-intro {
+    font-size: .95rem;
+    line-height: 1.5;
+  }
+
+  .ct-why3-card p {
+    font-size: .88rem;
+  }
+
+  .ct-why3-icon {
+    width: 62px;
+    height: 62px;
+  }
+
+  .ct-why3-icon img {
+    width: 30px;
+    height: 30px;
+  }
+}
+
+/* ============================================================
+   🧩 bis 600px – Mobile Premium (2 → 1 Column)
+   ============================================================ */
+@media (max-width: 600px) {
+
+  .ct-why3 {
+    padding: 3.4rem 0;
+  }
+
+  /* WICHTIG – Rechts-Bildschirmproblem FIX */
+  .ct-why3-wrap {
+    padding: 0 6%;
+  }
+
+  .ct-why3 h2 {
+    font-size: 1.55rem;
+  }
+
+  .ct-why3-grid {
+    grid-template-columns: 1fr;
+    gap: 1.4rem;
+  }
+
+  .ct-why3-card {
+    padding: 1.6rem 1.35rem;
+    border-radius: 14px;
+  }
+
+  .ct-why3-card h3 {
+    font-size: 1.1rem;
+  }
+
+  .ct-why3-card p {
+    font-size: .85rem;
+  }
+}
+
+/* ============================================================
+   🧩 bis 420px – iPhone 12 / moderne Phones
+   ============================================================ */
+@media (max-width: 420px) {
+
+  .ct-why3 h2 {
+    font-size: 1.42rem;
+  }
+
+  .ct-why3-card {
+    padding: 1.45rem 1.15rem;
+  }
+
+  .ct-why3-card h3 {
+    font-size: 1.05rem;
+  }
+
+  .ct-why3-card p {
+    font-size: .82rem;
+  }
+}
+
+/* ============================================================
+   🧩 bis 350px – ultra small
+   ============================================================ */
+@media (max-width: 350px) {
+
+  .ct-why3 h2 {
+    font-size: 1.3rem;
+  }
+
+  .ct-why3-card {
+    padding: 1.3rem 1rem;
+  }
+
+  .ct-why3-card h3 {
+    font-size: 1rem;
+  }
+
+  .ct-why3-card p {
+    font-size: .78rem;
+  }
+}
+
+
+
+/* ============================================
+   SKI SEO SECTION – CROWN TRANSFERS PREMIUM
+   ============================================ */
+
+.ct-ski-seo {
+  background: #f8f7f3;
+  padding: 5rem 0;
+}
+
+.ct-ski-seo-wrap {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 4%;
+  text-align: center;
+}
+
+.ct-ski-seo h2 {
+  font-size: 2.6rem;
+  font-weight: 700;
+  color: var(--crown-text-dark);
+  letter-spacing: -0.4px;
+}
+
+.ct-ski-seo-line {
+  width: 90px;
+  height: 3px;
+  background: var(--crown-gold);
+  border-radius: 4px;
+  margin: 0.8rem auto 2rem auto;
+}
+
+.ct-ski-seo-intro {
+  max-width: 780px;
+  margin: 0 auto 2.8rem auto;
+  font-size: 1.05rem;
+  color: #444;
+  line-height: 1.6;
+}
+
+.ct-ski-seo-block {
+  text-align: left;
+  background: #ffffff;
+  padding: 2.4rem 2rem;
+  border-radius: 18px;
+  margin-bottom: 2.2rem;
+  box-shadow: 0 12px 32px rgba(0,0,0,0.06);
+}
+
+.ct-ski-seo-block h3 {
+  font-size: 1.45rem;
+  font-weight: 700;
+  color: var(--crown-text-dark);
+  margin-bottom: 0.6rem;
+}
+
+.ct-ski-seo-subline {
+  display: block;
+  width: 60px;
+  height: 3px;
+  background: var(--crown-gold);
+  border-radius: 4px;
+  margin-bottom: 1.2rem;
+}
+
+.ct-ski-seo-block p {
+  font-size: 1.02rem;
+  color: #555;
+  line-height: 1.65;
+  margin-bottom: 1rem;
+}
+
+/* ============================================================
+   🧩 1500px – 1100px (MacBook Retina)
+   ============================================================ */
+@media (min-width: 1100px) and (max-width: 1500px) {
+
+  .ct-ski-seo {
+    padding: 4.4rem 0;
+  }
+
+  .ct-ski-seo h2 {
+    font-size: 2.2rem;  /* CROWN MacBook SIZE */
+  }
+
+  .ct-ski-seo-intro {
+    font-size: 1rem;
+  }
+
+  .ct-ski-seo-block {
+    padding: 2.1rem 1.85rem;
+  }
+
+  .ct-ski-seo-block h3 {
+    font-size: 1.32rem;
+  }
+
+  .ct-ski-seo-block p {
+    font-size: .96rem;
+  }
+}
+
+
+/* ============================================================
+   🧩 bis 1100px – Laptop
+   ============================================================ */
+@media (max-width: 1100px) {
+
+  .ct-ski-seo h2 {
+    font-size: 2rem;
+  }
+
+  .ct-ski-seo-block {
+    padding: 2rem 1.7rem;
+  }
+
+  .ct-ski-seo-block h3 {
+    font-size: 1.28rem;
+  }
+
+  .ct-ski-seo-block p {
+    font-size: .94rem;
+  }
+}
+
+
+/* ============================================================
+   🧩 bis 900px – Tablet quer
+   ============================================================ */
+@media (max-width: 900px) {
+
+  .ct-ski-seo h2 {
+    font-size: 1.85rem;
+  }
+
+  .ct-ski-seo-intro {
+    max-width: 680px;
+    font-size: .95rem;
+  }
+
+  .ct-ski-seo-block {
+    padding: 1.85rem 1.6rem;
+  }
+
+  .ct-ski-seo-block h3 {
+    font-size: 1.22rem;
+  }
+}
+
+
+/* ============================================================
+   🧩 bis 768px – Tablet hoch
+   ============================================================ */
+@media (max-width: 768px) {
+
+  .ct-ski-seo-wrap {
+    padding: 0 6%;
+  }
+
+  .ct-ski-seo-intro {
+    font-size: .93rem;
+    line-height: 1.55;
+  }
+
+  .ct-ski-seo-block p {
+    font-size: .9rem;
+  }
+}
+
+
+/* ============================================================
+   🧩 bis 600px – Mobile Premium (CROWN)
+   ============================================================ */
+@media (max-width: 600px) {
+
+  .ct-ski-seo {
+    padding: 3.5rem 0;
+  }
+
+  .ct-ski-seo-wrap {
+    padding: 0 7%; /* verhindert "rechts aussen" Problem */
+  }
+
+  .ct-ski-seo h2 {
+    font-size: 1.55rem;
+  }
+
+  .ct-ski-seo-intro {
+    margin-bottom: 2.2rem;
+    font-size: .9rem;
+  }
+
+  .ct-ski-seo-block {
+    padding: 1.6rem 1.35rem;
+    border-radius: 14px;
+  }
+
+  .ct-ski-seo-block h3 {
+    font-size: 1.12rem;
+  }
+
+  .ct-ski-seo-block p {
+    font-size: .85rem;
+  }
+}
+
+
+/* ============================================================
+   🧩 bis 420px – iPhone 12 / moderne Smartphones
+   ============================================================ */
+@media (max-width: 420px) {
+
+  .ct-ski-seo h2 {
+    font-size: 1.42rem;
+  }
+
+  .ct-ski-seo-block {
+    padding: 1.45rem 1.15rem;
+  }
+
+  .ct-ski-seo-block h3 {
+    font-size: 1.05rem;
+  }
+
+  .ct-ski-seo-block p {
+    font-size: .82rem;
+  }
+}
+
+
+/* ============================================================
+   🧩 bis 350px – ultra small
+   ============================================================ */
+@media (max-width: 350px) {
+
+  .ct-ski-seo h2 {
+    font-size: 1.3rem;
+  }
+
+  .ct-ski-seo-block {
+    padding: 1.32rem 1rem;
+  }
+
+  .ct-ski-seo-block h3 {
+    font-size: 1rem;
+  }
+
+  .ct-ski-seo-block p {
+    font-size: .78rem;
+  }
+}

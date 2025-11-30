@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- ==========================================
+       🔧 BASIC SETTINGS
+  =========================================== -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <html lang="en">
+
+  <!-- ==========================================
+       🏆 TITLE + META DESCRIPTION
+  =========================================== -->
+  <title>Legal Notice | Veloura Transfers – Company Information</title>
+
+  <meta name="description"
+        content="Official legal notice of Veloura Transfers. Company details, responsible entity, and legal information in accordance with Swiss regulations." />
+
+  <meta name="author" content="Veloura Transfers">
+  <meta name="theme-color" content="#c7a347">
+
+
+  <!-- ==========================================
+       🔗 CANONICAL + HREFLANG
+  =========================================== -->
+  <link rel="canonical" href="https://www.velouratransfers.ch/impressum_en.html">
+
+  <link rel="alternate" hreflang="de" href="https://www.velouratransfers.ch/impressum.html">
+  <link rel="alternate" hreflang="en" href="https://www.velouratransfers.ch/impressum_en.html">
+  <link rel="alternate" hreflang="id" href="https://www.velouratransfers.ch/impressum_id.html">
+  <link rel="alternate" hreflang="ar" href="https://www.velouratransfers.ch/impressum_ar.html">
+  <link rel="alternate" hreflang="x-default" href="https://www.velouratransfers.ch/impressum_en.html">
+
+
+  <!-- ==========================================
+       📣 OPEN GRAPH — SOCIAL PREVIEW
+  =========================================== -->
+  <meta property="og:title" content="Legal Notice – Veloura Transfers">
+  <meta property="og:description" content="Official legal information and company details of Veloura Transfers, Switzerland.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://www.velouratransfers.ch/impressum_en.html">
+  <meta property="og:image" content="https://www.velouratransfers.ch/img/og-image.webp">
+  <meta property="og:image:alt" content="Veloura Transfers – Legal Notice">
+  <meta property="og:site_name" content="Veloura Transfers">
+
+
+  <!-- ==========================================
+       🐦 TWITTER CARD
+  =========================================== -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Legal Notice – Veloura Transfers">
+  <meta name="twitter:description" content="Official legal notice and company details in accordance with Swiss law.">
+  <meta name="twitter:image" content="https://www.velouratransfers.ch/img/og-image.webp">
+  <meta name="twitter:image:alt" content="Veloura Transfers Legal Notice">
+
+
+  <!-- ==========================================
+       ⚡ PERFORMANCE OPTIMIZATION
+  =========================================== -->
+  <link rel="preload" href="general.css" as="style">
+  <link rel="preload" href="footer.css" as="style">
+  <link rel="stylesheet" href="general.css">
+  <link rel="stylesheet" href="footer.css">
+  <link rel="stylesheet" href="https://unpkg.com/aos@2.3.4/dist/aos.css">
+
+
+  <!-- ==========================================
+       📘 SCHEMA — LocalBusiness (Google Trust)
+  =========================================== -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "LocalBusiness",
+    "name": "Veloura Transfers",
+    "url": "https://www.velouratransfers.ch/",
+    "image": "https://www.velouratransfers.ch/img/og-image.webp",
+    "telephone": "+41 79 328 80 07",
+    "email": "info@velouratransfers.ch",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "Flurstrasse 10",
+      "addressLocality": "Kloten",
+      "postalCode": "8302",
+      "addressCountry": "CH"
+    },
+    "openingHours": "Mon-Sun 00:00-23:59"
+  }
+  </script>
+
+
+  <!-- ==========================================
+       📘 SCHEMA — Legal Notice (Impressum Schema)
+  =========================================== -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "LegalService",
+    "name": "Veloura Transfers – Legal Notice",
+    "url": "https://www.velouratransfers.ch/impressum_en.html",
+    "description": "Official legal notice and company disclosure for Veloura Transfers, required by Swiss law.",
+    "areaServed": "CH",
+    "contactPoint": {
+      "@type": "ContactPoint",
+      "contactType": "legal",
+      "telephone": "+41 79 328 80 07",
+      "email": "info@velouratransfers.ch"
+    }
+  }
+  </script>
+
+</head>
+
+<body>
+
+  <!--navbar-->
+         <div id="navbar"></div>
+
+  <script src="navbar.js"></script>
+  <script>
+    // Navbar laden
+    fetch("navbar_en.html")
+      .then(res => res.text())
+      .then(html => {
+        document.getElementById("navbar").innerHTML = html;
+        // Jetzt erst das JS aktivieren
+        initNavbar();
+      });
+  </script>
+
+<section id="impressum">
+  <div class="container">
+    <h1>Legal Notice</h1>
+
+    <div class="imp-content">
+      <p><strong>Veloura Transfers</strong><br>
+      Saranjan Devanantham<br>
+      Flurstrasse 10<br>
+      8302 Kloten<br>
+      Switzerland</p>
+
+      <p><strong>Email:</strong> 
+      <a href="mailto:info@velouratransfers.ch" class="emailimp">info@velouratransfers.ch</a><br>
+
+      <strong>Phone:</strong> 
+      <a href="tel:+41793288007">+41 79 328 80 07</a></p>
+    </div>
+  </div>
+</section>
+
+
+  <!-- Footer -->
+<div id="footer"></div>
+
+<script src="footer.js"></script>
+<script>
+  // Footer laden
+  fetch("footer_en.html")   <!-- HIER einfach ändern nach Sprache -->
+    .then(res => res.text())
+    .then(html => {
+      document.getElementById("footer").innerHTML = html;
+    });
+</script>
+
+
+
+
+
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+  AOS.init({
+    once: true,          // Animation nur einmal
+    duration: 900,       // Dauer allgemein
+    offset: 80           // leicht nach unten
+  });
+</script>
+
+</body>
