@@ -1,0 +1,1783 @@
+
+/* ======================================
+   👑 CROWN TRANSFERS – ABOUT HERO (FINAL)
+   ====================================== */
+
+.a2-hero {
+  position: relative;
+  width: 100%;
+  height: 58vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  background: #000;
+}
+
+/* BACKGROUND IMAGE */
+.a2-hero-bg {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center 45%;
+  filter: brightness(0.58) saturate(1.15) contrast(1.18);
+  z-index: 1;
+}
+
+/* GLASS BOX */
+.a2-hero-glass {
+  position: relative;
+  z-index: 3;
+  max-width: 600px;
+  width: 88%;
+  background: rgba(255,255,255,0.14);
+  backdrop-filter: blur(14px);
+  border: 1px solid rgba(255,255,255,0.22);
+  padding: 2rem 1.8rem;
+  border-radius: 20px;
+  text-align: center;
+  box-shadow: 0 18px 40px rgba(0,0,0,0.28);
+}
+
+/* HEADLINE */
+.a2-hero-glass h1 {
+  font-size: 2.45rem;
+  line-height: 1.18;
+  font-weight: 700;
+  color: #fff;
+  margin-bottom: .55rem;
+}
+
+/* TEXT */
+.a2-hero-glass p {
+  font-size: 1.05rem;
+  color: rgba(255,255,255,0.85);
+  line-height: 1.65;
+  margin-bottom: 1.2rem;
+}
+
+/* BUTTONS */
+.a2-hero-actions {
+  display: flex;
+  gap: .7rem;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.a2-btn {
+  padding: .8rem 1.25rem;
+  border-radius: 12px;
+  font-weight: 700;
+  font-size: .92rem;
+}
+
+/* GOLD */
+.a2-btn-gold {
+  background: var(--gold);
+  color: #fff;
+}
+
+/* GHOST */
+.a2-btn-ghost {
+  background: rgba(255,255,255,0.22);
+  border: 1px solid rgba(255,255,255,0.35);
+  color: #fff;
+}
+
+
+/* ============================================================
+   🧩 1500px – 1100px / MacBook Retina Compact
+   ============================================================ */
+@media (min-width: 1100px) and (max-width: 1500px) {
+
+  .a2-hero {
+    height: 56vh;
+  }
+
+  .a2-hero-glass {
+    max-width: 560px;
+    padding: 1.9rem 1.7rem;
+  }
+
+  .a2-hero-glass h1 {
+    font-size: 2.25rem;
+  }
+
+  .a2-hero-glass p {
+    font-size: 1rem;
+  }
+
+  .a2-btn {
+    padding: .75rem 1.15rem;
+    font-size: .88rem;
+  }
+}
+
+
+/* ============================================================
+   🧩 bis 1100px – Laptop
+   ============================================================ */
+@media (max-width: 1100px) {
+
+  .a2-hero {
+    height: 52vh;
+  }
+
+  .a2-hero-glass {
+    max-width: 520px;
+    padding: 1.75rem 1.55rem;
+  }
+
+  .a2-hero-glass h1 {
+    font-size: 2.05rem;
+    line-height: 1.17;
+  }
+
+  .a2-hero-glass p {
+    font-size: .98rem;
+  }
+
+  .a2-btn {
+    padding: .68rem 1rem;
+    font-size: .82rem;
+  }
+}
+
+
+/* ============================================================
+   🧩 bis 900px – Tablet quer (iPad landscape)
+   ============================================================ */
+@media (max-width: 900px) {
+
+  .a2-hero {
+    height: 47vh;
+  }
+
+  .a2-hero-glass {
+    max-width: 480px;
+    padding: 1.6rem 1.4rem;
+  }
+
+  .a2-hero-glass h1 {
+    font-size: 1.85rem;
+    line-height: 1.15;
+  }
+
+  .a2-hero-glass p {
+    font-size: .92rem;
+  }
+
+  .a2-btn {
+    padding: .62rem .95rem;
+    font-size: .8rem;
+  }
+}
+
+
+/* ============================================================
+   🧩 bis 768px – Tablet hoch (iPad Mini vertical)
+   ============================================================ */
+@media (max-width: 768px) {
+
+  .a2-hero {
+    height: 42vh;
+  }
+
+  .a2-hero-glass {
+    max-width: 450px;
+    padding: 1.45rem 1.3rem;
+  }
+
+  .a2-hero-glass h1 {
+    font-size: 1.7rem;
+    line-height: 1.14;
+  }
+
+  .a2-hero-glass p {
+    font-size: .88rem;
+  }
+
+  .a2-btn {
+    padding: .58rem .9rem;
+    font-size: .78rem;
+  }
+}
+
+
+/* ============================================================
+   🧩 bis 600px – große Handys (NEUE VERSION)
+   ============================================================ */
+@media (max-width: 600px) {
+
+  .a2-hero {
+    height: 36vh;
+  }
+
+  .a2-hero-glass {
+    max-width: 82%;
+    padding: 1.2rem 1rem;
+    border-radius: 16px;
+  }
+
+  .a2-hero-glass h1 {
+    font-size: 1.48rem;
+    line-height: 1.14;
+  }
+
+  .a2-hero-glass p {
+    font-size: .82rem;
+  }
+
+  .a2-btn {
+    padding: .5rem .85rem;
+    font-size: .75rem;
+  }
+}
+
+
+/* ============================================================
+   🧩 bis 420px – iPhone 12 / moderne Phones (NEU)
+   ============================================================ */
+@media (max-width: 420px) {
+
+  .a2-hero {
+    height: 32vh;
+  }
+
+  .a2-hero-glass {
+    max-width: 88%;
+    padding: 1rem .9rem;
+  }
+
+  .a2-hero-glass h1 {
+    font-size: 1.32rem;
+    line-height: 1.12;
+  }
+
+  .a2-hero-glass p {
+    font-size: .78rem;
+  }
+
+  .a2-btn {
+    padding: .45rem .75rem;
+    font-size: .72rem;
+  }
+}
+
+
+/* ============================================================
+   🧩 bis 350px – super kleine Geräte
+   ============================================================ */
+@media (max-width: 350px) {
+
+  .a2-hero {
+    height: 30vh;
+  }
+
+  .a2-hero-glass {
+    max-width: 92%;
+    padding: .9rem .8rem;
+  }
+
+  .a2-hero-glass h1 {
+    font-size: 1.15rem;
+    line-height: 1.1;
+  }
+
+  .a2-hero-glass p {
+    font-size: .72rem;
+  }
+
+  .a2-btn {
+    padding: .42rem .7rem;
+    font-size: .68rem;
+  }
+}
+
+
+/* ================================
+   👑 Crown Transfers – Service Slider
+================================ */
+
+/* Section */
+.svc-slider-section {
+  background: #f7f6f3;
+  padding: 5rem 2rem;
+  text-align: center;
+}
+
+.svc-slider-head h2 {
+  font-size: 2.2rem;
+  font-weight: 600;
+  color: #111;
+  margin-bottom: 2.2rem;
+}
+
+/* OUTER: hält Pfeile + Slider nebeneinander */
+.svc-slider-outer {
+  max-width: 1250px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  gap: 22px;
+}
+
+/* Wrapper = sichtbarer Bereich */
+.svc-slider-wrapper {
+  overflow: hidden;
+  width: 100%;
+}
+
+/* Track: GRID mit fester Kartenbreite */
+.svc-slider-track {
+  display: grid;
+  grid-auto-flow: column;
+  grid-auto-columns: 500px;
+  column-gap: 20px;
+  transition: 0.35s ease;
+}
+
+/* Karten */
+.svc-card {
+  background: white;
+  border-radius: 16px;
+  padding: 1.4rem;
+  box-shadow: 0 7px 20px rgba(0,0,0,0.08);
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  gap: 0.7rem;
+}
+
+.svc-img {
+  width: 100%;
+  height: 180px;
+  border-radius: 12px;
+  background-size: cover;
+  background-position: center;
+}
+
+.svc-card h3 {
+  font-size: 1.3rem;
+  color: #222;
+}
+
+.svc-card p {
+  font-size: 0.95rem;
+  color: #666;
+  line-height: 1.55;
+}
+
+/* Button */
+.svc-btn {
+  display: inline-block;
+  padding: 0.55rem 1rem;
+  border: 1.8px solid #a9852d;
+  border-radius: 6px;
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: #6f5420;
+  text-decoration: none;
+  width: fit-content;
+  transition: 0.25s;
+}
+
+.svc-btn:hover {
+  background: #a9852d;
+  color: white;
+}
+
+/* Pfeile – jetzt WIRKLICH AUSSEN */
+.svc-arrow {
+  background: white;
+  border: 2px solid #c7a347;
+  font-size: 1.7rem;
+  padding: 0.45rem 0.85rem;
+  border-radius: 12px;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.svc-arrow:hover {
+  background: #c7a347;
+  color: white;
+}
+
+/* Mobile: 1 Karte sichtbar */
+@media (max-width: 800px) {
+  .svc-slider-track {
+    grid-auto-columns: 85vw;
+  }
+}
+
+/* ============================================================
+   📱 RESPONSIVE DESIGN – Crown Transfers Service Slider
+   ============================================================ */
+
+
+/* 🧩 MacBook Pro Retina – 1100px bis 1500px */
+@media (min-width: 1100px) and (max-width: 1500px) {
+
+  .svc-slider-section {
+    padding: 4.2rem 2rem;
+  }
+
+  .svc-slider-head h2 {
+    font-size: 2rem;
+    margin-bottom: 1.9rem;
+  }
+
+  .svc-slider-track {
+    grid-auto-columns: 460px;
+    column-gap: 18px;
+  }
+
+  .svc-card {
+    padding: 1.25rem;
+    gap: 0.6rem;
+  }
+
+  .svc-img {
+    height: 165px;
+  }
+
+  .svc-card h3 {
+    font-size: 1.18rem;
+  }
+
+  .svc-card p {
+    font-size: 0.88rem;
+  }
+
+  .svc-btn {
+    font-size: 0.85rem;
+    padding: 0.5rem 0.9rem;
+  }
+
+  .svc-arrow {
+    font-size: 1.45rem;
+    padding: 0.38rem 0.7rem;
+  }
+}
+
+
+
+/* 🧩 bis 1100px – Laptop */
+@media (max-width: 1100px) {
+
+  .svc-slider-section {
+    padding: 4rem 2rem;
+  }
+
+  .svc-slider-head h2 {
+    font-size: 1.9rem;
+    margin-bottom: 1.8rem;
+  }
+
+  .svc-slider-track {
+    grid-auto-columns: min(80vw, 420px);
+    column-gap: 17px;
+  }
+
+  .svc-img {
+    height: 155px;
+  }
+
+  .svc-card h3 {
+    font-size: 1.12rem;
+  }
+
+  .svc-card p {
+    font-size: 0.85rem;
+  }
+
+  .svc-btn {
+    font-size: 0.82rem;
+    padding: 0.5rem 0.85rem;
+  }
+
+  .svc-arrow {
+    font-size: 1.35rem;
+    padding: 0.35rem 0.65rem;
+  }
+}
+
+
+
+/* 🧩 bis 900px – Tablet quer */
+@media (max-width: 900px) {
+
+  .svc-slider-section {
+    padding: 3.6rem 1.8rem;
+  }
+
+  .svc-slider-head h2 {
+    font-size: 1.75rem;
+  }
+
+  .svc-slider-track {
+    grid-auto-columns: min(82vw, 360px);
+    column-gap: 16px;
+  }
+
+  .svc-img {
+    height: 150px;
+  }
+
+  .svc-card h3 {
+    font-size: 1.05rem;
+  }
+
+  .svc-card p {
+    font-size: 0.84rem;
+  }
+
+  .svc-arrow {
+    font-size: 1.25rem;
+    padding: 0.32rem 0.6rem;
+  }
+}
+
+
+
+/* 🧩 bis 768px – Tablet hoch */
+@media (max-width: 768px) {
+
+  .svc-slider-section {
+    padding: 3.3rem 1.6rem;
+  }
+
+  .svc-slider-head h2 {
+    font-size: 1.65rem;
+  }
+
+  .svc-slider-track {
+    grid-auto-columns: min(85vw, 330px);
+  }
+
+  .svc-img {
+    height: 145px;
+  }
+
+  .svc-card h3 {
+    font-size: 1rem;
+  }
+
+  .svc-card p {
+    font-size: 0.8rem;
+  }
+
+  .svc-arrow {
+    font-size: 1.18rem;
+    padding: 0.28rem 0.55rem;
+  }
+}
+
+
+
+/* 🧩 bis 600px – kleine Handys */
+@media (max-width: 600px) {
+
+  .svc-slider-section {
+    padding: 3rem 1.3rem;
+  }
+
+  .svc-slider-head h2 {
+    font-size: 1.55rem;
+  }
+
+  .svc-slider-track {
+    grid-auto-columns: min(90vw, 300px);
+  }
+
+  .svc-img {
+    height: 140px;
+  }
+
+  .svc-card h3 {
+    font-size: 0.95rem;
+  }
+
+  .svc-card p {
+    font-size: 0.78rem;
+  }
+
+  .svc-btn {
+    font-size: 0.75rem;
+    padding: 0.42rem 0.75rem;
+  }
+
+  .svc-arrow {
+    font-size: 1.12rem;
+    padding: 0.25rem 0.5rem;
+  }
+}
+
+
+
+/* 🧩 bis 420px – iPhone 12 / moderne Smartphones */
+@media (max-width: 420px) {
+
+  .svc-slider-section {
+    padding: 2.6rem 1.1rem;
+  }
+
+  .svc-slider-head h2 {
+    font-size: 1.45rem;
+  }
+
+  .svc-slider-track {
+    grid-auto-columns: min(94vw, 280px);
+    column-gap: 12px;
+  }
+
+  .svc-img {
+    height: 135px;
+  }
+
+  .svc-card h3 {
+    font-size: 0.92rem;
+  }
+
+  .svc-card p {
+    font-size: 0.75rem;
+  }
+
+  .svc-arrow {
+    font-size: 1.05rem;
+    padding: 0.23rem 0.47rem;
+  }
+}
+
+
+
+/* 🧩 bis 350px – sehr kleine Geräte */
+@media (max-width: 350px) {
+
+  .svc-slider-section {
+    padding: 2.4rem 0.9rem;
+  }
+
+  .svc-slider-head h2 {
+    font-size: 1.35rem;
+  }
+
+  .svc-slider-track {
+    grid-auto-columns: min(96vw, 260px);
+  }
+
+  .svc-img {
+    height: 128px;
+  }
+
+  .svc-card h3 {
+    font-size: 0.88rem;
+  }
+
+  .svc-card p {
+    font-size: 0.72rem;
+  }
+
+  .svc-btn {
+    font-size: 0.7rem;
+    padding: 0.38rem 0.65rem;
+  }
+
+  .svc-arrow {
+    font-size: 0.95rem;
+    padding: 0.22rem 0.45rem;
+  }
+}
+
+
+
+/* ============================================================
+   👑 CROWN TRANSFERS – WHY SIGHTSEEING (PREMIUM)
+============================================================ */
+
+.ct-sightbenefits {
+  width: 100%;
+  padding: 5rem 0 4.6rem;
+  background: #f7f6f3;
+}
+
+.ct-sightbenefits-wrap {
+  max-width: 1250px;
+  margin: 0 auto;
+  padding: 0 4%;
+  display: flex;
+  justify-content: space-between;
+  gap: 3rem;
+}
+
+/* LEFT SIDE */
+.ct-sb-left {
+  flex: 1;
+}
+
+.ct-sb-left h2 {
+font-size: 2.4rem;
+  font-weight: 700;
+  color: var(--crown-text-dark);
+  margin-bottom: 1rem;
+  position: relative;
+}
+
+.ct-sb-goldline {
+  display: block;
+  width: 80px;
+  height: 3px;
+  background: #c7a347;
+  margin-bottom: 1.6rem;
+  border-radius: 2px;
+}
+
+.ct-sb-left p {
+  font-size: 1.05rem;
+  line-height: 1.6;
+  color: #333;
+  max-width: 540px;
+}
+
+/* RIGHT SIDE – LIST */
+.ct-sb-right {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 1.35rem;
+}
+
+.ct-sb-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 1rem;
+}
+
+.ct-sb-icon {
+  width: 42px;
+  height: 42px;
+  min-width: 42px;
+  background: #c7a3471a;
+  border: 1px solid #c7a34750;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 6px;
+}
+
+.ct-sb-icon svg {
+  width: 100%;
+  height: 100%;
+}
+
+.ct-sb-item p {
+  font-size: 1rem;
+  color: #333;
+  line-height: 1.5;
+}
+
+/* ============================================================
+   🧩 1500px – 1100px (MacBook Retina Compact)
+   ============================================================ */
+@media (min-width: 1100px) and (max-width: 1500px) {
+
+  .ct-sightbenefits {
+    padding: 4.4rem 0 4.2rem;
+  }
+
+  .ct-sb-left h2 {
+    font-size: 2.2rem; /* CROWN MacBook SIZE */
+  }
+
+  .ct-sb-left p {
+    font-size: 1rem;
+  }
+
+  .ct-sb-item p {
+    font-size: .95rem;
+  }
+
+  .ct-sb-icon {
+    width: 38px;
+    height: 38px;
+    min-width: 38px;
+  }
+}
+
+
+/* ============================================================
+   🧩 bis 1100px – Laptop
+   ============================================================ */
+@media (max-width: 1100px) {
+
+  .ct-sightbenefits-wrap {
+    gap: 2.4rem;
+  }
+
+  .ct-sb-left h2 {
+    font-size: 2rem;
+  }
+
+  .ct-sb-left p {
+    font-size: .98rem;
+    line-height: 1.55;
+  }
+
+  .ct-sb-item p {
+    font-size: .93rem;
+  }
+}
+
+
+/* ============================================================
+   🧩 bis 900px – Tablet quer
+   ============================================================ */
+@media (max-width: 900px) {
+
+  .ct-sightbenefits-wrap {
+    gap: 2rem;
+  }
+
+  .ct-sb-left h2 {
+    font-size: 1.85rem;
+  }
+
+  .ct-sb-left p {
+    font-size: .95rem;
+  }
+
+  .ct-sb-icon {
+    width: 36px;
+    height: 36px;
+  }
+
+  .ct-sb-item p {
+    font-size: .9rem;
+  }
+}
+
+
+/* ============================================================
+   🧩 bis 768px – Tablet hoch
+   ============================================================ */
+@media (max-width: 768px) {
+
+  .ct-sightbenefits-wrap {
+    flex-direction: column;
+    text-align: left;
+  }
+
+  .ct-sb-left h2 {
+    font-size: 1.75rem;
+  }
+
+  .ct-sb-left p {
+    max-width: 100%;
+    font-size: .92rem;
+  }
+
+  .ct-sb-icon {
+    width: 34px;
+    height: 34px;
+    min-width: 34px;
+  }
+
+  .ct-sb-item p {
+    font-size: .88rem;
+  }
+}
+
+
+/* ============================================================
+   🧩 bis 600px – MOBILE PREMIUM (CROWN STYLE)
+   ============================================================ */
+@media (max-width: 600px) {
+
+  .ct-sightbenefits {
+    padding: 3.6rem 0 3.3rem;
+  }
+
+  .ct-sightbenefits-wrap {
+    padding: 0 6%;   /* FIX: kein Text mehr rechts raus */
+    gap: 1.8rem;
+  }
+
+  .ct-sb-left h2 {
+    font-size: 1.55rem;
+  }
+
+  .ct-sb-left p {
+    font-size: .88rem;
+    line-height: 1.55;
+  }
+
+  .ct-sb-item {
+    gap: .8rem;
+  }
+
+  .ct-sb-icon {
+    width: 32px;
+    height: 32px;
+    padding: 4px;
+  }
+
+  .ct-sb-item p {
+    font-size: .85rem;
+    line-height: 1.5;
+  }
+}
+
+
+/* ============================================================
+   🧩 bis 420px – iPhone 12 / moderne Smartphones
+   ============================================================ */
+@media (max-width: 420px) {
+
+  .ct-sightbenefits-wrap {
+    padding: 0 7%;
+  }
+
+  .ct-sb-left h2 {
+    font-size: 1.42rem;
+  }
+
+  .ct-sb-left p {
+    font-size: .84rem;
+  }
+
+  .ct-sb-item p {
+    font-size: .82rem;
+  }
+}
+
+
+/* ============================================================
+   🧩 bis 350px – ultra small
+   ============================================================ */
+@media (max-width: 350px) {
+
+  .ct-sightbenefits-wrap {
+    padding: 0 8%;
+  }
+
+  .ct-sb-left h2 {
+    font-size: 1.3rem;
+  }
+
+  .ct-sb-left p {
+    font-size: .8rem;
+  }
+
+  .ct-sb-item p {
+    font-size: .78rem;
+  }
+}
+
+
+/* ==========================================
+   PREMIUM MAGAZINE PRICE SECTION
+========================================== */
+
+.ct-price-elegant {
+  width: 100%;
+  padding: 6rem 1.5rem 5rem;
+  background: #f7f6f3;
+}
+
+.ct-price-elegant-inner {
+  max-width: 1250px;
+  margin: 0 auto;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 4rem;
+}
+
+/* LEFT SIDE */
+.ct-price-left {
+  width: 42%;
+  position: relative;
+}
+
+.ct-price-left h2 {
+  font-size: 2.6rem;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+  color: #1a1a1a;
+  margin-bottom: 1rem;
+}
+.ct-sb-goldline {
+  display: block;
+  width: 80px;
+  height: 3px;
+  background: #c7a347;
+  margin-bottom: 1.6rem;
+  border-radius: 2px;
+}
+
+
+
+.ct-price-description {
+  font-size: 1.05rem;
+  color: #333;
+  line-height: 1.6;
+  max-width: 420px;
+}
+
+/* RIGHT SIDE */
+.ct-price-right {
+  width: 52%;
+  display: flex;
+  flex-direction: column;
+  gap: 1.8rem;
+}
+
+.ct-price-fact {
+  padding: 1rem 0;
+  border-bottom: 1px solid rgba(0,0,0,0.1);
+}
+
+.ct-price-fact h3 {
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: #1a1a1a;
+  margin-bottom: 0.3rem;
+}
+
+.ct-price-fact p {
+  font-size: 1rem;
+  color: #555;
+  margin: 0;
+}
+
+/* CTA */
+.ct-price-cta {
+  text-align: center;
+  margin-top: 4rem;
+}
+
+.ct-price-btn {
+  display: inline-block;
+  background: #c7a347;
+  color: #fff;
+  padding: 1.05rem 2.9rem;
+  font-size: 1.1rem;
+  font-weight: 600;
+  border-radius: 12px;
+  text-decoration: none;
+  transition: 0.25s ease;
+}
+
+.ct-price-btn:hover {
+  background: #b0913f;
+}
+
+/* ==========================================================
+   🧩 MacBook Pro Retina – 1100px bis 1500px
+   ========================================================== */
+@media (min-width: 1100px) and (max-width: 1500px) {
+
+  .ct-price-elegant {
+    padding: 5rem 1.4rem 4.2rem;
+  }
+
+  .ct-price-elegant-inner {
+    max-width: 1150px;
+    gap: 3rem;
+  }
+
+  .ct-price-left { width: 44%; }
+  .ct-price-right { width: 50%; }
+
+  .ct-price-left h2 {
+    font-size: 2.2rem;
+    text-align: left;
+  }
+
+  .ct-price-description { font-size: 0.97rem; max-width: 400px; }
+  .ct-price-fact h3 { font-size: 1.1rem; }
+  .ct-price-fact p  { font-size: 0.9rem; }
+
+  .ct-price-btn {
+    padding: 1rem 2.4rem;
+    font-size: 1rem;
+  }
+  .ct-price-btn {
+    padding: 0.85rem 2.2rem;
+    font-size: 1rem;
+    border-radius: 10px;
+  }
+}
+
+/* ==========================================================
+   🧩 bis 1100px – Laptop
+   ========================================================== */
+@media (max-width: 1100px) {
+
+  .ct-price-elegant {
+    padding: 4.8rem 1.3rem 4rem;
+  }
+
+  .ct-price-left { width: 46%; }
+  .ct-price-right { width: 50%; }
+
+  .ct-price-elegant-inner { gap: 3rem; }
+
+  .ct-price-left h2 {
+    font-size: 2.05rem;
+    text-align: left;
+  }
+
+    .ct-price-btn {
+    padding: 0.82rem 2rem;
+    font-size: 0.98rem;
+    border-radius: 10px;
+  }
+}
+
+/* ==========================================================
+   🧩 bis 900px – Tablet quer (2-spaltig linksbündig)
+   ========================================================== */
+@media (max-width: 900px) {
+
+  .ct-price-left { width: 48%; }
+  .ct-price-right { width: 48%; }
+
+  .ct-price-elegant-inner { gap: 2.2rem; }
+
+  .ct-price-left h2 {
+    font-size: 1.9rem;
+    text-align: left;
+  }
+
+  .ct-price-description {
+    text-align: left;
+    max-width: 330px;
+  }
+
+    .ct-price-btn {
+    padding: 0.80rem 1.85rem;
+    font-size: 0.95rem;
+    border-radius: 10px;
+  }
+}
+
+/* ==========================================================
+   🧩 bis 768px – Tablet hoch → STAPELN (untereinander, LINKS!)
+   ========================================================== */
+@media (max-width: 768px) {
+
+  .ct-price-elegant-inner {
+    flex-direction: column;
+    gap: 2.4rem;
+  }
+
+  .ct-price-left,
+  .ct-price-right {
+    width: 100%;
+  }
+
+  .ct-price-left h2 {
+    font-size: 1.75rem;
+    text-align: left;
+  }
+
+  .ct-sb-goldline {
+    margin: 0 0 1.2rem 0; /* links */
+  }
+
+  .ct-price-description {
+    font-size: 0.88rem;
+    text-align: left;
+    max-width: 100%;
+  }
+
+  .ct-price-fact h3 { font-size: 0.95rem; }
+  .ct-price-fact p  { font-size: 0.82rem; }
+
+  .ct-price-btn {
+    padding: 0.78rem 1.7rem;
+    font-size: 0.9rem;
+    border-radius: 9px;
+  }
+}
+
+/* ==========================================================
+   🧩 bis 600px – Smartphones (links, kompakt)
+   ========================================================== */
+@media (max-width: 600px) {
+
+  .ct-price-elegant {
+    padding: 3.5rem 1rem 2.8rem;
+  }
+
+  .ct-price-left h2 {
+    font-size: 1.58rem;
+    text-align: left;
+  }
+
+  .ct-price-description { font-size: 0.82rem; }
+
+  .ct-price-fact h3 { font-size: 0.9rem; }
+  .ct-price-fact p  { font-size: 0.78rem; }
+
+  .ct-price-btn {
+    font-size: 0.82rem;
+    padding: 0.75rem 1.6rem;
+  }
+    .ct-price-btn {
+    padding: 0.75rem 1.55rem;
+    font-size: 0.86rem;
+    border-radius: 9px;
+  }
+
+}
+
+/* ==========================================================
+   🧩 bis 420px – iPhone 12 / moderne Smartphones
+   ========================================================== */
+@media (max-width: 420px) {
+
+  .ct-price-left h2 {
+    font-size: 1.48rem;
+    text-align: left;
+  }
+
+  .ct-price-description { font-size: 0.8rem; }
+  .ct-price-fact h3 { font-size: 0.88rem; }
+  .ct-price-fact p  { font-size: 0.75rem; }
+
+  .ct-price-btn {
+    padding: 0.72rem 1.4rem;
+    font-size: 0.82rem;
+    border-radius: 8px;
+  }
+}
+
+/* ==========================================================
+   🧩 bis 350px – sehr kleine Geräte
+   ========================================================== */
+@media (max-width: 350px) {
+
+  .ct-price-elegant {
+    padding: 2.8rem 0.7rem 2.4rem;
+  }
+
+  .ct-price-left h2 {
+    font-size: 1.38rem;
+    text-align: left;
+  }
+
+  .ct-price-description { font-size: 0.75rem; }
+  .ct-price-fact h3 { font-size: 0.85rem; }
+  .ct-price-fact p  { font-size: 0.72rem; }
+
+  .ct-price-btn {
+    padding: 0.68rem 1.25rem;
+    font-size: 0.78rem;
+    border-radius: 8px;
+  }
+}
+
+/* ==========================================================
+   🧩 bis 420px – iPhone 12 / moderne Smartphones (Hard Max-Width)
+   ========================================================== */
+@media (max-width: 420px) {
+
+  /* verhindert jegliches Überlaufen */
+  .ct-price-description {
+    max-width: 95vw;      /* bleibt sicher im Viewport */
+    overflow-wrap: break-word;  /* bricht lange Wörter */
+    word-break: break-word;
+  }
+
+  .ct-price-left h2 {
+    max-width: 95vw;
+  }
+
+  .ct-price-fact p {
+    max-width: 95vw;
+    overflow-wrap: break-word;
+    word-break: break-word;
+  }
+}
+
+/* ==========================================================
+   🧩 bis 350px – sehr kleine Geräte (noch enger)
+   ========================================================== */
+@media (max-width: 350px) {
+
+  .ct-price-description {
+    max-width: 92vw;
+    overflow-wrap: break-word;
+    word-break: break-word;
+  }
+
+  .ct-price-fact p {
+    max-width: 92vw;
+    overflow-wrap: break-word;
+    word-break: break-word;
+  }
+
+  .ct-price-left h2 {
+    max-width: 92vw;
+  }
+}
+
+
+
+
+/* ============================================
+   👑 CROWN TRANSFERS – CTA SECTION (CLEAN IVORY)
+   ============================================ */
+
+.ct-cta {
+  width: 100%;
+  background: #f7f6f3; /* Crown Ivory Clean Background */
+  padding: 6rem 0;
+  border-top: 1px solid rgba(199,163,71,0.25); /* dezente goldene Linie */
+}
+
+.ct-cta-container {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 0 4%;
+  text-align: center;
+  color: #1a1a1a; /* Text in elegantem Dunkelgrau */
+}
+
+/* HEADLINE */
+.ct-cta h2 {
+  font-size: 2.2rem;
+  font-weight: 600;
+  margin-bottom: 1.2rem;
+  color: #1a1a1a;
+  letter-spacing: -0.2px;
+}
+
+/* PARAGRAPH */
+.ct-cta p {
+  font-size: 1.1rem;
+  color: #444;
+  max-width: 700px;
+  margin: 0 auto 2.8rem auto;
+  line-height: 1.65;
+}
+
+/* ACTION BUTTONS */
+.ct-cta-actions {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+/* BASE BUTTON */
+.ct-cta-btn {
+  padding: 0.9rem 1.8rem;
+  border-radius: 12px;
+  font-size: .95rem;
+  font-weight: 700;
+  text-decoration: none;
+  transition: .25s ease;
+}
+
+/* GOLD BUTTON */
+.ct-cta-gold {
+  background: #c7a347;
+  color: #fff;
+}
+
+.ct-cta-gold:hover {
+  background: #d6b860;
+  box-shadow: 0 0 18px rgba(199,163,71,0.4);
+  transform: translateY(-3px);
+}
+
+/* GHOST BUTTON (HELL / IVORY VERSION) */
+.ct-cta-ghost {
+  background: rgba(0,0,0,0.06);
+  border: 1px solid rgba(0,0,0,0.15);
+  color: #1a1a1a;
+}
+
+.ct-cta-ghost:hover {
+  background: rgba(0,0,0,0.12);
+  transform: translateY(-3px);
+}
+
+/* ============================================================
+   🧩 1500px – 1100px / MacBook Pro Retina Fix
+   ============================================================ */
+@media (min-width: 1100px) and (max-width: 1500px) {
+  .ct-cta {
+    padding: 5rem 0;
+  }
+  .ct-cta h2 {
+    font-size: 2rem;
+  }
+  .ct-cta p {
+    font-size: 1rem;
+    margin-bottom: 2.4rem;
+  }
+  .ct-cta-btn {
+    padding: 0.85rem 1.6rem;
+    font-size: .9rem;
+  }
+}
+
+
+/* ============================================================
+   🧩 bis 1100px – Laptop
+   ============================================================ */
+@media (max-width: 1100px) {
+  .ct-cta {
+    padding: 4.7rem 0;
+  }
+  .ct-cta h2 {
+    font-size: 1.9rem;
+  }
+  .ct-cta p {
+    font-size: .98rem;
+  }
+  .ct-cta-btn {
+    padding: .82rem 1.55rem;
+    font-size: .88rem;
+  }
+}
+
+
+/* ============================================================
+   🧩 bis 900px – Tablet quer
+   ============================================================ */
+@media (max-width: 900px) {
+  .ct-cta {
+    padding: 4.4rem 0;
+  }
+  .ct-cta h2 {
+    font-size: 1.75rem;
+  }
+  .ct-cta p {
+    font-size: .95rem;
+    margin-bottom: 2.2rem;
+  }
+  .ct-cta-btn {
+    padding: .78rem 1.45rem;
+    font-size: .85rem;
+  }
+}
+
+
+/* ============================================================
+   🧩 bis 768px – Tablet hoch
+   ============================================================ */
+@media (max-width: 768px) {
+  .ct-cta {
+    padding: 4rem 0;
+  }
+  .ct-cta h2 {
+    font-size: 1.65rem;
+  }
+  .ct-cta p {
+    font-size: .92rem;
+    line-height: 1.55;
+  }
+  .ct-cta-btn {
+    padding: .75rem 1.3rem;
+    font-size: .82rem;
+  }
+}
+
+
+/* ============================================================
+   🧩 bis 600px – kleine Handys
+   ============================================================ */
+@media (max-width: 600px) {
+  .ct-cta {
+    padding: 3.6rem 0;
+  }
+  .ct-cta h2 {
+    font-size: 1.55rem;
+    margin-bottom: 1rem;
+  }
+  .ct-cta p {
+    font-size: .88rem;
+    margin-bottom: 1.9rem;
+  }
+  .ct-cta-actions {
+    gap: .75rem;
+  }
+  .ct-cta-btn {
+    padding: .65rem 1.15rem;
+    font-size: .78rem;
+    border-radius: 10px;
+  }
+}
+
+
+/* ============================================================
+   🧩 bis 420px – iPhone 12 / moderne Smartphones
+   ============================================================ */
+@media (max-width: 420px) {
+  .ct-cta {
+    padding: 3.2rem 0;
+  }
+  .ct-cta h2 {
+    font-size: 1.45rem;
+  }
+  .ct-cta p {
+    font-size: .85rem;
+    margin-bottom: 1.6rem;
+  }
+  .ct-cta-btn {
+    padding: .6rem 1rem;
+    font-size: .75rem;
+  }
+}
+
+
+/* ============================================================
+   🧩 bis 350px – sehr kleine Geräte
+   ============================================================ */
+@media (max-width: 350px) {
+  .ct-cta {
+    padding: 2.9rem 0;
+  }
+  .ct-cta h2 {
+    font-size: 1.32rem;
+  }
+  .ct-cta p {
+    font-size: .8rem;
+    margin-bottom: 1.4rem;
+  }
+  .ct-cta-btn {
+    padding: .55rem .9rem;
+    font-size: .72rem;
+  }
+}
+
+/* ==========================================
+   CROWN TRANSFERS – SEO CONTENT SECTION
+========================================== */
+
+.ct-seo {
+  width: 100%;
+  background: #f7f6f3;
+  padding: 6rem 1.5rem;
+}
+
+.ct-seo-container {
+  max-width: 900px;
+  margin: 0 auto;
+  color: #1a1a1a;
+  line-height: 1.65;
+}
+
+/* MAIN TITLE */
+.ct-seo-title {
+  font-size: 2.4rem;
+  font-weight: 700;
+  margin-bottom: 0.7rem;
+}
+
+
+
+/* INTRO */
+.ct-seo-intro {
+  font-size: 1.12rem;
+  margin-bottom: 3rem;
+  color: #333;
+}
+
+/* SUBTITLE */
+.ct-seo-subtitle {
+  font-size: 1.35rem;
+  font-weight: 700;
+  margin-bottom: 0.6rem;
+}
+
+.ct-seo-line-sm {
+  display: block;
+  width: 55px;
+  height: 3px;
+  background: #c7a347;
+  border-radius: 2px;
+  margin-bottom: 1.6rem;
+}
+/* ============================================================
+   🧩 1500px – 1100px (MacBook Retina Compact)
+   ============================================================ */
+@media (min-width: 1100px) and (max-width: 1500px) {
+
+  .ct-seo {
+    padding: 5.2rem 1.4rem;
+  }
+
+  .ct-seo-title {
+    font-size: 2.2rem; /* Crown MacBook Size */
+  }
+
+  .ct-seo-intro {
+    font-size: 1.05rem;
+  }
+
+  .ct-seo-subtitle {
+    font-size: 1.28rem;
+  }
+}
+
+
+/* ============================================================
+   🧩 bis 1100px – Laptop
+   ============================================================ */
+@media (max-width: 1100px) {
+
+  .ct-seo {
+    padding: 5rem 1.4rem;
+  }
+
+  .ct-seo-title {
+    font-size: 2.05rem;
+  }
+
+  .ct-seo-intro {
+    font-size: 1.02rem;
+  }
+
+  .ct-seo-subtitle {
+    font-size: 1.25rem;
+  }
+}
+
+
+/* ============================================================
+   🧩 bis 900px – Tablet quer
+   ============================================================ */
+@media (max-width: 900px) {
+
+  .ct-seo {
+    padding: 4.6rem 1.3rem;
+  }
+
+  .ct-seo-title {
+    font-size: 1.9rem;
+  }
+
+  .ct-seo-intro {
+    font-size: .98rem;
+  }
+
+  .ct-seo-subtitle {
+    font-size: 1.2rem;
+  }
+}
+
+
+/* ============================================================
+   🧩 bis 768px – Tablet hoch
+   ============================================================ */
+@media (max-width: 768px) {
+
+  .ct-seo {
+    padding: 4.2rem 1.3rem;
+  }
+
+  .ct-seo-title {
+    font-size: 1.75rem;
+  }
+
+  .ct-seo-intro {
+    font-size: .95rem;
+  }
+
+  .ct-seo-subtitle {
+    font-size: 1.15rem;
+  }
+}
+
+
+/* ============================================================
+   🧩 bis 600px – Mobile Premium
+   ============================================================ */
+@media (max-width: 600px) {
+
+  .ct-seo {
+    padding: 3.6rem 1.4rem;
+  }
+
+  .ct-seo-container {
+    padding: 0 6%; /* kein Overflow */
+  }
+
+  .ct-seo-title {
+    font-size: 1.55rem;
+    margin-bottom: .6rem;
+  }
+
+  .ct-seo-intro {
+    font-size: .9rem;
+    line-height: 1.55;
+    margin-bottom: 2.4rem;
+  }
+
+  .ct-seo-subtitle {
+    font-size: 1.1rem;
+    margin-bottom: .5rem;
+  }
+
+  .ct-seo-line-sm {
+    width: 48px;
+    margin-bottom: 1.2rem;
+  }
+}
+
+
+/* ============================================================
+   🧩 bis 420px – small smartphones
+   ============================================================ */
+@media (max-width: 420px) {
+
+  .ct-seo-container {
+    padding: 0 7%;
+  }
+
+  .ct-seo-title {
+    font-size: 1.42rem;
+  }
+
+  .ct-seo-intro {
+    font-size: .86rem;
+  }
+
+  .ct-seo-subtitle {
+    font-size: 1.05rem;
+  }
+}
+
+
+/* ============================================================
+   🧩 bis 350px – ultra small
+   ============================================================ */
+@media (max-width: 350px) {
+
+  .ct-seo-container {
+    padding: 0 8%;
+  }
+
+  .ct-seo-title {
+    font-size: 1.3rem;
+  }
+
+  .ct-seo-intro {
+    font-size: .82rem;
+  }
+
+  .ct-seo-subtitle {
+    font-size: 1rem;
+  }
+}
+
+
