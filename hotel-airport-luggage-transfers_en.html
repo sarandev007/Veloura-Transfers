@@ -1,7 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <!-- ========== FAVICONS ========== -->
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="robots" content="index,follow,max-image-preview:large,max-snippet:-1,max-video-preview:-1" />
+<!-- ========== FAVICONS ========== -->
 <link rel="icon" type="image/png" sizes="16x16" href="/favicon/favicon-16x16.png">
 <link rel="icon" type="image/png" sizes="32x32" href="/favicon/favicon-32x32.png">
 <link rel="icon" type="image/png" sizes="96x96" href="/favicon/favicon-96x96.png">
@@ -34,20 +37,14 @@
   <!-- ==========================================
        🔧 BASIC SETTINGS
   =========================================== -->
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <html lang="en">
 
   <!-- ==========================================
        🏆 TITLE + META DESCRIPTION (155 chars)
   =========================================== -->
-  <title>Hotel & Airport Transfers Zurich | Veloura Transfers – Premium, Reliable & 24/7</title>
+  <title>Zurich Airport Transfer | Veloura Transfers</title>
 
   <meta name="description"
         content="Premium hotel & airport transfers in Zurich and across Switzerland. Meet & Greet, flight tracking, luggage service & 24/7 chauffeur. Reliable, safe & luxurious." />
-
-  <meta name="keywords"
-        content="Zurich airport transfer, hotel transfer Zurich, airport shuttle Zurich, chauffeur service Zurich airport, luggage transport Switzerland, Meet & Greet Zurich, Veloura Transfers, business transfer Zurich, premium chauffeur service, Zurich transportation, private driver Zurich" />
 
   <meta name="author" content="Veloura Transfers" />
   <meta name="theme-color" content="#c7a347" />
@@ -62,7 +59,7 @@
   <link rel="alternate" hreflang="en" href="https://www.velouratransfers.ch/hotel-airport-luggage-transfers_en.html" />
   <link rel="alternate" hreflang="id" href="https://www.velouratransfers.ch/hotel-airport-luggage-transfers_id.html" />
   <link rel="alternate" hreflang="ar" href="https://www.velouratransfers.ch/hotel-airport-luggage-transfers_ar.html" />
-  <link rel="alternate" hreflang="x-default" href="https://www.velouratransfers.ch/hotel-airport-luggage-transfers_en.html" />
+  <link rel="alternate" hreflang="x-default" href="https://www.velouratransfers.ch/hotel-airport-luggage-transfers.html" />
 
 
   <!-- ==========================================
@@ -72,9 +69,10 @@
   <meta property="og:description" content="Reliable hotel & airport transfers in Zurich. Meet & Greet, flight tracking & premium fleet. Available 24/7." />
   <meta property="og:type" content="website" />
   <meta property="og:url" content="https://www.velouratransfers.ch/hotel-airport-luggage-transfers_en.html" />
-  <meta property="og:image" content="https://www.velouratransfers.ch/img/og-image.webp" />
+  <meta property="og:image" content="https://www.velouratransfers.ch/img/index/airporttransfer.webp" />
   <meta property="og:image:alt" content="Veloura Transfers – Zurich Airport Chauffeur Service" />
   <meta property="og:site_name" content="Veloura Transfers" />
+  <meta property="og:locale" content="en_GB" />
 
 
   <!-- ==========================================
@@ -83,7 +81,7 @@
   <meta name="twitter:card" content="summary_large_image" />
   <meta name="twitter:title" content="Hotel & Airport Transfers Zurich – Premium Chauffeur Service" />
   <meta name="twitter:description" content="Premium Zurich airport & hotel transfers with Meet & Greet, luggage service & 24/7 availability." />
-  <meta name="twitter:image" content="https://www.velouratransfers.ch/img/og-image.webp" />
+  <meta name="twitter:image" content="https://www.velouratransfers.ch/img/index/airporttransfer.webp" />
   <meta name="twitter:image:alt" content="Veloura Transfers – Zurich Airport Transfer" />
 
 
@@ -96,7 +94,8 @@
 
   <link rel="stylesheet" href="general.css" />
   <link rel="stylesheet" href="hotel-airport-luggage-transfers.css" />
-  <link rel="stylesheet" href="https://unpkg.com/aos@2.3.4/dist/aos.css" />
+  <link rel="preconnect" href="https://unpkg.com" crossorigin />
+<link rel="stylesheet" href="https://unpkg.com/aos@2.3.4/dist/aos.css" />
 
 
   <!-- ==========================================
@@ -109,7 +108,7 @@
     "name": "Veloura Transfers",
     "@id": "https://www.velouratransfers.ch/",
     "url": "https://www.velouratransfers.ch/",
-    "image": "https://www.velouratransfers.ch/img/og-image.webp",
+    "image": "https://www.velouratransfers.ch/img/index/airporttransfer.webp",
     "telephone": "+41 79 328 80 07",
     "email": "info@velouratransfers.ch",
     "priceRange": "CHF 80 - 1200",
@@ -232,6 +231,7 @@
 </script>
 
 
+<link rel="stylesheet" href="footer.css" />
 </head>
 
 
@@ -337,7 +337,7 @@
 
 <!-- HERO -->
 <section class="a2-hero" data-aos="fade-up">
-  <img class="a2-hero-bg" src="img/index/airporttransfer.webp" alt="Veloura Transfers – Hotel and Airport Transfers">
+  <img class="a2-hero-bg" src="img/index/airporttransfer.webp" width="5972" height="3981" fetchpriority="high" decoding="async" alt="Veloura Transfers – Hotel and Airport Transfers">
   <div class="a2-hero-glass" data-aos="zoom-in" data-aos-delay="120">
     <h1>Hotel & Airport Transfers</h1>
     <p>Reliable transportation between Zurich Airport, hotels, and business locations.</p>
@@ -372,7 +372,7 @@
       <!-- IMAGE -->
       <div class="ct-lug-image" data-aos="fade-right">
         <div class="ct-lug-img-inner">
-          <img src="img/services/hotel.webp" 
+          <img src="img/services/hotel.webp" width="1200" height="1200" loading="lazy" decoding="async" 
                alt="International luggage transport Veloura Transfers Zurich">
         </div>
       </div>
@@ -1107,7 +1107,7 @@ initCarSlider("ecoPrev", "ecoNext", ".eco-track");
 <script src="footer.js"></script>
 <script>
   // Footer laden
-  fetch("footer_en.html")   <!-- HIER einfach ändern nach Sprache -->
+  fetch("footer_en.html")
     .then(res => res.text())
     .then(html => {
       document.getElementById("footer").innerHTML = html;
@@ -1118,7 +1118,7 @@ initCarSlider("ecoPrev", "ecoNext", ".eco-track");
 
 
 
-<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
 <script>
   AOS.init({
     once: true,          // Animation nur einmal

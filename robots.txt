@@ -1,34 +1,17 @@
-##########################################
-# 🚀 Veloura Transfers – Advanced Robots
-# Full SEO + Security + Crawling Control
-##########################################
-
 User-agent: *
 Allow: /
-Crawl-delay: 1
+Disallow: /cgi-bin/
+Disallow: /tmp/
+Disallow: /private/
+Disallow: /backup/
+Disallow: /test/
+Disallow: /dev/
+Disallow: /*.zip$
+Disallow: /*.tar$
+Disallow: /*.gz$
+Disallow: /*.sql$
+Disallow: /*.log$
 
-##########################################
-# 📌 MAIN SITEMAP INDEX
-##########################################
-Sitemap: https://www.velouratransfers.ch/sitemap-index.xml
-
-##########################################
-# 🌍 LANGUAGE SITEMAPS
-##########################################
-Sitemap: https://www.velouratransfers.ch/sitemap-main.xml
-Sitemap: https://www.velouratransfers.ch/sitemap-de.xml
-Sitemap: https://www.velouratransfers.ch/sitemap-en.xml
-Sitemap: https://www.velouratransfers.ch/sitemap-id.xml
-Sitemap: https://www.velouratransfers.ch/sitemap-ar.xml
-
-##########################################
-# 🖼️ IMAGE SITEMAP
-##########################################
-Sitemap: https://www.velouratransfers.ch/sitemap-images.xml
-
-##########################################
-# 🛡️ SECURITY BLOCKLIST – BAD BOTS
-##########################################
 User-agent: MJ12bot
 Disallow: /
 
@@ -56,10 +39,6 @@ Disallow: /
 User-agent: SEOkicks-Robot
 Disallow: /
 
-##########################################
-# 📵 BLOCK AI SCRAPERS (OPTIONAL)
-##########################################
-# Diese Bots klauen Inhalte für AI-Training:
 User-agent: GPTBot
 Disallow: /
 
@@ -69,41 +48,10 @@ Disallow: /
 User-agent: Google-Extended
 Disallow: /
 
-##########################################
-# 📂 TECHNISCHE ORDNER BLOCKIEREN
-##########################################
-Disallow: /cgi-bin/
-Disallow: /tmp/
-Disallow: /private/
-Disallow: /backup/
-Disallow: /test/
-Disallow: /dev/
-
-##########################################
-# 🧼 CLEANUP – NICHT NOTWENDIGE FILES
-##########################################
-Disallow: /*.zip$
-Disallow: /*.tar$
-Disallow: /*.gz$
-Disallow: /*.sql$
-Disallow: /*.log$
-
-##########################################
-# 🎯 ADVERTISING BOTS ERLAUBEN
-##########################################
 User-agent: AdsBot-Google
 Allow: /
 
 User-agent: AdsBot-Google-Mobile
 Allow: /
 
-##########################################
-# ⚙️ PERFORMANCE OPTIMIERUNG
-##########################################
-# Googlebot darf mit Max-Speed crawlen:
-User-agent: Googlebot
-Crawl-delay: 0
-
-##########################################
-# ❤️ ENDE
-##########################################
+Sitemap: https://www.velouratransfers.ch/sitemap-index.xml

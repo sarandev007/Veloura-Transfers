@@ -1,7 +1,10 @@
 <!DOCTYPE html>
 <html lang="de">
 <head>
-  <!-- ========== FAVICONS ========== -->
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="robots" content="index,follow,max-image-preview:large,max-snippet:-1,max-video-preview:-1" />
+<!-- ========== FAVICONS ========== -->
 <link rel="icon" type="image/png" sizes="16x16" href="/favicon/favicon-16x16.png">
 <link rel="icon" type="image/png" sizes="32x32" href="/favicon/favicon-32x32.png">
 <link rel="icon" type="image/png" sizes="96x96" href="/favicon/favicon-96x96.png">
@@ -34,20 +37,14 @@
   <!-- ==========================================
        🔧 GRUNDEINSTELLUNGEN
   =========================================== -->
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <html lang="de">
 
   <!-- ==========================================
        🏆 TITLE + DESCRIPTION (≤155 Zeichen)
   =========================================== -->
-  <title>Kontakt & Buchung | Veloura Transfers – Chauffeurservice Schweiz</title>
+  <title>Chauffeur anfragen | Veloura Transfers</title>
 
   <meta name="description"
         content="Kontaktieren Sie Veloura Transfers für Buchungen, Angebote oder Fragen. Premium Chauffeurservice in der ganzen Schweiz – schnell & professionell erreichbar." />
-
-  <meta name="keywords"
-        content="Kontakt Veloura Transfers, Chauffeurservice Kontakt, Buchung Chauffeur Schweiz, Anfrage Fahrdienst, Limousinenservice Schweiz" />
 
   <meta name="author" content="Veloura Transfers" />
   <meta name="theme-color" content="#c7a347" />
@@ -72,9 +69,10 @@
   <meta property="og:description" content="Kontaktieren Sie uns für Buchungen und Anfragen. Premium Chauffeurservice Schweiz." />
   <meta property="og:type" content="website" />
   <meta property="og:url" content="https://www.velouratransfers.ch/servkontakt.html" />
-  <meta property="og:image" content="https://www.velouratransfers.ch/img/og-image.webp" />
+  <meta property="og:image" content="https://www.velouratransfers.ch/img/index/indexhero.webp" />
   <meta property="og:image:alt" content="Veloura Transfers – Kontakt & Chauffeurservice Schweiz" />
   <meta property="og:site_name" content="Veloura Transfers" />
+  <meta property="og:locale" content="de_CH" />
 
 
   <!-- ==========================================
@@ -83,7 +81,7 @@
   <meta name="twitter:card" content="summary_large_image" />
   <meta name="twitter:title" content="Kontakt – Veloura Transfers" />
   <meta name="twitter:description" content="Für Buchungen & Kontaktanfragen stehen wir Ihnen jederzeit zur Verfügung." />
-  <meta name="twitter:image" content="https://www.velouratransfers.ch/img/og-image.webp" />
+  <meta name="twitter:image" content="https://www.velouratransfers.ch/img/index/indexhero.webp" />
   <meta name="twitter:image:alt" content="Veloura Transfers Kontaktseite" />
 
 
@@ -96,7 +94,8 @@
 
   <link rel="stylesheet" href="general.css" />
   <link rel="stylesheet" href="servkontakt.css" />
-  <link rel="stylesheet" href="https://unpkg.com/aos@2.3.4/dist/aos.css" />
+  <link rel="preconnect" href="https://unpkg.com" crossorigin />
+<link rel="stylesheet" href="https://unpkg.com/aos@2.3.4/dist/aos.css" />
 
 
   <!-- ==========================================
@@ -109,7 +108,7 @@
     "name": "Veloura Transfers",
     "@id": "https://www.velouratransfers.ch/",
     "url": "https://www.velouratransfers.ch/",
-    "image": "https://www.velouratransfers.ch/img/og-image.webp",
+    "image": "https://www.velouratransfers.ch/img/index/indexhero.webp",
     "telephone": "+41 79 328 80 07",
     "email": "info@velouratransfers.ch",
     "priceRange": "CHF 80 - 1200",
@@ -154,6 +153,7 @@
   }
   </script>
 
+<link rel="stylesheet" href="footer.css" />
 </head>
 
 
@@ -213,7 +213,7 @@
         <select name="service" required>
           <option value="">Bitte auswählen…</option>
           <option>Hotel & Flughafen Transfers</option>
-          <option>WEF Davos 2026 Shuttle</option>
+          <option>WEF Davos 2027 Shuttle</option>
           <option>Business & VIP Chauffeurservice</option>
           <option>Event- & Gruppenfahrten</option>
           <option>Ski Resort Transfers</option>
@@ -269,7 +269,7 @@
 <script src="footer.js"></script>
 <script>
   // Footer laden
-  fetch("footer_de.html")   <!-- HIER einfach ändern nach Sprache -->
+  fetch("footer_de.html")
     .then(res => res.text())
     .then(html => {
       document.getElementById("footer").innerHTML = html;
@@ -280,7 +280,7 @@
 
 
 
-<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
 <script>
   AOS.init({
     once: true,          // Animation nur einmal

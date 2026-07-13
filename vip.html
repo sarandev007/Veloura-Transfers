@@ -1,7 +1,10 @@
 <!DOCTYPE html>
 <html lang="de">
 <head>
-  <!-- ========== FAVICONS ========== -->
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="robots" content="index,follow,max-image-preview:large,max-snippet:-1,max-video-preview:-1" />
+<!-- ========== FAVICONS ========== -->
 <link rel="icon" type="image/png" sizes="16x16" href="/favicon/favicon-16x16.png">
 <link rel="icon" type="image/png" sizes="32x32" href="/favicon/favicon-32x32.png">
 <link rel="icon" type="image/png" sizes="96x96" href="/favicon/favicon-96x96.png">
@@ -34,20 +37,14 @@
   <!-- ==========================================
        🔧 Grundeinstellungen
   =========================================== -->
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <html lang="de">
 
   <!-- ==========================================
        🏆 TITLE + DESCRIPTION (≤155 Zeichen)
   =========================================== -->
-  <title>VIP & Business Chauffeurservice Schweiz | Veloura Transfers – CEOs, FBO, Private Jet</title>
+  <title>VIP Chauffeurservice Schweiz | Veloura Transfers</title>
 
   <meta name="description"
         content="VIP & Business Chauffeurservice in der Schweiz. CEO-Transfers, FBO & Private-Jet Chauffeur, Geschäftsreisen, Premium Limousinen & 24/7 Service für höchste Ansprüche." />
-
-  <meta name="keywords"
-        content="VIP Chauffeur Schweiz, Business Chauffeur Zürich, CEO Chauffeurservice, Private Jet Chauffeur Schweiz, FBO Chauffeur Zürich, Executive Transfer, Luxus Limousinenservice, Firmenchauffeur Schweiz, Premium Chauffeurservice Zürich, Flughafen Chauffeur VIP" />
 
   <meta name="author" content="Veloura Transfers" />
   <meta name="theme-color" content="#c7a347" />
@@ -72,9 +69,10 @@
   <meta property="og:description" content="Premium Chauffeurservice für CEOs, Unternehmen, Diplomaten & VIPs. 24/7, diskret & zuverlässig." />
   <meta property="og:type" content="website" />
   <meta property="og:url" content="https://www.velouratransfers.ch/vip.html" />
-  <meta property="og:image" content="https://www.velouratransfers.ch/img/og-image.webp" />
+  <meta property="og:image" content="https://www.velouratransfers.ch/img/index/vip.webp" />
   <meta property="og:image:alt" content="Veloura Transfers – VIP Chauffeurservice Schweiz" />
   <meta property="og:site_name" content="Veloura Transfers" />
+  <meta property="og:locale" content="de_CH" />
 
 
   <!-- ==========================================
@@ -83,7 +81,7 @@
   <meta name="twitter:card" content="summary_large_image" />
   <meta name="twitter:title" content="VIP & Business Chauffeurservice Schweiz – Premium Executive" />
   <meta name="twitter:description" content="Executive Chauffeurservice für CEOs & VIPs. Diskret, sicher und 24/7 verfügbar." />
-  <meta name="twitter:image" content="https://www.velouratransfers.ch/img/og-image.webp" />
+  <meta name="twitter:image" content="https://www.velouratransfers.ch/img/index/vip.webp" />
   <meta name="twitter:image:alt" content="Veloura Transfers – Business Chauffeur Zürich" />
 
 
@@ -96,7 +94,8 @@
 
   <link rel="stylesheet" href="general.css" />
   <link rel="stylesheet" href="vip.css" />
-  <link rel="stylesheet" href="https://unpkg.com/aos@2.3.4/dist/aos.css" />
+  <link rel="preconnect" href="https://unpkg.com" crossorigin />
+<link rel="stylesheet" href="https://unpkg.com/aos@2.3.4/dist/aos.css" />
 
 
   <!-- ==========================================
@@ -109,7 +108,7 @@
     "name": "Veloura Transfers",
     "@id": "https://www.velouratransfers.ch/",
     "url": "https://www.velouratransfers.ch/",
-    "image": "https://www.velouratransfers.ch/img/og-image.webp",
+    "image": "https://www.velouratransfers.ch/img/index/vip.webp",
     "telephone": "+41 79 328 80 07",
     "email": "info@velouratransfers.ch",
     "priceRange": "CHF 80 - 1200",
@@ -260,6 +259,7 @@
 </script>
 
 
+<link rel="stylesheet" href="footer.css" />
 </head>
 
 
@@ -366,7 +366,7 @@
 
   <!-- HERO -->
   <section class="a2-hero" data-aos="fade-up">
-    <img class="a2-hero-bg" src="img/index/vip.webp" alt="Veloura Transfers – Business & VIP Chauffeur Service" >
+    <img class="a2-hero-bg" src="img/index/vip.webp" width="5845" height="3897" fetchpriority="high" decoding="async" alt="Veloura Transfers – Business & VIP Chauffeur Service" >
     <div class="a2-hero-glass" data-aos="zoom-in" data-aos-delay="120">
       <h1>Business & VIP Chauffeur Service in der Schweiz
 
@@ -386,7 +386,7 @@
 
     <!-- IMAGE LEFT -->
     <figure class="ct-vipclean-img" data-aos="fade-right">
-      <img src="img/services/vip.webp" alt="Veloura Transfers Business & VIP Chauffeurservice">
+      <img src="img/services/vip.webp" width="2048" height="1536" loading="lazy" decoding="async" alt="Veloura Transfers Business & VIP Chauffeurservice">
     </figure>
 
     <!-- TEXT RIGHT -->
@@ -956,7 +956,7 @@ initCarSlider("ecoPrev", "ecoNext", ".eco-track");
 <script src="footer.js"></script>
 <script>
   // Footer laden
-  fetch("footer_de.html")   <!-- HIER einfach ändern nach Sprache -->
+  fetch("footer_de.html")
     .then(res => res.text())
     .then(html => {
       document.getElementById("footer").innerHTML = html;
@@ -967,7 +967,7 @@ initCarSlider("ecoPrev", "ecoNext", ".eco-track");
 
 
 
-<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
 <script>
   AOS.init({
     once: true,          // Animation nur einmal

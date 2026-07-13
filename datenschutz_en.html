@@ -1,7 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <!-- ========== FAVICONS ========== -->
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="robots" content="index,follow,max-image-preview:large,max-snippet:-1,max-video-preview:-1" />
+<!-- ========== FAVICONS ========== -->
 <link rel="icon" type="image/png" sizes="16x16" href="/favicon/favicon-16x16.png">
 <link rel="icon" type="image/png" sizes="32x32" href="/favicon/favicon-32x32.png">
 <link rel="icon" type="image/png" sizes="96x96" href="/favicon/favicon-96x96.png">
@@ -36,7 +39,6 @@
   =========================================== -->
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <html lang="en">
 
   <!-- ==========================================
        🏆 TITLE + META DESCRIPTION
@@ -45,9 +47,6 @@
 
   <meta name="description"
         content="Privacy Policy of Veloura Transfers. Learn how we process, store and protect personal data in accordance with Swiss data protection regulations." />
-
-  <meta name="keywords"
-        content="Veloura Transfers privacy policy, data protection Switzerland, personal data processing, Swiss privacy law" />
 
   <meta name="author" content="Veloura Transfers">
   <meta name="theme-color" content="#c7a347">
@@ -62,7 +61,7 @@
   <link rel="alternate" hreflang="en" href="https://www.velouratransfers.ch/datenschutz_en.html">
   <link rel="alternate" hreflang="id" href="https://www.velouratransfers.ch/datenschutz_id.html">
   <link rel="alternate" hreflang="ar" href="https://www.velouratransfers.ch/datenschutz_ar.html">
-  <link rel="alternate" hreflang="x-default" href="https://www.velouratransfers.ch/datenschutz_en.html">
+  <link rel="alternate" hreflang="x-default" href="https://www.velouratransfers.ch/datenschutz.html">
 
 
   <!-- ==========================================
@@ -72,9 +71,10 @@
   <meta property="og:description" content="How Veloura Transfers protects and processes your personal data.">
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://www.velouratransfers.ch/datenschutz_en.html">
-  <meta property="og:image" content="https://www.velouratransfers.ch/img/og-image.webp">
+  <meta property="og:image" content="https://www.velouratransfers.ch/img/index/indexhero.webp">
   <meta property="og:image:alt" content="Veloura Transfers – Privacy Policy">
   <meta property="og:site_name" content="Veloura Transfers">
+  <meta property="og:locale" content="en_GB" />
 
 
   <!-- ==========================================
@@ -83,7 +83,7 @@
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="Privacy Policy – Veloura Transfers">
   <meta name="twitter:description" content="Details on how we handle personal data and ensure data security.">
-  <meta name="twitter:image" content="https://www.velouratransfers.ch/img/og-image.webp">
+  <meta name="twitter:image" content="https://www.velouratransfers.ch/img/index/indexhero.webp">
   <meta name="twitter:image:alt" content="Veloura Transfers – Privacy Policy Page">
 
 
@@ -94,7 +94,8 @@
   <link rel="preload" href="footer.css" as="style">
   <link rel="stylesheet" href="general.css">
   <link rel="stylesheet" href="footer.css">
-  <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css">
+  <link rel="preconnect" href="https://unpkg.com" crossorigin />
+<link rel="stylesheet" href="https://unpkg.com/aos@2.3.4/dist/aos.css">
 
 
   <!-- ==========================================
@@ -106,7 +107,7 @@
     "@type": "LocalBusiness",
     "name": "Veloura Transfers",
     "url": "https://www.velouratransfers.ch/",
-    "image": "https://www.velouratransfers.ch/img/og-image.webp",
+    "image": "https://www.velouratransfers.ch/img/index/indexhero.webp",
     "telephone": "+41 79 328 80 07",
     "email": "info@velouratransfers.ch",
     "priceRange": "CHF 80 - 1200",
@@ -206,7 +207,7 @@
 <script src="footer.js"></script>
 <script>
   // Footer laden
-  fetch("footer_en.html")   <!-- HIER einfach ändern nach Sprache -->
+  fetch("footer_en.html")
     .then(res => res.text())
     .then(html => {
       document.getElementById("footer").innerHTML = html;
@@ -217,7 +218,7 @@
 
 
 
-<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
 <script>
   AOS.init({
     once: true,          // Animation nur einmal

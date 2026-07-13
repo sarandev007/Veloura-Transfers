@@ -1,7 +1,10 @@
 <!DOCTYPE html>
 <html lang="de">
 <head>
-  <!-- ========== FAVICONS ========== -->
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="robots" content="index,follow,max-image-preview:large,max-snippet:-1,max-video-preview:-1" />
+<!-- ========== FAVICONS ========== -->
 <link rel="icon" type="image/png" sizes="16x16" href="/favicon/favicon-16x16.png">
 <link rel="icon" type="image/png" sizes="32x32" href="/favicon/favicon-32x32.png">
 <link rel="icon" type="image/png" sizes="96x96" href="/favicon/favicon-96x96.png">
@@ -34,20 +37,14 @@
   <!-- ==========================================
        🔧 Grundeinstellungen
   =========================================== -->
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <html lang="de">
 
   <!-- ==========================================
        🏆 TITLE + DESCRIPTION (≤155 Zeichen)
   =========================================== -->
-  <title>Ski Transfers Schweiz | Veloura Transfers – St. Moritz, Davos, Zermatt & Verbier</title>
+  <title>Skitransfer Schweiz | Veloura Transfers</title>
 
   <meta name="description"
         content="Premium Ski Transfers in der ganzen Schweiz. Zürich Airport zu St. Moritz, Davos, Zermatt, Verbier, Andermatt & Laax. Winterfeste Luxusfahrzeuge & 24/7 Chauffeurservice." />
-
-  <meta name="keywords"
-        content="Ski Transfer Schweiz, St. Moritz Transfer, Davos Ski Chauffeur, Zermatt Transfer, Verbier Transfer, Andermatt Ski Shuttle, Laax Transfer, Flughafen Zürich Ski Transfer, Winter Chauffeur Schweiz, Premium Ski Transport" />
 
   <meta name="author" content="Veloura Transfers" />
   <meta name="theme-color" content="#c7a347" />
@@ -72,9 +69,10 @@
   <meta property="og:description" content="Zürich Flughafen zu allen Skigebieten: St. Moritz, Davos, Zermatt, Verbier & mehr. Winterfeste Premiumflotte." />
   <meta property="og:type" content="website" />
   <meta property="og:url" content="https://www.velouratransfers.ch/ski.html" />
-  <meta property="og:image" content="https://www.velouratransfers.ch/img/og-image.webp" />
+  <meta property="og:image" content="https://www.velouratransfers.ch/img/index/skiresort.webp" />
   <meta property="og:image:alt" content="Veloura Transfers – Ski Transfers Schweiz" />
   <meta property="og:site_name" content="Veloura Transfers" />
+  <meta property="og:locale" content="de_CH" />
 
 
   <!-- ==========================================
@@ -83,7 +81,7 @@
   <meta name="twitter:card" content="summary_large_image" />
   <meta name="twitter:title" content="Ski Transfers Schweiz – Premium Chauffeurservice" />
   <meta name="twitter:description" content="Luxus Ski Transfers zu allen Schweizer Skigebieten. Winterfester 4MATIC Fuhrpark." />
-  <meta name="twitter:image" content="https://www.velouratransfers.ch/img/og-image.webp" />
+  <meta name="twitter:image" content="https://www.velouratransfers.ch/img/index/skiresort.webp" />
   <meta name="twitter:image:alt" content="Veloura Transfers – Winter Chauffeurservice Schweiz" />
 
 
@@ -96,7 +94,8 @@
 
   <link rel="stylesheet" href="general.css" />
   <link rel="stylesheet" href="ski.css" />
-  <link rel="stylesheet" href="https://unpkg.com/aos@2.3.4/dist/aos.css" />
+  <link rel="preconnect" href="https://unpkg.com" crossorigin />
+<link rel="stylesheet" href="https://unpkg.com/aos@2.3.4/dist/aos.css" />
 
 
   <!-- ==========================================
@@ -109,7 +108,7 @@
     "name": "Veloura Transfers",
     "@id": "https://www.velouratransfers.ch/",
     "url": "https://www.velouratransfers.ch/",
-    "image": "https://www.velouratransfers.ch/img/og-image.webp",
+    "image": "https://www.velouratransfers.ch/img/index/skiresort.webp",
     "telephone": "+41 79 328 80 07",
     "email": "info@velouratransfers.ch",
     "priceRange": "CHF 80 - 1200",
@@ -241,6 +240,7 @@
 </script>
   
 
+<link rel="stylesheet" href="footer.css" />
 </head>
 
 
@@ -346,7 +346,7 @@
 
   <!-- HERO -->
   <section class="a2-hero" data-aos="fade-up">
-    <img class="a2-hero-bg" src="img/index/skiresort.webp" alt="Veloura Transfers – Skiresort Transfers" >
+    <img class="a2-hero-bg" src="img/index/skiresort.webp" width="4032" height="3024" fetchpriority="high" decoding="async" alt="Veloura Transfers – Skiresort Transfers" >
     <div class="a2-hero-glass" data-aos="zoom-in" data-aos-delay="120">
       <h1>Skiresort Transfers in der ganzen Schweiz</h1>
     <p>P:
@@ -364,7 +364,7 @@ Wintertransfers von jedem Ort in der Schweiz – sicher, komfortabel und mit win
 
     <!-- BIG ASYMMETRIC IMAGE -->
     <figure class="ct-skiinfo-luxe-img" data-aos="fade-up">
-      <img src="img/services/ski.webp" alt="Ski & Equipment Transport">
+      <img src="img/services/ski.webp" width="899" height="899" loading="lazy" decoding="async" alt="Ski & Equipment Transport">
     </figure>
 
     <!-- FLOATING INFO BOX -->
@@ -1006,7 +1006,7 @@ initCarSlider("ecoPrev", "ecoNext", ".eco-track");
 <script src="footer.js"></script>
 <script>
   // Footer laden
-  fetch("footer_de.html")   <!-- HIER einfach ändern nach Sprache -->
+  fetch("footer_de.html")
     .then(res => res.text())
     .then(html => {
       document.getElementById("footer").innerHTML = html;
@@ -1017,7 +1017,7 @@ initCarSlider("ecoPrev", "ecoNext", ".eco-track");
 
 
 
-<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
 <script>
   AOS.init({
     once: true,          // Animation nur einmal

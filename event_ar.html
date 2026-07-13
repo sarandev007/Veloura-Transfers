@@ -1,7 +1,10 @@
 <!DOCTYPE html>
-<html lang="ar">
+<html lang="ar" dir="rtl">
 <head>
-  <!-- ========== FAVICONS ========== -->
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="robots" content="index,follow,max-image-preview:large,max-snippet:-1,max-video-preview:-1" />
+<!-- ========== FAVICONS ========== -->
 <link rel="icon" type="image/png" sizes="16x16" href="/favicon/favicon-16x16.png">
 <link rel="icon" type="image/png" sizes="32x32" href="/favicon/favicon-32x32.png">
 <link rel="icon" type="image/png" sizes="96x96" href="/favicon/favicon-96x96.png">
@@ -34,20 +37,14 @@
   <!-- ==========================================
        🔧 الإعدادات الأساسية
   =========================================== -->
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <html lang="ar" dir="rtl">
 
   <!-- ==========================================
        🏆 العنوان + الوصف (SEO ممتاز)
   =========================================== -->
-  <title>خدمة نقل الفعاليات والمجموعات في سويسرا | Veloura Transfers – شركات، حفلات زفاف و VIP</title>
+  <title>نقل الفعاليات والمجموعات في سويسرا | Veloura Transfers</title>
 
   <meta name="description"
         content="خدمة نقل فاخرة للفعاليات والمجموعات في جميع أنحاء سويسرا. فعاليات الشركات، حفلات الزفاف، الحفلات، المعارض، الفعاليات الرياضية والمجموعات الخاصة. خدمة سائق 24/7." />
-
-  <meta name="keywords"
-        content="نقل فعاليات سويسرا, نقل مجموعات زيورخ, سائق حفلات زفاف سويسرا, نقل شركات سويسرا, Event Shuttle سويسرا, نقل حفلات زيورخ, نقل معارض سويسرا, فعاليات رياضية سويسرا, نقل VIP مجموعات, Veloura Transfers" />
 
   <meta name="author" content="Veloura Transfers" />
   <meta name="theme-color" content="#c7a347" />
@@ -62,7 +59,7 @@
   <link rel="alternate" hreflang="en" href="https://www.velouratransfers.ch/event_en.html" />
   <link rel="alternate" hreflang="id" href="https://www.velouratransfers.ch/event_id.html" />
   <link rel="alternate" hreflang="ar" href="https://www.velouratransfers.ch/event_ar.html" />
-  <link rel="alternate" hreflang="x-default" href="https://www.velouratransfers.ch/event_ar.html" />
+  <link rel="alternate" hreflang="x-default" href="https://www.velouratransfers.ch/event.html" />
 
 
   <!-- ==========================================
@@ -72,9 +69,10 @@
   <meta property="og:description" content="نقل فعاليات الشركات وحفلات الزفاف والحفلات والمجموعات الخاصة. خدمة ممتازة وآمنة ومتاحة 24/7." />
   <meta property="og:type" content="website" />
   <meta property="og:url" content="https://www.velouratransfers.ch/event_ar.html" />
-  <meta property="og:image" content="https://www.velouratransfers.ch/img/og-image.webp" />
+  <meta property="og:image" content="https://www.velouratransfers.ch/img/index/gruppenfahrten.webp" />
   <meta property="og:image:alt" content="Veloura Transfers – نقل الفعاليات والمجموعات" />
   <meta property="og:site_name" content="Veloura Transfers" />
+  <meta property="og:locale" content="ar_AR" />
 
 
   <!-- ==========================================
@@ -83,7 +81,7 @@
   <meta name="twitter:card" content="summary_large_image" />
   <meta name="twitter:title" content="خدمة نقل الفعاليات والمجموعات – Chauffeur فاخر" />
   <meta name="twitter:description" content="خدمة نقل مجموعات وفعاليات للشركات، حفلات الزفاف، الحفلات والفعاليات الخاصة." />
-  <meta name="twitter:image" content="https://www.velouratransfers.ch/img/og-image.webp" />
+  <meta name="twitter:image" content="https://www.velouratransfers.ch/img/index/gruppenfahrten.webp" />
   <meta name="twitter:image:alt" content="Veloura Transfers – Event Shuttle" />
 
 
@@ -96,7 +94,8 @@
 
   <link rel="stylesheet" href="general.css" />
   <link rel="stylesheet" href="event.css" />
-  <link rel="stylesheet" href="https://unpkg.com/aos@2.3.4/dist/aos.css" />
+  <link rel="preconnect" href="https://unpkg.com" crossorigin />
+<link rel="stylesheet" href="https://unpkg.com/aos@2.3.4/dist/aos.css" />
 
 
   <!-- ==========================================
@@ -109,7 +108,7 @@
     "name": "Veloura Transfers",
     "@id": "https://www.velouratransfers.ch/",
     "url": "https://www.velouratransfers.ch/",
-    "image": "https://www.velouratransfers.ch/img/og-image.webp",
+    "image": "https://www.velouratransfers.ch/img/index/gruppenfahrten.webp",
     "telephone": "+41 79 328 80 07",
     "email": "info@velouratransfers.ch",
     "priceRange": "CHF 80 - 1200",
@@ -261,6 +260,7 @@
 
 
 
+<link rel="stylesheet" href="footer.css" />
 </head>
 
 
@@ -367,8 +367,8 @@
 
 <!-- HERO -->
 <section class="a2-hero" data-aos="fade-up" dir="rtl">
-  <img class="a2-hero-bg" src="img/index/gruppenfahrten.webp" 
-       alt="كرون ترانسفيرز – خدمات النقل للمناسبات والمجموعات في سويسرا">
+  <img class="a2-hero-bg" src="img/index/gruppenfahrten.webp" width="1084" height="1084" fetchpriority="high" decoding="async" 
+       alt="Veloura Transfers – خدمات النقل للمناسبات والمجموعات في سويسرا">
   <div class="a2-hero-glass" data-aos="zoom-in" data-aos-delay="120">
     <h1>خدمات النقل للمناسبات والمجموعات في جميع أنحاء سويسرا</h1>
     <p>
@@ -390,7 +390,7 @@
 
     <!-- IMAGE -->
     <figure class="ct-eventintro-img" data-aos="fade-right">
-      <img src="img/index/gruppenfahrten.webp" 
+      <img src="img/index/gruppenfahrten.webp" width="1084" height="1084" loading="lazy" decoding="async" 
            alt="خدمة السائق للمناسبات والمجموعات في سويسرا">
     </figure>
 
@@ -400,7 +400,7 @@
       <h2>نقل للمناسبات والمجموعات لكل أنواع الفعاليات</h2>
 
       <p>
-        تقدم كرون ترانسفيرز خدمات نقل احترافية  
+        تقدم Veloura Transfers خدمات نقل احترافية  
         <strong>للمناسبات والمجموعات في جميع أنحاء سويسرا</strong> –  
         مثالية لـ<strong>حفلات الزفاف</strong>، <strong>الحفلات الموسيقية</strong>،  
         <strong>فعاليات الشركات</strong>، <strong>أعياد الميلاد</strong>،  
@@ -459,7 +459,7 @@
 
     <!-- RIGHT IMAGE -->
     <div class="ct-mat3-image" data-aos="fade-left">
-      <img src="img/services/hebebühne.webp" 
+      <img src="img/services/hebebuehne.webp" width="1000" height="666" loading="lazy" decoding="async" 
            alt="نقل المعدات في سويسرا – شاحنة بمنصة رفع هيدروليكية">
     </div>
 
@@ -1103,7 +1103,7 @@ initCarSlider("ecoPrev", "ecoNext", ".eco-track");
 <script src="footer.js"></script>
 <script>
   // Footer laden
-  fetch("footer_ar.html")   <!-- HIER einfach ändern nach Sprache -->
+  fetch("footer_ar.html")
     .then(res => res.text())
     .then(html => {
       document.getElementById("footer").innerHTML = html;
@@ -1114,7 +1114,7 @@ initCarSlider("ecoPrev", "ecoNext", ".eco-track");
 
 
 
-<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
 <script>
   AOS.init({
     once: true,          // Animation nur einmal

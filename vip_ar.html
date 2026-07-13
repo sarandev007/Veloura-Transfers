@@ -1,7 +1,10 @@
 <!DOCTYPE html>
-<html lang="ar">
+<html lang="ar" dir="rtl">
 <head>
-  <!-- ========== FAVICONS ========== -->
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="robots" content="index,follow,max-image-preview:large,max-snippet:-1,max-video-preview:-1" />
+<!-- ========== FAVICONS ========== -->
 <link rel="icon" type="image/png" sizes="16x16" href="/favicon/favicon-16x16.png">
 <link rel="icon" type="image/png" sizes="32x32" href="/favicon/favicon-32x32.png">
 <link rel="icon" type="image/png" sizes="96x96" href="/favicon/favicon-96x96.png">
@@ -34,20 +37,14 @@
   <!-- ==========================================
        🔧 الإعدادات الأساسية
   =========================================== -->
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <html lang="ar" dir="rtl">
 
   <!-- ==========================================
        🏆 العنوان + الوصف (SEO ممتاز)
   =========================================== -->
-  <title>خدمة سائق VIP والأعمال في سويسرا | Veloura Transfers – للرؤساء التنفيذيين وطائرات الـPrivate Jet</title>
+  <title>خدمة سائق VIP في سويسرا | Veloura Transfers</title>
 
   <meta name="description"
         content="خدمة سائق VIP والأعمال في سويسرا. نقل الرؤساء التنفيذيين، FBO، طائرات الـPrivate Jet، رحلات العمل، سيارات فاخرة وخدمة 24/7 بأعلى مستوى من الخصوصية." />
-
-  <meta name="keywords"
-        content="سائق VIP سويسرا, سائق أعمال زيورخ, سائق رئيس تنفيذي, سائق طائرة خاصة سويسرا, سائق FBO زيورخ, نقل كبار الشخصيات, ليموزين فاخرة سويسرا, سائق شركات سويسرا, خدمة Chauffeur مميزة, سائق مطار VIP" />
 
   <meta name="author" content="Veloura Transfers" />
   <meta name="theme-color" content="#c7a347" />
@@ -62,7 +59,7 @@
   <link rel="alternate" hreflang="en" href="https://www.velouratransfers.ch/vip_en.html" />
   <link rel="alternate" hreflang="id" href="https://www.velouratransfers.ch/vip_id.html" />
   <link rel="alternate" hreflang="ar" href="https://www.velouratransfers.ch/vip_ar.html" />
-  <link rel="alternate" hreflang="x-default" href="https://www.velouratransfers.ch/vip_ar.html" />
+  <link rel="alternate" hreflang="x-default" href="https://www.velouratransfers.ch/vip.html" />
 
 
   <!-- ==========================================
@@ -72,9 +69,10 @@
   <meta property="og:description" content="خدمة Chauffeur فاخرة للرؤساء التنفيذيين وكبار الشخصيات والمسافرين عبر طائرات الـPrivate Jet." />
   <meta property="og:type" content="website" />
   <meta property="og:url" content="https://www.velouratransfers.ch/vip_ar.html" />
-  <meta property="og:image" content="https://www.velouratransfers.ch/img/og-image.webp" />
+  <meta property="og:image" content="https://www.velouratransfers.ch/img/index/vip.webp" />
   <meta property="og:image:alt" content="Veloura Transfers – خدمة سائق VIP سويسرا" />
   <meta property="og:site_name" content="Veloura Transfers" />
+  <meta property="og:locale" content="ar_AR" />
 
 
   <!-- ==========================================
@@ -83,7 +81,7 @@
   <meta name="twitter:card" content="summary_large_image" />
   <meta name="twitter:title" content="خدمة سائق VIP والأعمال – خدمة تنفيذية فاخرة" />
   <meta name="twitter:description" content="خدمة سائق خاصة للرؤساء التنفيذيين، كبار الشخصيات ومسافري الـPrivate Jet. رفاهية كاملة ودعم 24/7." />
-  <meta name="twitter:image" content="https://www.velouratransfers.ch/img/og-image.webp" />
+  <meta name="twitter:image" content="https://www.velouratransfers.ch/img/index/vip.webp" />
   <meta name="twitter:image:alt" content="Veloura Transfers – Business Chauffeur Zurich" />
 
 
@@ -96,7 +94,8 @@
 
   <link rel="stylesheet" href="general.css" />
   <link rel="stylesheet" href="vip.css" />
-  <link rel="stylesheet" href="https://unpkg.com/aos@2.3.4/dist/aos.css" />
+  <link rel="preconnect" href="https://unpkg.com" crossorigin />
+<link rel="stylesheet" href="https://unpkg.com/aos@2.3.4/dist/aos.css" />
 
 
   <!-- ==========================================
@@ -109,7 +108,7 @@
     "name": "Veloura Transfers",
     "@id": "https://www.velouratransfers.ch/",
     "url": "https://www.velouratransfers.ch/",
-    "image": "https://www.velouratransfers.ch/img/og-image.webp",
+    "image": "https://www.velouratransfers.ch/img/index/vip.webp",
     "telephone": "+41 79 328 80 07",
     "email": "info@velouratransfers.ch",
     "priceRange": "CHF 80 - 1200",
@@ -260,6 +259,7 @@
 
 
 
+<link rel="stylesheet" href="footer.css" />
 </head>
 
 
@@ -365,7 +365,7 @@
 
 <!-- HERO -->
 <section class="a2-hero" dir="rtl" data-aos="fade-up">
-  <img class="a2-hero-bg" src="img/index/vip.webp" alt="Veloura Transfers – خدمة سائق رجال الأعمال وكبار الشخصيات">
+  <img class="a2-hero-bg" src="img/index/vip.webp" width="5845" height="3897" fetchpriority="high" decoding="async" alt="Veloura Transfers – خدمة سائق رجال الأعمال وكبار الشخصيات">
   <div class="a2-hero-glass" data-aos="zoom-in" data-aos-delay="120">
 
     <h1>خدمة سائق رجال الأعمال وكبار الشخصيات في سويسرا</h1>
@@ -389,7 +389,7 @@
 
     <!-- IMAGE LEFT -->
     <figure class="ct-vipclean-img" data-aos="fade-right">
-      <img src="img/services/vip.webp" alt="Veloura Transfers – خدمة سائق رجال الأعمال وكبار الشخصيات">
+      <img src="img/services/vip.webp" width="2048" height="1536" loading="lazy" decoding="async" alt="Veloura Transfers – خدمة سائق رجال الأعمال وكبار الشخصيات">
     </figure>
 
     <!-- TEXT RIGHT -->
@@ -980,7 +980,7 @@ initCarSlider("ecoPrev", "ecoNext", ".eco-track");
 <script src="footer.js"></script>
 <script>
   // Footer laden
-  fetch("footer_ar.html")   <!-- HIER einfach ändern nach Sprache -->
+  fetch("footer_ar.html")
     .then(res => res.text())
     .then(html => {
       document.getElementById("footer").innerHTML = html;
@@ -991,7 +991,7 @@ initCarSlider("ecoPrev", "ecoNext", ".eco-track");
 
 
 
-<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
 <script>
   AOS.init({
     once: true,          // Animation nur einmal

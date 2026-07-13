@@ -1,7 +1,10 @@
 <!DOCTYPE html>
 <html lang="de">
 <head>
-  <!-- ========== FAVICONS ========== -->
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="robots" content="index,follow,max-image-preview:large,max-snippet:-1,max-video-preview:-1" />
+<!-- ========== FAVICONS ========== -->
 <link rel="icon" type="image/png" sizes="16x16" href="/favicon/favicon-16x16.png">
 <link rel="icon" type="image/png" sizes="32x32" href="/favicon/favicon-32x32.png">
 <link rel="icon" type="image/png" sizes="96x96" href="/favicon/favicon-96x96.png">
@@ -34,20 +37,14 @@
   <!-- ==========================================
        🔧 Grundeinstellungen
   =========================================== -->
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <html lang="de">
 
   <!-- ==========================================
        🏆 TITLE + DESCRIPTION (≤155 Zeichen)
   =========================================== -->
-  <title>Sightseeing Touren Schweiz | Veloura Transfers – Zürich, Luzern, Interlaken & Zermatt</title>
+  <title>Private Touren Schweiz | Veloura Transfers</title>
 
   <meta name="description"
         content="Private Sightseeing Touren in der Schweiz. Zürich, Luzern, Interlaken, Jungfraujoch, Zermatt & Rheinfall. Premium Chauffeur & individuelle Tourplanung." />
-
-  <meta name="keywords"
-        content="Sightseeing Tour Schweiz, Zürich Stadtrundfahrt, Luzern Tour, Interlaken Tour, Jungfraujoch Tour, Zermatt Tour, Rheinfall Tour, private Schweiz Tour, Chauffeur Guided Tour Schweiz, Swiss private tour guide" />
 
   <meta name="author" content="Veloura Transfers" />
   <meta name="theme-color" content="#c7a347" />
@@ -72,9 +69,10 @@
   <meta property="og:description" content="Private Touren zu Zürich, Luzern, Interlaken, Zermatt, Jungfrau & Rheinfall. Premium & individuell." />
   <meta property="og:type" content="website" />
   <meta property="og:url" content="https://www.velouratransfers.ch/tour.html" />
-  <meta property="og:image" content="https://www.velouratransfers.ch/img/og-image.webp" />
+  <meta property="og:image" content="https://www.velouratransfers.ch/img/index/sightseeing.webp" />
   <meta property="og:image:alt" content="Veloura Transfers – Sightseeing Tour Schweiz" />
   <meta property="og:site_name" content="Veloura Transfers" />
+  <meta property="og:locale" content="de_CH" />
 
 
   <!-- ==========================================
@@ -83,7 +81,7 @@
   <meta name="twitter:card" content="summary_large_image" />
   <meta name="twitter:title" content="Sightseeing Touren Schweiz – Private Chauffeurservice" />
   <meta name="twitter:description" content="Geführte Privattouren durch die Schweiz mit Premium Chauffeur. Zürich, Luzern, Interlaken, Zermatt & mehr." />
-  <meta name="twitter:image" content="https://www.velouratransfers.ch/img/og-image.webp" />
+  <meta name="twitter:image" content="https://www.velouratransfers.ch/img/index/sightseeing.webp" />
   <meta name="twitter:image:alt" content="Veloura Transfers – Schweiz Rundfahrt" />
 
 
@@ -96,7 +94,8 @@
 
   <link rel="stylesheet" href="general.css" />
   <link rel="stylesheet" href="tour.css" />
-  <link rel="stylesheet" href="https://unpkg.com/aos@2.3.4/dist/aos.css" />
+  <link rel="preconnect" href="https://unpkg.com" crossorigin />
+<link rel="stylesheet" href="https://unpkg.com/aos@2.3.4/dist/aos.css" />
 
 
   <!-- ==========================================
@@ -109,7 +108,7 @@
     "name": "Veloura Transfers",
     "@id": "https://www.velouratransfers.ch/",
     "url": "https://www.velouratransfers.ch/",
-    "image": "https://www.velouratransfers.ch/img/og-image.webp",
+    "image": "https://www.velouratransfers.ch/img/index/sightseeing.webp",
     "telephone": "+41 79 328 80 07",
     "email": "info@velouratransfers.ch",
     "priceRange": "CHF 80 - 1200",
@@ -260,6 +259,7 @@
 </script>
 
 
+<link rel="stylesheet" href="footer.css" />
 </head>
 
 
@@ -365,7 +365,7 @@
 
 <!-- HERO -->
 <section class="a2-hero" data-aos="fade-up">
-  <img class="a2-hero-bg" src="img/index/sightseeing.webp" alt="Veloura Transfers – Sightseeing-Touren" >
+  <img class="a2-hero-bg" src="img/index/sightseeing.webp" width="3648" height="3648" fetchpriority="high" decoding="async" alt="Veloura Transfers – Sightseeing-Touren" >
   <div class="a2-hero-glass" data-aos="zoom-in" data-aos-delay="120">
     
     <h1>Private Sightseeing-Touren in der ganzen Schweiz</h1>
@@ -1114,7 +1114,7 @@ initCarSlider("ecoPrev", "ecoNext", ".eco-track");
 <script src="footer.js"></script>
 <script>
   // Footer laden
-  fetch("footer_de.html")   <!-- HIER einfach ändern nach Sprache -->
+  fetch("footer_de.html")
     .then(res => res.text())
     .then(html => {
       document.getElementById("footer").innerHTML = html;
@@ -1127,7 +1127,7 @@ initCarSlider("ecoPrev", "ecoNext", ".eco-track");
 
 
 
-<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
 <script>
   AOS.init({
     once: true,          // Animation nur einmal

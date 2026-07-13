@@ -1,7 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <!-- ========== FAVICONS ========== -->
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="robots" content="index,follow,max-image-preview:large,max-snippet:-1,max-video-preview:-1" />
+<!-- ========== FAVICONS ========== -->
 <link rel="icon" type="image/png" sizes="16x16" href="/favicon/favicon-16x16.png">
 <link rel="icon" type="image/png" sizes="32x32" href="/favicon/favicon-32x32.png">
 <link rel="icon" type="image/png" sizes="96x96" href="/favicon/favicon-96x96.png">
@@ -34,20 +37,14 @@
   <!-- ==========================================
        🔧 BASIC SETTINGS
   =========================================== -->
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <html lang="en">
 
   <!-- ==========================================
        🏆 TITLE + META DESCRIPTION (≤155 chars)
   =========================================== -->
-  <title>Event & Group Transportation Switzerland | Veloura Transfers – Corporate, Weddings & VIP</title>
+  <title>Event and Group Transfers Switzerland | Veloura Transfers</title>
 
   <meta name="description"
         content="Premium event & group transportation across Switzerland. Corporate events, weddings, concerts, exhibitions, sports events & private groups. 24/7 chauffeur service." />
-
-  <meta name="keywords"
-        content="event transportation Switzerland, group transfers Zurich, corporate event transport, wedding chauffeur Zurich, event shuttle Switzerland, concert transfer Zurich, exhibition shuttle Switzerland, sports event transportation, VIP group transfer, Veloura Transfers" />
 
   <meta name="author" content="Veloura Transfers" />
   <meta name="theme-color" content="#c7a347" />
@@ -62,7 +59,7 @@
   <link rel="alternate" hreflang="en" href="https://www.velouratransfers.ch/event_en.html" />
   <link rel="alternate" hreflang="id" href="https://www.velouratransfers.ch/event_id.html" />
   <link rel="alternate" hreflang="ar" href="https://www.velouratransfers.ch/event_ar.html" />
-  <link rel="alternate" hreflang="x-default" href="https://www.velouratransfers.ch/event_en.html" />
+  <link rel="alternate" hreflang="x-default" href="https://www.velouratransfers.ch/event.html" />
 
 
   <!-- ==========================================
@@ -72,9 +69,10 @@
   <meta property="og:description" content="Corporate, wedding & private event transfers. Premium fleet, safe, reliable & 24/7 available." />
   <meta property="og:type" content="website" />
   <meta property="og:url" content="https://www.velouratransfers.ch/event_en.html" />
-  <meta property="og:image" content="https://www.velouratransfers.ch/img/og-image.webp" />
+  <meta property="og:image" content="https://www.velouratransfers.ch/img/index/gruppenfahrten.webp" />
   <meta property="og:image:alt" content="Veloura Transfers – Event & Group Chauffeur Service" />
   <meta property="og:site_name" content="Veloura Transfers" />
+  <meta property="og:locale" content="en_GB" />
 
 
   <!-- ==========================================
@@ -83,7 +81,7 @@
   <meta name="twitter:card" content="summary_large_image" />
   <meta name="twitter:title" content="Event & Group Transportation Switzerland – Premium Chauffeur Service" />
   <meta name="twitter:description" content="Corporate events, weddings, concerts & group transfers – luxury & 24/7." />
-  <meta name="twitter:image" content="https://www.velouratransfers.ch/img/og-image.webp" />
+  <meta name="twitter:image" content="https://www.velouratransfers.ch/img/index/gruppenfahrten.webp" />
   <meta name="twitter:image:alt" content="Veloura Transfers – Group Transfers Switzerland" />
 
 
@@ -96,7 +94,8 @@
 
   <link rel="stylesheet" href="general.css" />
   <link rel="stylesheet" href="event.css" />
-  <link rel="stylesheet" href="https://unpkg.com/aos@2.3.4/dist/aos.css" />
+  <link rel="preconnect" href="https://unpkg.com" crossorigin />
+<link rel="stylesheet" href="https://unpkg.com/aos@2.3.4/dist/aos.css" />
 
 
   <!-- ==========================================
@@ -109,7 +108,7 @@
     "name": "Veloura Transfers",
     "@id": "https://www.velouratransfers.ch/",
     "url": "https://www.velouratransfers.ch/",
-    "image": "https://www.velouratransfers.ch/img/og-image.webp",
+    "image": "https://www.velouratransfers.ch/img/index/gruppenfahrten.webp",
     "telephone": "+41 79 328 80 07",
     "email": "info@velouratransfers.ch",
     "priceRange": "CHF 80 - 1200",
@@ -260,6 +259,7 @@
 
 
 
+<link rel="stylesheet" href="footer.css" />
 </head>
 
 
@@ -365,7 +365,7 @@
 
 <!-- HERO -->
 <section class="a2-hero" data-aos="fade-up">
-  <img class="a2-hero-bg" src="img/index/gruppenfahrten.webp" alt="Veloura Transfers – Event & Group Transportation Switzerland">
+  <img class="a2-hero-bg" src="img/index/gruppenfahrten.webp" width="1084" height="1084" fetchpriority="high" decoding="async" alt="Veloura Transfers – Event & Group Transportation Switzerland">
   <div class="a2-hero-glass" data-aos="zoom-in" data-aos-delay="120">
     <h1>Event & Group Transportation Across Switzerland</h1>
     <p>
@@ -387,7 +387,7 @@
 
     <!-- IMAGE -->
     <figure class="ct-eventintro-img" data-aos="fade-right">
-      <img src="img/index/gruppenfahrten.webp" 
+      <img src="img/index/gruppenfahrten.webp" width="1084" height="1084" loading="lazy" decoding="async" 
            alt="Event & Group Chauffeur Service Switzerland">
     </figure>
 
@@ -452,7 +452,7 @@
 
     <!-- RIGHT IMAGE -->
     <div class="ct-mat3-image" data-aos="fade-left">
-      <img src="img/services/hebebühne.webp" 
+      <img src="img/services/hebebuehne.webp" width="1000" height="666" loading="lazy" decoding="async" 
            alt="Material Transport Switzerland – Liftgate Transporter">
     </div>
 
@@ -1036,7 +1036,7 @@ initCarSlider("ecoPrev", "ecoNext", ".eco-track");
 <script src="footer.js"></script>
 <script>
   // Footer laden
-  fetch("footer_en.html")   <!-- HIER einfach ändern nach Sprache -->
+  fetch("footer_en.html")
     .then(res => res.text())
     .then(html => {
       document.getElementById("footer").innerHTML = html;
@@ -1047,7 +1047,7 @@ initCarSlider("ecoPrev", "ecoNext", ".eco-track");
 
 
 
-<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
 <script>
   AOS.init({
     once: true,          // Animation nur einmal

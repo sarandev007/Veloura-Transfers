@@ -1,7 +1,10 @@
 <!DOCTYPE html>
-<html lang="ar">
+<html lang="ar" dir="rtl">
 <head>
-  <!-- ========== FAVICONS ========== -->
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="robots" content="index,follow,max-image-preview:large,max-snippet:-1,max-video-preview:-1" />
+<!-- ========== FAVICONS ========== -->
 <link rel="icon" type="image/png" sizes="16x16" href="/favicon/favicon-16x16.png">
 <link rel="icon" type="image/png" sizes="32x32" href="/favicon/favicon-32x32.png">
 <link rel="icon" type="image/png" sizes="96x96" href="/favicon/favicon-96x96.png">
@@ -36,7 +39,6 @@
   =========================================== -->
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <html lang="ar" dir="rtl">
 
   <!-- ==========================================
        🏆 العنوان + الوصف
@@ -59,7 +61,7 @@
   <link rel="alternate" hreflang="en" href="https://www.velouratransfers.ch/impressum_en.html">
   <link rel="alternate" hreflang="id" href="https://www.velouratransfers.ch/impressum_id.html">
   <link rel="alternate" hreflang="ar" href="https://www.velouratransfers.ch/impressum_ar.html">
-  <link rel="alternate" hreflang="x-default" href="https://www.velouratransfers.ch/impressum_ar.html">
+  <link rel="alternate" hreflang="x-default" href="https://www.velouratransfers.ch/impressum.html">
 
 
   <!-- ==========================================
@@ -69,9 +71,10 @@
   <meta property="og:description" content="المعلومات القانونية الرسمية وتفاصيل الشركة وفقًا للتشريعات السويسرية.">
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://www.velouratransfers.ch/impressum_ar.html">
-  <meta property="og:image" content="https://www.velouratransfers.ch/img/og-image.webp">
+  <meta property="og:image" content="https://www.velouratransfers.ch/img/index/indexhero.webp">
   <meta property="og:image:alt" content="Veloura Transfers – الإشعار القانوني">
   <meta property="og:site_name" content="Veloura Transfers">
+  <meta property="og:locale" content="ar_AR" />
 
 
   <!-- ==========================================
@@ -80,7 +83,7 @@
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="الإشعار القانوني – Veloura Transfers">
   <meta name="twitter:description" content="الإفصاح القانوني والمعلومات الرسمية للشركة وفق القانون السويسري.">
-  <meta name="twitter:image" content="https://www.velouratransfers.ch/img/og-image.webp">
+  <meta name="twitter:image" content="https://www.velouratransfers.ch/img/index/indexhero.webp">
   <meta name="twitter:image:alt" content="Veloura Transfers Legal Notice">
 
 
@@ -91,7 +94,8 @@
   <link rel="preload" href="footer.css" as="style">
   <link rel="stylesheet" href="general.css">
   <link rel="stylesheet" href="footer.css">
-  <link rel="stylesheet" href="https://unpkg.com/aos@2.3.4/dist/aos.css">
+  <link rel="preconnect" href="https://unpkg.com" crossorigin />
+<link rel="stylesheet" href="https://unpkg.com/aos@2.3.4/dist/aos.css">
 
 
   <!-- ==========================================
@@ -103,7 +107,7 @@
     "@type": "LocalBusiness",
     "name": "Veloura Transfers",
     "url": "https://www.velouratransfers.ch/",
-    "image": "https://www.velouratransfers.ch/img/og-image.webp",
+    "image": "https://www.velouratransfers.ch/img/index/indexhero.webp",
     "telephone": "+41 79 328 80 07",
     "email": "info@velouratransfers.ch",
     "address": {
@@ -124,14 +128,15 @@
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
-    "@type": "LegalService",
+    "@type": "WebPage",
     "name": "Veloura Transfers – الإشعار القانوني",
     "url": "https://www.velouratransfers.ch/impressum_ar.html",
     "description": "الإشعار القانوني الرسمي والتفاصيل القانونية الخاصة بـ Veloura Transfers وفق القوانين السويسرية.",
-    "areaServed": "CH",
-    "contactPoint": {
-      "@type": "ContactPoint",
-      "contactType": "legal",
+    "inLanguage": "ar",
+    "about": {
+      "@type": "LocalBusiness",
+      "@id": "https://www.velouratransfers.ch/",
+      "name": "Veloura Transfers",
       "telephone": "+41 79 328 80 07",
       "email": "info@velouratransfers.ch"
     }
@@ -186,7 +191,7 @@
 <script src="footer.js"></script>
 <script>
   // Footer laden
-  fetch("footer_ar.html")   <!-- HIER einfach ändern nach Sprache -->
+  fetch("footer_ar.html")
     .then(res => res.text())
     .then(html => {
       document.getElementById("footer").innerHTML = html;
@@ -197,7 +202,7 @@
 
 
 
-<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
 <script>
   AOS.init({
     once: true,          // Animation nur einmal

@@ -1,7 +1,10 @@
 <!DOCTYPE html>
 <html lang="de">
 <head>
-  <!-- ========== FAVICONS ========== -->
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="robots" content="index,follow,max-image-preview:large,max-snippet:-1,max-video-preview:-1" />
+<!-- ========== FAVICONS ========== -->
 <link rel="icon" type="image/png" sizes="16x16" href="/favicon/favicon-16x16.png">
 <link rel="icon" type="image/png" sizes="32x32" href="/favicon/favicon-32x32.png">
 <link rel="icon" type="image/png" sizes="96x96" href="/favicon/favicon-96x96.png">
@@ -34,20 +37,14 @@
   <!-- ==========================================
        🔧 Grundeinstellungen
   =========================================== -->
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <html lang="de">
 
   <!-- ==========================================
        🏆 TITLE + DESCRIPTION (SEO High-Intent)
   =========================================== -->
-  <title>Hotel- & Flughafen Transfers Zürich | Veloura Transfers – Pünktlich, Premium & Zuverlässig</title>
+  <title>Flughafentransfer Zürich | Veloura Transfers</title>
 
   <meta name="description"
         content="Hotel- & Flughafen Transfers in Zürich und der ganzen Schweiz. Pünktlich, diskret und premium. Meet & Greet, Flugtracking, Koffertransport & 24/7 Chauffeurservice." />
-
-  <meta name="keywords"
-        content="Flughafen Transfer Zürich, Hotel Transfer Zürich, Airport Shuttle Zürich, Chauffeurservice Zürich Airport, Gepäcktransport Schweiz, Veloura Transfers, Meet & Greet Zürich, Business Transfer Zürich, Koffertransport Schweiz, Premium Chauffeurservice" />
 
 
   <meta name="author" content="Veloura Transfers" />
@@ -73,9 +70,10 @@
   <meta property="og:description" content="Pünktliche Hotel- & Flughafen Transfers in Zürich. Meet & Greet, Flugtracking, Premium-Fuhrpark & 24/7 Chauffeurservice." />
   <meta property="og:type" content="website" />
   <meta property="og:url" content="https://www.velouratransfers.ch/hotel-airport-luggage-transfers.html" />
-  <meta property="og:image" content="https://www.velouratransfers.ch/img/og-image.webp" />
+  <meta property="og:image" content="https://www.velouratransfers.ch/img/index/airporttransfer.webp" />
   <meta property="og:image:alt" content="Veloura Transfers – Premium Flughafen Transfer Zürich" />
   <meta property="og:site_name" content="Veloura Transfers" />
+  <meta property="og:locale" content="de_CH" />
 
 
   <!-- ==========================================
@@ -84,7 +82,7 @@
   <meta name="twitter:card" content="summary_large_image" />
   <meta name="twitter:title" content="Hotel- & Flughafen Transfers Zürich – Premium Chauffeurservice" />
   <meta name="twitter:description" content="Premium Transfers zwischen Zürich Airport, Hotels & Business-Locations. 24/7, diskret und zuverlässig." />
-  <meta name="twitter:image" content="https://www.velouratransfers.ch/img/og-image.webp" />
+  <meta name="twitter:image" content="https://www.velouratransfers.ch/img/index/airporttransfer.webp" />
   <meta name="twitter:image:alt" content="Veloura Transfers – Zürich Airport Transfers" />
 
 
@@ -97,7 +95,8 @@
 
   <link rel="stylesheet" href="general.css" />
   <link rel="stylesheet" href="hotel-airport-luggage-transfers.css" />
-  <link rel="stylesheet" href="https://unpkg.com/aos@2.3.4/dist/aos.css" />
+  <link rel="preconnect" href="https://unpkg.com" crossorigin />
+<link rel="stylesheet" href="https://unpkg.com/aos@2.3.4/dist/aos.css" />
 
 
 
@@ -111,7 +110,7 @@
     "name": "Veloura Transfers",
     "@id": "https://www.velouratransfers.ch/",
     "url": "https://www.velouratransfers.ch/",
-    "image": "https://www.velouratransfers.ch/img/og-image.webp",
+    "image": "https://www.velouratransfers.ch/img/index/airporttransfer.webp",
     "telephone": "+41 79 328 80 07",
     "email": "info@velouratransfers.ch",
     "priceRange": "CHF 80 - 1200",
@@ -235,6 +234,7 @@
 </script>
 
 
+<link rel="stylesheet" href="footer.css" />
 </head>
 
 
@@ -341,7 +341,7 @@
 
   <!-- HERO -->
   <section class="a2-hero" data-aos="fade-up">
-    <img class="a2-hero-bg" src="img/index/airporttransfer.webp" alt="Veloura Transfers – Hotel und Flughafen Transfers" >
+    <img class="a2-hero-bg" src="img/index/airporttransfer.webp" width="5972" height="3981" fetchpriority="high" decoding="async" alt="Veloura Transfers – Hotel und Flughafen Transfers" >
     <div class="a2-hero-glass" data-aos="zoom-in" data-aos-delay="120">
       <h1>Hotel- & Flughafen Transfers in Zürich und der ganzen Schweiz</h1>
     <p>Zuverlässige Transfers zwischen Flughafen Zürich, Hotels & Businesslocations.</p>
@@ -377,7 +377,7 @@
       <!-- ANGLED IMAGE -->
       <div class="ct-lug-image" data-aos="fade-right">
         <div class="ct-lug-img-inner">
-          <img src="img/services/hotel.webp" 
+          <img src="img/services/hotel.webp" width="1200" height="1200" loading="lazy" decoding="async" 
                alt="Internationaler Koffertransport Veloura Transfers Zürich">
         </div>
       </div>
@@ -1120,7 +1120,7 @@ initCarSlider("ecoPrev", "ecoNext", ".eco-track");
 <script src="footer.js"></script>
 <script>
   // Footer laden
-  fetch("footer_de.html")   <!-- HIER einfach ändern nach Sprache -->
+  fetch("footer_de.html")
     .then(res => res.text())
     .then(html => {
       document.getElementById("footer").innerHTML = html;
@@ -1131,7 +1131,7 @@ initCarSlider("ecoPrev", "ecoNext", ".eco-track");
 
 
 
-<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
 <script>
   AOS.init({
     once: true,          // Animation nur einmal

@@ -1,8 +1,11 @@
 <!DOCTYPE html>
-<html lang="ar">
+<html lang="ar" dir="rtl">
 
 <head>
-  <!-- ========== FAVICONS ========== -->
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="robots" content="index,follow,max-image-preview:large,max-snippet:-1,max-video-preview:-1" />
+<!-- ========== FAVICONS ========== -->
 <link rel="icon" type="image/png" sizes="16x16" href="/favicon/favicon-16x16.png">
 <link rel="icon" type="image/png" sizes="32x32" href="/favicon/favicon-32x32.png">
 <link rel="icon" type="image/png" sizes="96x96" href="/favicon/favicon-96x96.png">
@@ -35,20 +38,14 @@
   <!-- ==========================================
        🔧 الإعدادات الأساسية
   =========================================== -->
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <html lang="ar" dir="rtl">
 
   <!-- ==========================================
        🏆 عنوان الصفحة + الوصف (SEO قوي)
   =========================================== -->
-  <title>فيلورا ترانسفيرز | خدمة سائق خاص فاخرة في سويسرا – زيورخ، دافوس، سانت موريتز</title>
+  <title>خدمة سائق خاص في سويسرا | Veloura Transfers</title>
 
   <meta name="description"
         content="خدمة سائق خاص وسيارات ليموزين فاخرة في سويسرا. نقل مطار زيورخ، سائق للـ WEF دافوس، خدمات VIP ورجال الأعمال، جولات سياحية، نقل للتزلج والمناسبات." />
-
-  <meta name="keywords"
-        content="سائق خاص سويسرا, ليموزين زيورخ, نقل مطار زيورخ, سائق VIP سويسرا, سائق عربي في زيورخ, نقل دافوس, WEF دافوس, خدمات رجال الأعمال, ليموزين فاخرة سويسرا, جولات سياحية سويسرا, نقل فنادق زيورخ" />
 
   <meta name="author" content="Veloura Transfers" />
   <meta name="theme-color" content="#c7a347" />
@@ -73,9 +70,10 @@
   <meta property="og:description" content="أفضل خدمة سائق خاص ونقل مطار في سويسرا، زيورخ، دافوس وجنيف." />
   <meta property="og:type" content="website" />
   <meta property="og:url" content="https://www.velouratransfers.ch/" />
-  <meta property="og:image" content="https://www.velouratransfers.ch/img/og-image.webp" />
+  <meta property="og:image" content="https://www.velouratransfers.ch/img/index/indexhero.webp" />
   <meta property="og:image:alt" content="Veloura Transfers – Chauffeur Service Switzerland" />
   <meta property="og:site_name" content="Veloura Transfers" />
+  <meta property="og:locale" content="ar_AR" />
 
 
   <!-- ==========================================
@@ -84,7 +82,7 @@
   <meta name="twitter:card" content="summary_large_image" />
   <meta name="twitter:title" content="فيلورا ترانسفيرز – خدمة سائق خاص سويسرا" />
   <meta name="twitter:description" content="خدمة سائق وليموزين فاخرة في جميع أنحاء سويسرا." />
-  <meta name="twitter:image" content="https://www.velouratransfers.ch/img/og-image.webp" />
+  <meta name="twitter:image" content="https://www.velouratransfers.ch/img/index/indexhero.webp" />
   <meta name="twitter:image:alt" content="Veloura Transfers Chauffeur Service" />
 
 
@@ -103,7 +101,8 @@
   <!-- ملفات CSS -->
   <link rel="stylesheet" href="index.css" />
   <link rel="stylesheet" href="general.css" />
-  <link rel="stylesheet" href="https://unpkg.com/aos@2.3.4/dist/aos.css" />
+  <link rel="preconnect" href="https://unpkg.com" crossorigin />
+<link rel="stylesheet" href="https://unpkg.com/aos@2.3.4/dist/aos.css" />
 
 
   <!-- ==========================================
@@ -116,7 +115,7 @@
     "name": "Veloura Transfers",
     "@id": "https://www.velouratransfers.ch/",
     "url": "https://www.velouratransfers.ch/",
-    "image": "https://www.velouratransfers.ch/img/og-image.webp",
+    "image": "https://www.velouratransfers.ch/img/index/indexhero.webp",
     "telephone": "+41 79 328 80 07",
     "email": "info@velouratransfers.ch",
     "priceRange": "CHF 80 - 1200",
@@ -222,6 +221,7 @@
 </script>
 
 
+<link rel="stylesheet" href="footer.css" />
 </head>
 
 
@@ -536,7 +536,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
     <!-- zentrales Bild -->
     <figure class="ht-center" data-aos="zoom-in" data-aos-delay="150">
-      <img src="img/index/vklass.webp"
+      <img src="img/index/vklass.webp" width="1536" height="1024" loading="lazy" decoding="async"
            alt="Mercedes V-Klasse – خدمة ليموزين Veloura Transfers في سويسرا">
     </figure>
 
@@ -654,7 +654,7 @@ document.addEventListener("DOMContentLoaded", () => {
         <article class="svc-card">
           <div class="svc-img" style="background-image:url('img/index/wef.webp');"></div>
           <h3>خدمة WEF دافوس – شاتل فاخر</h3>
-          <p>سائقون معتمدون ومخصصون لحدث دافوس 2026.</p>
+          <p>سائقون معتمدون ومخصصون لحدث دافوس 2027.</p>
           <a href="wef_ar.html" class="svc-btn">اعرف المزيد</a>
         </article>
 
@@ -1586,7 +1586,7 @@ document.addEventListener("DOMContentLoaded", () => {
         <strong>الدقة في المواعيد، الأمان والسرية</strong> – سواء لخدمات
         <strong>التواجد الدائم (Stand-by)</strong> في الفعاليات،
         جولات التنفيذيين، أو  
-        <strong>خدمات WEF دافوس 2026</strong>.  
+        <strong>خدمات WEF دافوس 2027</strong>.  
         مع أسطولنا الفاخر من سيارات
         <strong>Mercedes-Benz S-Class، V-Class، و Sprinter Executive</strong>
         ستستمتع بأقصى درجات الراحة والأناقة وجودة الخدمة السويسرية الفائقة.
@@ -1599,7 +1599,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
     <!-- IMAGE -->
     <div class="crown-image" data-aos="fade-left" data-aos-delay="200">
-      <img src="img/index/infobild.webp"
+      <img src="img/index/infobild.webp" width="4602" height="3072" loading="lazy" decoding="async"
         alt="خدمة سائق فاخرة في سويسرا – Veloura Transfers زيورخ دافوس سانت موريتز WEF">
       <div class="Veloura-overlay"></div>
     </div>
@@ -1870,7 +1870,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
     <h3>خدمة سائق WEF دافوس</h3>
     <p>
-      نقدم <strong>خدمة سائق WEF Davos 2026</strong> المتخصصة عبر فريق ذو خبرة،
+      نقدم <strong>خدمة سائق WEF Davos 2027</strong> المتخصصة عبر فريق ذو خبرة،
       أسطول سيارات دفع رباعي آمنة للثلوج،
       طاقم متمرّس في العمل مع البطاقات الأمنية،
       وإدارة تنقّل الوفود والسيارات التنفيذية — مثالية للشركات والسياسيين
@@ -1897,14 +1897,14 @@ document.addEventListener("DOMContentLoaded", () => {
 <script src="footer.js"></script>
 <script>
   // Footer laden
-  fetch("footer_ar.html")   <!-- HIER einfach ändern nach Sprache -->
+  fetch("footer_ar.html")
     .then(res => res.text())
     .then(html => {
       document.getElementById("footer").innerHTML = html;
     });
 </script>
 
-<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
 <script>
   AOS.init({
     once: true,          // Animation nur einmal

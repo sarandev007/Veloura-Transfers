@@ -1,7 +1,10 @@
 <!DOCTYPE html>
-<html lang="ar">
+<html lang="ar" dir="rtl">
 <head>
-  <!-- ========== FAVICONS ========== -->
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="robots" content="index,follow,max-image-preview:large,max-snippet:-1,max-video-preview:-1" />
+<!-- ========== FAVICONS ========== -->
 <link rel="icon" type="image/png" sizes="16x16" href="/favicon/favicon-16x16.png">
 <link rel="icon" type="image/png" sizes="32x32" href="/favicon/favicon-32x32.png">
 <link rel="icon" type="image/png" sizes="96x96" href="/favicon/favicon-96x96.png">
@@ -34,20 +37,14 @@
   <!-- ==========================================
        🔧 الإعدادات الأساسية
   =========================================== -->
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <html lang="ar" dir="rtl">
 
   <!-- ==========================================
        🏆 العنوان + الوصف (SEO ممتاز)
   =========================================== -->
-  <title>جولات سياحية خاصة في سويسرا | Veloura Transfers – زيورخ، لوزيرن، إنترلاكن & زيرمات</title>
+  <title>جولات خاصة في سويسرا | Veloura Transfers</title>
 
   <meta name="description"
         content="جولات سياحية خاصة في سويسرا مع سائق خاص. زيورخ، لوزيرن، إنترلاكن، يونغفرايوخ، زيرمات وشلالات الراين. جولات فاخرة ومخصصة بالكامل." />
-
-  <meta name="keywords"
-        content="جولة سياحية سويسرا, جولة زيورخ, جولة لوزيرن, جولة إنترلاكن, جولة يونغفرايوخ, جولة زيرمات, جولة شلالات الراين, جولة خاصة سويسرا, جولات فاخرة سويسرا, سائق خاص سويسرا" />
 
   <meta name="author" content="Veloura Transfers" />
   <meta name="theme-color" content="#c7a347" />
@@ -62,7 +59,7 @@
   <link rel="alternate" hreflang="en" href="https://www.velouratransfers.ch/tour_en.html" />
   <link rel="alternate" hreflang="id" href="https://www.velouratransfers.ch/tour_id.html" />
   <link rel="alternate" hreflang="ar" href="https://www.velouratransfers.ch/tour_ar.html" />
-  <link rel="alternate" hreflang="x-default" href="https://www.velouratransfers.ch/tour_ar.html" />
+  <link rel="alternate" hreflang="x-default" href="https://www.velouratransfers.ch/tour.html" />
 
 
   <!-- ==========================================
@@ -72,9 +69,10 @@
   <meta property="og:description" content="استكشف سويسرا بجولات خاصة فاخرة إلى زيورخ، لوزيرن، إنترلاكن، زيرمات، يونغفرايوخ والمزيد." />
   <meta property="og:type" content="website" />
   <meta property="og:url" content="https://www.velouratransfers.ch/tour_ar.html" />
-  <meta property="og:image" content="https://www.velouratransfers.ch/img/og-image.webp" />
+  <meta property="og:image" content="https://www.velouratransfers.ch/img/index/sightseeing.webp" />
   <meta property="og:image:alt" content="Veloura Transfers – جولات سويسرا الخاصة" />
   <meta property="og:site_name" content="Veloura Transfers" />
+  <meta property="og:locale" content="ar_AR" />
 
 
   <!-- ==========================================
@@ -83,7 +81,7 @@
   <meta name="twitter:card" content="summary_large_image" />
   <meta name="twitter:title" content="جولات خاصة في سويسرا – Chauffeur فاخر" />
   <meta name="twitter:description" content="جولات سويسرية مع سائق خاص: زيورخ، لوزيرن، إنترلاكن، زيرمات وشلالات الراين." />
-  <meta name="twitter:image" content="https://www.velouratransfers.ch/img/og-image.webp" />
+  <meta name="twitter:image" content="https://www.velouratransfers.ch/img/index/sightseeing.webp" />
   <meta name="twitter:image:alt" content="Veloura Transfers – Swiss Private Tours" />
 
 
@@ -96,7 +94,8 @@
 
   <link rel="stylesheet" href="general.css" />
   <link rel="stylesheet" href="tour.css" />
-  <link rel="stylesheet" href="https://unpkg.com/aos@2.3.4/dist/aos.css" />
+  <link rel="preconnect" href="https://unpkg.com" crossorigin />
+<link rel="stylesheet" href="https://unpkg.com/aos@2.3.4/dist/aos.css" />
 
 
   <!-- ==========================================
@@ -109,7 +108,7 @@
     "name": "Veloura Transfers",
     "@id": "https://www.velouratransfers.ch/",
     "url": "https://www.velouratransfers.ch/",
-    "image": "https://www.velouratransfers.ch/img/og-image.webp",
+    "image": "https://www.velouratransfers.ch/img/index/sightseeing.webp",
     "telephone": "+41 79 328 80 07",
     "email": "info@velouratransfers.ch",
     "priceRange": "CHF 80 - 1200",
@@ -275,6 +274,7 @@
 </script>
 
 
+<link rel="stylesheet" href="footer.css" />
 </head>
 
 
@@ -380,7 +380,7 @@
 
 <!-- HERO -->
 <section class="a2-hero" data-aos="fade-up" lang="ar" dir="rtl">
-  <img class="a2-hero-bg" src="img/index/sightseeing.webp" alt="Veloura Transfers – جولات سياحية" >
+  <img class="a2-hero-bg" src="img/index/sightseeing.webp" width="3648" height="3648" fetchpriority="high" decoding="async" alt="Veloura Transfers – جولات سياحية" >
   <div class="a2-hero-glass" data-aos="zoom-in" data-aos-delay="120">
 
     <h1>جولات سياحية خاصة في جميع أنحاء سويسرا</h1>
@@ -1176,7 +1176,7 @@ initCarSlider("ecoPrev", "ecoNext", ".eco-track");
 <script src="footer.js"></script>
 <script>
   // Footer laden
-  fetch("footer_ar.html")   <!-- HIER einfach ändern nach Sprache -->
+  fetch("footer_ar.html")
     .then(res => res.text())
     .then(html => {
       document.getElementById("footer").innerHTML = html;
@@ -1187,7 +1187,7 @@ initCarSlider("ecoPrev", "ecoNext", ".eco-track");
 
 
 
-<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
 <script>
   AOS.init({
     once: true,          // Animation nur einmal

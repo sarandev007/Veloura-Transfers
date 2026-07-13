@@ -1,7 +1,10 @@
 <!DOCTYPE html>
 <html lang="de">
 <head>
-  <!-- ========== FAVICONS ========== -->
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="robots" content="index,follow,max-image-preview:large,max-snippet:-1,max-video-preview:-1" />
+<!-- ========== FAVICONS ========== -->
 <link rel="icon" type="image/png" sizes="16x16" href="/favicon/favicon-16x16.png">
 <link rel="icon" type="image/png" sizes="32x32" href="/favicon/favicon-32x32.png">
 <link rel="icon" type="image/png" sizes="96x96" href="/favicon/favicon-96x96.png">
@@ -34,20 +37,13 @@
   <!-- ==========================================
        🔧 Grundeinstellungen
   =========================================== -->
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <html lang="de">
-
   <!-- ==========================================
        🏆 TITLE + META DESCRIPTION (155 Zeichen)
   =========================================== -->
-  <title>WEF Davos 2026 Chauffeurservice | Veloura Transfers – VIP, CEO & Delegationen</title>
+  <title>WEF Davos 2027 Chauffeurservice | Veloura Transfers</title>
 
   <meta name="description"
-        content="Premium Chauffeurservice für das WEF Davos 2026. VIP-, CEO- & Delegationsbetreuung, ZRH Transfers, GAC, Sicherheitszonen, winterfeste Flotte & 24/7 Support." />
-
-  <meta name="keywords"
-        content="WEF Davos 2026 Chauffeur, Davos Limousinenservice, WEF Transfer Zürich, WEF GAC Chauffeur, WEF Delegation Transport, VIP Chauffeur Davos, CEO Chauffeur Davos, Winter Chauffeurservice Davos, AlpenGold Davos Transfer, Belvédère Davos Chauffeur, WEF Security Zones, Davos Chauffeurservice" />
+        content="WEF Davos 2027 Chauffeurservice für VIPs, CEOs und Delegationen: Transfers ab Zürich Flughafen und GAC, winterfeste Flotte und 24/7 Betreuung." />
 
   <meta name="author" content="Veloura Transfers" />
   <meta name="theme-color" content="#c7a347" />
@@ -68,22 +64,29 @@
   <!-- ==========================================
        📣 Open Graph (Facebook / WhatsApp / LinkedIn)
   =========================================== -->
-  <meta property="og:title" content="WEF Davos 2026 – Premium Chauffeurservice" />
-  <meta property="og:description" content="VIP, CEO & Delegationen. Winterfeste Flotte, GAC Transfers, Sicherheitszonen-Erfahrung & 24/7 Chauffeursupport." />
+  <meta property="og:title" content="WEF Davos 2027 – Premium Chauffeurservice" />
+  <meta property="og:description" content="VIP-, CEO- und Delegationstransfers ab Zürich Flughafen und GAC. Winterfeste Flotte, Davos-Erfahrung und 24/7 Betreuung." />
   <meta property="og:type" content="website" />
   <meta property="og:url" content="https://www.velouratransfers.ch/wef.html" />
-  <meta property="og:image" content="https://www.velouratransfers.ch/img/og-image.webp" />
-  <meta property="og:image:alt" content="Veloura Transfers – WEF Davos Chauffeurservice" />
+  <meta property="og:image" content="https://www.velouratransfers.ch/img/index/wef.webp" />
+  <meta property="og:image:type" content="image/webp" />
+  <meta property="og:image:width" content="5040" />
+  <meta property="og:image:height" content="3360" />
+  <meta property="og:image:alt" content="Chauffeurservice für das WEF Davos 2027 von Veloura Transfers" />
   <meta property="og:site_name" content="Veloura Transfers" />
+  <meta property="og:locale" content="de_CH" />
+  <meta property="og:locale:alternate" content="en_GB" />
+  <meta property="og:locale:alternate" content="id_ID" />
+  <meta property="og:locale:alternate" content="ar_AR" />
 
 
   <!-- ==========================================
        🐦 Twitter Cards
   =========================================== -->
   <meta name="twitter:card" content="summary_large_image" />
-  <meta name="twitter:title" content="WEF Davos 2026 – Premium Chauffeurservice" />
-  <meta name="twitter:description" content="Chauffeurservice für WEF Delegationen, CEOs & VIPs. 24/7, winterfest & sicher." />
-  <meta name="twitter:image" content="https://www.velouratransfers.ch/img/og-image.webp" />
+  <meta name="twitter:title" content="WEF Davos 2027 – Premium Chauffeurservice" />
+  <meta name="twitter:description" content="VIP-, CEO- und Delegationstransfers zum WEF Davos 2027 mit winterfester Flotte und 24/7 Betreuung." />
+  <meta name="twitter:image" content="https://www.velouratransfers.ch/img/index/wef.webp" />
   <meta name="twitter:image:alt" content="Veloura Transfers – WEF Davos Transfers" />
 
 
@@ -92,7 +95,8 @@
   =========================================== -->
   <link rel="preload" href="wef.css" as="style" />
   <link rel="preload" href="general.css" as="style" />
-  <link rel="preload" href="img/index/wef.webp" as="image" />
+  <link rel="preload" href="img/index/wef.webp" as="image" type="image/webp" fetchpriority="high" />
+  <link rel="preconnect" href="https://unpkg.com" crossorigin />
 
   <link rel="stylesheet" href="general.css" />
   <link rel="stylesheet" href="wef.css" />
@@ -109,7 +113,7 @@
     "name": "Veloura Transfers",
     "@id": "https://www.velouratransfers.ch/",
     "url": "https://www.velouratransfers.ch/",
-    "image": "https://www.velouratransfers.ch/img/og-image.webp",
+    "image": "https://www.velouratransfers.ch/img/index/wef.webp",
     "telephone": "+41 79 328 80 07",
     "email": "info@velouratransfers.ch",
     "priceRange": "CHF 80 - 1200",
@@ -125,7 +129,12 @@
       "latitude": 47.44870,
       "longitude": 8.58325
     },
-    "openingHours": "Mo-So 00:00-23:59",
+    "openingHoursSpecification": {
+      "@type": "OpeningHoursSpecification",
+      "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"],
+      "opens": "00:00",
+      "closes": "23:59"
+    },
     "sameAs": [
       "https://www.instagram.com/velouratransfers",
       "https://www.facebook.com/velouratransfers"
@@ -141,9 +150,10 @@
   {
     "@context": "https://schema.org",
     "@type": "LimousineService",
-    "name": "Veloura Transfers – WEF Davos 2026 Chauffeurservice",
+    "@id": "https://www.velouratransfers.ch/wef.html#service",
+    "name": "Veloura Transfers – WEF Davos 2027 Chauffeurservice",
     "serviceType": [
-      "WEF Davos 2026 Chauffeurservice",
+      "WEF Davos 2027 Chauffeurservice",
       "VIP Chauffeur Davos",
       "CEO Chauffeurservice",
       "Delegations- & Ministertransfers",
@@ -152,9 +162,41 @@
       "4MATIC Winter Chauffeurservice",
       "24/7 Chauffeur für Meetings & Side Events"
     ],
-    "areaServed": "Switzerland",
+    "areaServed": [
+      {"@type": "Country", "name": "Schweiz"},
+      {"@type": "City", "name": "Davos"},
+      {"@type": "City", "name": "Zürich"}
+    ],
     "url": "https://www.velouratransfers.ch/wef.html",
-    "description": "Premium Chauffeurservice für das WEF Davos 2026: Sicherheitszonen-Erfahrung, winterfeste Flotte, VIP-/CEO-Betreuung, ZRH & GAC Transfers."
+    "description": "Premium Chauffeurservice für das WEF Davos 2027: Sicherheitszonen-Erfahrung, winterfeste Flotte, VIP-/CEO-Betreuung, ZRH & GAC Transfers.",
+    "provider": {"@id": "https://www.velouratransfers.ch/"}
+  }
+  </script>
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebPage",
+    "@id": "https://www.velouratransfers.ch/wef.html#webpage",
+    "url": "https://www.velouratransfers.ch/wef.html",
+    "name": "WEF Davos 2027 Chauffeurservice",
+    "description": "WEF Davos 2027 Chauffeurservice für VIPs, CEOs und Delegationen mit Transfers ab Zürich Flughafen und GAC.",
+    "inLanguage": "de",
+    "isPartOf": {"@id": "https://www.velouratransfers.ch/"},
+    "about": {"@id": "https://www.velouratransfers.ch/wef.html#service"},
+    "primaryImageOfPage": {
+      "@type": "ImageObject",
+      "url": "https://www.velouratransfers.ch/img/index/wef.webp",
+      "width": 5040,
+      "height": 3360
+    },
+    "breadcrumb": {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {"@type": "ListItem", "position": 1, "name": "Startseite", "item": "https://www.velouratransfers.ch/index.html"},
+        {"@type": "ListItem", "position": 2, "name": "WEF Davos 2027", "item": "https://www.velouratransfers.ch/wef.html"}
+      ]
+    }
   }
   </script>
 
@@ -223,6 +265,7 @@
 </script>
 
 
+<link rel="stylesheet" href="footer.css" />
 </head>
 
 
@@ -330,25 +373,24 @@
 
   <!-- HERO -->
   <section class="a2-hero" data-aos="fade-up">
-    <img class="a2-hero-bg" src="img/index/wef.webp" alt="Veloura Transfers –WEF Davos 2026 Chauffeur- & Limousinenservices" >
+    <img class="a2-hero-bg" src="img/index/wef.webp" width="5040" height="3360" fetchpriority="high" decoding="async" alt="Chauffeurservice und Limousinenservice für das WEF Davos 2027">
     <div class="a2-hero-glass" data-aos="zoom-in" data-aos-delay="120">
-      <h1>WEF Davos 2026 Chauffeur- & Limousinenservices
-</h1>
-    <p>Zuverlässige Transfers zum WEF Davos 2026 – vom Flughafen Zürich bis zu allen Hotels & Eventlocations.</p>
+      <h1>WEF Davos 2027 Chauffeur- und Limousinenservice</h1>
+    <p>Zuverlässige Transfers zum WEF Davos 2027 – vom Flughafen Zürich bis zu allen Hotels und Eventlocations.</p>
       <div class="a2-hero-actions">
-        <a href="servkontakt.html" class="a2-btn a2-btn-gold">Jetz buchen</a>
+        <a href="servkontakt.html" class="a2-btn a2-btn-gold">Jetzt buchen</a>
         <a href="kontakt.html" class="a2-btn a2-btn-ghost">Kontakt</a>
       </div>
     </div>
   </section>
 
-  <!-- WHY Veloura TRANSFERS – WEF DAVOS 2026 -->
+  <!-- WHY Veloura TRANSFERS – WEF DAVOS 2027 -->
 <section class="ct-wef-why" id="why-wef">
         <span class="ct-zrh-line"></span>
 
   <div class="ct-wef-why-container">
 
-    <h2 data-aos="fade-up">Warum Veloura Transfers für das WEF Davos 2026?</h2>
+    <h2 data-aos="fade-up">Warum Veloura Transfers für das WEF Davos 2027?</h2>
     <span class="ct-goldline"></span>
 
     <p class="ct-wef-toptext" data-aos="fade-up">
@@ -434,7 +476,7 @@
 
       <!-- RIGHT IMAGE -->
       <div class="ct-wef-right" data-aos="fade-left">
-        <img src="img/services/wefbild1.webp" alt="WEF Davos 2026 Chauffeurservice – Veloura Transfers">
+        <img src="img/services/wefbild1.webp" width="1536" height="1536" loading="lazy" decoding="async" alt="WEF Davos 2027 Chauffeurservice von Veloura Transfers">
       </div>
 
     </div>
@@ -667,7 +709,7 @@ initCarSlider("ecoPrev", "ecoNext", ".eco-track");
 <section class="ct-wef-services-grid">
   <div class="ct-wef-services-grid-container">
 
-    <h2 data-aos="fade-up">Chauffeurservices für das WEF Davos 2026</h2>
+    <h2 data-aos="fade-up">Chauffeurservices für das WEF Davos 2027</h2>
     <span class="ct-zrh-line"></span>
 
     <p class="ct-servicesg-intro" data-aos="fade-up">
@@ -743,10 +785,10 @@ initCarSlider("ecoPrev", "ecoNext", ".eco-track");
 <section class="ct-cta">
   <div class="ct-cta-container" data-aos="fade-up">
 
-    <h2>Jetzt Ihren Chauffeurservice für das WEF Davos 2026 sichern</h2>
+    <h2>Jetzt Ihren Chauffeurservice für das WEF Davos 2027 sichern</h2>
     <p>
       Buchen Sie Ihren exklusiven Chauffeurservice für das
-<strong>World Economic Forum Davos 2026</strong> – inklusive Transfers vom
+<strong>World Economic Forum Davos 2027</strong> – inklusive Transfers vom
 <strong>Flughafen Zürich, Privatjet-Terminal, Hotels und Eventlocations</strong>.
 Diskret, pünktlich, winterfest und rund um die Uhr verfügbar.
     </p>
@@ -759,13 +801,13 @@ Diskret, pünktlich, winterfest und rund um die Uhr verfügbar.
   </div>
 </section>
 
-  <!-- IMPORTANT INFORMATION – WEF DAVOS 2026 -->
-<!-- IMPORTANT INFORMATION – WEF DAVOS 2026 -->
+  <!-- IMPORTANT INFORMATION – WEF DAVOS 2027 -->
+<!-- IMPORTANT INFORMATION – WEF DAVOS 2027 -->
 <section class="ct-wef-info" data-aos="fade-up" data-aos-duration="700">
   <div class="ct-wef-info-container">
 
     <h2 data-aos="fade-down" data-aos-duration="700">
-      Wichtige Informationen für WEF Davos 2026 Teilnehmer
+      Wichtige Informationen für WEF Davos 2027 Teilnehmer
     </h2>
 
     <span class="ct-zrh-line" data-aos="fade-down" data-aos-duration="700" data-aos-delay="80"></span>
@@ -891,7 +933,7 @@ Diskret, pünktlich, winterfest und rund um die Uhr verfügbar.
 <section class="faq" id="faq" data-aos="fade-up" data-aos-duration="700">
   <div class="faq-wrap">
     <div class="faq-head" data-aos="fade-down" data-aos-duration="700">
-      <h2>Häufig gestellte Fragen – WEF Davos 2026</h2>
+      <h2>Häufig gestellte Fragen – WEF Davos 2027</h2>
     </div>
 
     <div class="faq-list">
@@ -961,7 +1003,7 @@ Diskret, pünktlich, winterfest und rund um die Uhr verfügbar.
 </section>
 
 <!-- ======================================================
-     Veloura TRANSFERS – WEF 2026 SEO MASTER SECTION
+     Veloura TRANSFERS – WEF 2027 SEO MASTER SECTION
      ====================================================== -->
 
 <section class="ct-wef-master" id="wef-information" data-aos="fade-up">
@@ -970,10 +1012,10 @@ Diskret, pünktlich, winterfest und rund um die Uhr verfügbar.
 
     <!-- SECTION HEAD -->
     <div class="ct-wef-master-head" data-aos="fade-down">
-      <h2>WEF Davos 2026 – Alles Wichtige auf einen Blick</h2>
+      <h2>WEF Davos 2027 – Alles Wichtige auf einen Blick</h2>
       <span class="ct-gold-line"></span>
       <p class="ct-wef-master-intro">
-        Alle entscheidenden Informationen für das World Economic Forum Annual Meeting 2026 –
+        Alle entscheidenden Informationen für das World Economic Forum Annual Meeting 2027 –
         Themen, Teilnehmer, Anreise, Davos Infrastruktur, Hotels, Medien & offizielle Ressourcen.
       </p>
     </div>
@@ -982,10 +1024,11 @@ Diskret, pünktlich, winterfest und rund um die Uhr verfügbar.
     <!-- BLOCK 1: KEY AGENDA TOPICS -->
     <div class="ct-wef-master-block" data-aos="fade-up" data-aos-delay="100">
 
-      <h3>Schwerpunkte & Top-Themen 2026</h3>
+      <h3>Erwartete Schwerpunkte und Themen 2027</h3>
       <p>
-        Das WEF Davos 2026 konzentriert sich auf globale Herausforderungen, Innovationen,
-        geopolitische Entwicklungen und die wirtschaftliche Zukunft.
+        Die offizielle Agenda für 2027 wird vom World Economic Forum veröffentlicht.
+        Auf Basis der wiederkehrenden Themen stehen voraussichtlich globale Herausforderungen,
+        Innovationen, geopolitische Entwicklungen und die wirtschaftliche Zukunft im Fokus.
       </p>
 
       <ul class="ct-wef-list">
@@ -1084,11 +1127,11 @@ Diskret, pünktlich, winterfest und rund um die Uhr verfügbar.
       <h3>Medien, Presse & Offizielle Ressourcen</h3>
       <p>
         Verifizierte Informationen, Pressemitteilungen und Downloads rund um
-        das World Economic Forum 2026.
+        das World Economic Forum 2027.
       </p>
 
       <ul class="ct-wef-list">
-        <li>Offizielle Website: World Economic Forum</li>
+        <li><a href="https://www.weforum.org/meetings/">Offizielle Meetings des World Economic Forum</a></li>
         <li>Aktuelle Pressemitteilungen & Statements</li>
         <li>Agenda, Logos & Medienpakete zum Herunterladen</li>
         <li>Zertifizierte Quellen & internationale Coverage</li>
@@ -1107,7 +1150,7 @@ Diskret, pünktlich, winterfest und rund um die Uhr verfügbar.
 <script src="footer.js"></script>
 <script>
   // Footer laden
-  fetch("footer_de.html")   <!-- HIER einfach ändern nach Sprache -->
+  fetch("footer_de.html")
     .then(res => res.text())
     .then(html => {
       document.getElementById("footer").innerHTML = html;
@@ -1118,7 +1161,7 @@ Diskret, pünktlich, winterfest und rund um die Uhr verfügbar.
 
 
 
-<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
 <script>
   AOS.init({
     once: true,          // Animation nur einmal

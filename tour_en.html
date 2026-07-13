@@ -1,7 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <!-- ========== FAVICONS ========== -->
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="robots" content="index,follow,max-image-preview:large,max-snippet:-1,max-video-preview:-1" />
+<!-- ========== FAVICONS ========== -->
 <link rel="icon" type="image/png" sizes="16x16" href="/favicon/favicon-16x16.png">
 <link rel="icon" type="image/png" sizes="32x32" href="/favicon/favicon-32x32.png">
 <link rel="icon" type="image/png" sizes="96x96" href="/favicon/favicon-96x96.png">
@@ -34,20 +37,14 @@
   <!-- ==========================================
        🔧 BASIC SETTINGS
   =========================================== -->
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <html lang="en">
 
   <!-- ==========================================
        🏆 TITLE + META DESCRIPTION (≤155 chars)
   =========================================== -->
-  <title>Sightseeing Tours Switzerland | Veloura Transfers – Zurich, Lucerne, Interlaken & Zermatt</title>
+  <title>Private Tours Switzerland | Veloura Transfers</title>
 
   <meta name="description"
         content="Private sightseeing tours across Switzerland. Zurich, Lucerne, Interlaken, Jungfraujoch, Zermatt & Rhine Falls. Luxury chauffeur-guided tours, fully customized." />
-
-  <meta name="keywords"
-        content="Switzerland sightseeing tour, Zurich city tour, Lucerne tour, Interlaken tour, Jungfraujoch tour, Zermatt tour, Rhine Falls tour, private Switzerland tour, chauffeur guided tour Switzerland, Swiss private tours" />
 
   <meta name="author" content="Veloura Transfers" />
   <meta name="theme-color" content="#c7a347" />
@@ -62,7 +59,7 @@
   <link rel="alternate" hreflang="en" href="https://www.velouratransfers.ch/tour_en.html" />
   <link rel="alternate" hreflang="id" href="https://www.velouratransfers.ch/tour_id.html" />
   <link rel="alternate" hreflang="ar" href="https://www.velouratransfers.ch/tour_ar.html" />
-  <link rel="alternate" hreflang="x-default" href="https://www.velouratransfers.ch/tour_en.html" />
+  <link rel="alternate" hreflang="x-default" href="https://www.velouratransfers.ch/tour.html" />
 
 
   <!-- ==========================================
@@ -72,9 +69,10 @@
   <meta property="og:description" content="Discover Switzerland with private tours to Zurich, Lucerne, Interlaken, Zermatt, Jungfraujoch & more." />
   <meta property="og:type" content="website" />
   <meta property="og:url" content="https://www.velouratransfers.ch/tour_en.html" />
-  <meta property="og:image" content="https://www.velouratransfers.ch/img/og-image.webp" />
+  <meta property="og:image" content="https://www.velouratransfers.ch/img/index/sightseeing.webp" />
   <meta property="og:image:alt" content="Veloura Transfers – Sightseeing Tours Switzerland" />
   <meta property="og:site_name" content="Veloura Transfers" />
+  <meta property="og:locale" content="en_GB" />
 
 
   <!-- ==========================================
@@ -83,7 +81,7 @@
   <meta name="twitter:card" content="summary_large_image" />
   <meta name="twitter:title" content="Sightseeing Tours Switzerland – Luxury Private Tours" />
   <meta name="twitter:description" content="Private, chauffeur-guided sightseeing tours across Switzerland. Zurich, Lucerne, Interlaken & more." />
-  <meta name="twitter:image" content="https://www.velouratransfers.ch/img/og-image.webp" />
+  <meta name="twitter:image" content="https://www.velouratransfers.ch/img/index/sightseeing.webp" />
   <meta name="twitter:image:alt" content="Veloura Transfers – Private Switzerland Tours" />
 
 
@@ -96,7 +94,8 @@
 
   <link rel="stylesheet" href="general.css" />
   <link rel="stylesheet" href="tour.css" />
-  <link rel="stylesheet" href="https://unpkg.com/aos@2.3.4/dist/aos.css" />
+  <link rel="preconnect" href="https://unpkg.com" crossorigin />
+<link rel="stylesheet" href="https://unpkg.com/aos@2.3.4/dist/aos.css" />
 
 
   <!-- ==========================================
@@ -109,7 +108,7 @@
     "name": "Veloura Transfers",
     "@id": "https://www.velouratransfers.ch/",
     "url": "https://www.velouratransfers.ch/",
-    "image": "https://www.velouratransfers.ch/img/og-image.webp",
+    "image": "https://www.velouratransfers.ch/img/index/sightseeing.webp",
     "telephone": "+41 79 328 80 07",
     "email": "info@velouratransfers.ch",
     "priceRange": "CHF 80 - 1200",
@@ -275,6 +274,7 @@
 </script>
 
 
+<link rel="stylesheet" href="footer.css" />
 </head>
 
 
@@ -380,7 +380,7 @@
 
 <!-- HERO -->
 <section class="a2-hero" data-aos="fade-up">
-  <img class="a2-hero-bg" src="img/index/sightseeing.webp" alt="Veloura Transfers – Sightseeing Tours" >
+  <img class="a2-hero-bg" src="img/index/sightseeing.webp" width="3648" height="3648" fetchpriority="high" decoding="async" alt="Veloura Transfers – Sightseeing Tours" >
   <div class="a2-hero-glass" data-aos="zoom-in" data-aos-delay="120">
     
     <h1>Private Sightseeing Tours Across Switzerland</h1>
@@ -1120,7 +1120,7 @@ initCarSlider("ecoPrev", "ecoNext", ".eco-track");
 <script src="footer.js"></script>
 <script>
   // Footer laden
-  fetch("footer_en.html")   <!-- HIER einfach ändern nach Sprache -->
+  fetch("footer_en.html")
     .then(res => res.text())
     .then(html => {
       document.getElementById("footer").innerHTML = html;
@@ -1131,7 +1131,7 @@ initCarSlider("ecoPrev", "ecoNext", ".eco-track");
 
 
 
-<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
 <script>
   AOS.init({
     once: true,          // Animation nur einmal
